@@ -29,7 +29,7 @@ async def enviar_datos_a_unity():
             except Exception as e:
                 print(f"Error enviando a Unity: {e}")
                 clients["Unity_receiver"] = None
-        await asyncio.sleep(1)
+        await asyncio.sleep(0.3)
 
 # Función para enviar GT a ESP32 periódicamente
 async def enviar_gt_a_esp32():
@@ -42,7 +42,7 @@ async def enviar_gt_a_esp32():
             except Exception as e:
                 print(f"Error enviando GT a ESP32: {e}")
                 clients["esp32"] = None
-        await asyncio.sleep(1)
+        await asyncio.sleep(0.5)
 
 # Manejador de cada conexión entrante
 async def handler(websocket):
