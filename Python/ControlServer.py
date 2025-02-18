@@ -91,11 +91,13 @@
 
 
 import asyncio
+import socket
 import json
 from websockets.asyncio.server import serve
 
 # Variables globales para almacenar los datos de EMG, frecuencia cardíaca y control de HPIS
-esp32_data = {"EMG_counter": 0, "Heart_Rate": 0}
+hr_data = {"Heart_Rate": 0}
+esp32_data = {"EMG_counter": 0}
 hpis_control_data = {
     "actividad": 0,
     "paso_actividad": 0,
@@ -103,20 +105,31 @@ hpis_control_data = {
     "GT": 0
 }
 
-# Función para manejar la recepción de datos de EMG y frecuencia cardíaca desde ESP32
+# Función para manejar la recepción de datos de frecuencia cardíaca desde Manilla
+async def receive_hr_control(websocket):
+    global hr_data
+    try:
+        async for message in websocket:
+            hr_data = json.loads(message)
+            print(f"<<< Received Heart Rate: {hr_data}")
+
+    except Exception as e:
+        print(f"Error receiving Heart Rate: {e}")
+
+# Función para manejar la recepción de datos de EMG desde ESP32
 async def receive_esp32(websocket):
     global esp32_data
     try:
         async for message in websocket:
             esp32_data = json.loads(message)
-            print(f"<<< Received EMG and Heart Rate: {esp32_data}")
+            print(f"<<< Received EMG: {esp32_data}")
 
             # Enviar de vuelta el valor de GT actual al ESP32
             gt_data = {"GT": hpis_control_data["GT"]}
             await websocket.send(json.dumps(gt_data))
             print(f">>> Sent GT to ESP32: {gt_data}")
     except Exception as e:
-        print(f"Error receiving EMG and Heart Rate: {e}")
+        print(f"Error receiving EMG: {e}")
 
 # Función para manejar la recepción de datos del cliente HPISControl.py
 async def receive_hpis_control(websocket):
@@ -155,6 +168,8 @@ async def handler(websocket):
             await send_data(websocket)
         elif client_type == "HPISControl":
             await receive_hpis_control(websocket)
+        elif client_type == "HRControl":
+            await receive_hr_control(websocket)
         else:
             print("Unknown client type")
     except Exception as e:
@@ -164,7 +179,12 @@ async def handler(websocket):
 
 # Función principal del servidor
 async def main():
-    async with serve(handler, "192.168.50.51", 7890):
+    hostname = socket.gethostname()
+    IPAddr = socket.gethostbyname(hostname)
+
+    print("Your Computer Name is:" + hostname)
+    print("Your Computer IP Address is:" + IPAddr)
+    async with serve(handler, IPAddr, 7890):
         await asyncio.Future()
 
 # Punto de entrada del script
