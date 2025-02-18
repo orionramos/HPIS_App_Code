@@ -88,7 +88,7 @@ async def enviar_keep_alive(websocket, app):
 
 # Función asíncrona para conectar con el servidor WebSocket y enviar datos
 async def enviar_datos_al_servidor(app):
-    uri = "ws://192.168.50.51:7890"  # Dirección IP del servidor WebSocket
+    uri = "ws://LocalHost:7890"  # Dirección IP del servidor WebSocket
 
     async with connect(uri) as websocket:  # Establecer conexión WebSocket
         await websocket.send(json.dumps({"type": "HPISControl"}))  # Identificar el cliente

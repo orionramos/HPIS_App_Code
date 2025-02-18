@@ -7,7 +7,7 @@ async def receive_data():
     """
     Se conecta al servidor WebSocket y recibe datos combinados continuamente.
     """
-    uri = "ws://192.168.50.51:7890"  # Dirección del servidor WebSocket
+    uri = "ws://192.168.50.52:7890"  # Dirección del servidor WebSocket
     # uri = "ws://192.168.4.2:7890"  # Dirección del servidor WebSocket
     async with connect(uri) as websocket:  # Establecer conexión con el servidor
         # Enviar mensaje inicial identificando al cliente como receptor
