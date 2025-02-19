@@ -15,7 +15,6 @@ async def send_emg_hr(websocket):
             }
             await websocket.send(json.dumps(data))  # Envía los datos convertidos a formato JSON.
             print(f">>> Sent EMG and Heart Rate: {data}")  # Muestra en consola los datos enviados.
-            await asyncio.sleep(1)  # Espera 1 segundo antes de enviar el siguiente paquete de datos.
     except Exception as e:
         print(f"Error in send_emg_hr: {e}")  # Captura y muestra cualquier error en la comunicación.
 
