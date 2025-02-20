@@ -7,7 +7,8 @@ from websockets.asyncio.server import serve  # Importa la función `serve` para 
 clients = {
     "esp32": None,  # Cliente ESP32, encargado de enviar datos de sensores
     "HPISControl": None,  # Cliente HPISControl, envía datos de actividad
-    "Unity_receiver": None  # Cliente Unity, encargado de recibir y mostrar datos en la interfaz
+    "Unity_receiver": None,  # Cliente Unity, encargado de recibir y mostrar datos en la interfaz
+    "HRControl": None
 }
 
 # Variables globales que se actualizan con los datos recibidos de los clientes
@@ -32,6 +33,7 @@ async def enviar_datos_a_unity():
                 print(f"Error enviando a Unity: {e}")
                 clients["Unity_receiver"] = None  # Si hay error, se desconecta el cliente
         await asyncio.sleep(0.3)  # Pausa de 300 ms antes de enviar nuevamente
+
 
 # Función asíncrona para enviar el mensaje GT al ESP32 periódicamente
 async def enviar_gt_a_esp32():
@@ -72,8 +74,11 @@ async def handler(websocket):
             if client_type == "esp32":  
                 # Actualiza las variables globales con los datos del ESP32
                 datos_globales["EMG_counter"] = data.get("EMG_counter", 0)
+    
+            elif client_type == "HRControl":
+                # Actualiza las variables globales con los datos del HRControl
                 datos_globales["Heart_Rate"] = data.get("Heart_Rate", 0)
-
+                
             elif client_type == "HPISControl":  
                 message_type = data.get("type")  # Obtiene el tipo de mensaje
 
@@ -93,6 +98,7 @@ async def handler(websocket):
                     respuesta = {"status": "ERROR", "mensaje": "Tipo de mensaje no reconocido"}
 
                 await websocket.send(json.dumps(respuesta))  # Envía la respuesta al cliente HPISControl
+            
 
     except Exception as e:
         print(f"❌ Error con {client_type}: {e}")  # Captura y muestra cualquier error

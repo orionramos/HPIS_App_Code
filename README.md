@@ -4,27 +4,35 @@ Este repositorio contiene los archivos necesarios para la interacción entre un 
 
 ## Archivos incluidos
 
-### 1. `Controlserver.py`
+### 1. `WebSocketserver.py`
 
-Este script implementa el servidor WebSocket en Python. Se encarga de recibir datos del ESP32, gestionar la información de la aplicación de control (`HPISControl.py`) y enviar los datos adecuados a la aplicación Unity.
+Este script implementa el servidor WebSocket en Python. Se encarga de recibir datos del ESP32, gestionar la información de la aplicación de control (`HPISControl.py`) y la aplicación de frecuencia cardíaca (`HRControl`) y enviar los datos adecuados a la aplicación Unity.
 
 ### 2. `HPISControl.py`
 
 Este archivo es el cliente que permite a los usuarios seleccionar un participante, una estrategia de HRI y una actividad. Luego, envía estos datos al servidor WebSocket y gestiona la interacción paso a paso durante la ejecución de la actividad.
 
-### 3. `ClientUnitySimulation.py`
+### 3. `HRControl.py`
+
+Este script consome la API de Pulsoid a fin de obtener la frecuencia cardíaca y envíala a el WebSocketServer.
+
+### 4. `ESP - main.ino`
+
+Este script cria la rede WIFI que todos los dispositivos deben conectarse. Envia los pulsos EMG a el WebSocketServer e recibe el tipo de agarre. Genera el tren de pulsos que deberá ser recibido por la prótesis.
+
+### 5. `ClientUnitySimulation.py`
 
 Simula el cliente Unity para recibir datos del servidor WebSocket y visualizar la información procesada.
 
-### 4. `ClienteESP32.py`
+### 6. `ClienteESP32.py`
 
 Simula el cliente ESP32 enviando datos de frecuencia cardíaca y señales EMG al servidor WebSocket, y recibe la señal GT en respuesta.
 
-### 5. `requirements.txt`
+### 7. `requirements.txt`
 
 Contiene la lista de bibliotecas necesarias para ejecutar los scripts en este repositorio.
 
-### 6. `install_requirements.py`
+### 8. `install_requirements.py`
 
 Script que instala automáticamente todas las dependencias listadas en `requirements.txt`.
 

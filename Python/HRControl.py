@@ -8,8 +8,6 @@ import random  # Biblioteca para generar valores aleatorios
 import time
 import rel
 
-#CONTROL_SERVER_URI = "ws://192.168.50.120:7890"
-
 async def send_hr(hr):
     """
     Envia a frequência cardíaca ao software de controle.
@@ -39,10 +37,11 @@ def on_open(ws):
 if __name__ == "__main__":
     global CONTROL_SERVER_URI
     
-    hostname = socket.gethostname()
-    IPAddr = socket.gethostbyname(hostname)
+    #hostname = socket.gethostname()
+    #IPAddr = socket.gethostbyname(hostname)
     
-    CONTROL_SERVER_URI = "ws://" + IPAddr + ":7890"
+    #CONTROL_SERVER_URI = "ws://" + IPAddr + ":7890"
+    CONTROL_SERVER_URI = "ws://localhost:7890"                                                                                                                                                                                                                                                                                                                                                                                
     
     ws = websocket.WebSocketApp("wss://dev.pulsoid.net/api/v1/data/real_time?access_token=dd1ade8e-28ea-4b9c-8020-b98344c72a1e&response_mode=text_plain_only_heart_rate",
                               on_open=on_open,
