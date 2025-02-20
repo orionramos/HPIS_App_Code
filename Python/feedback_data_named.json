@@ -1,0 +1,1872 @@
+{
+    "1": {
+        "name": "Beber líquido",
+        "strategies": {
+            "1": {
+                "name": "Estrategia Auditiva 1",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_1_1_1"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_1_1_2"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_1_1_3"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_1_1_4"
+                    }
+                }
+            },
+            "2": {
+                "name": "Estrategia Auditiva 2",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_1_2_1"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_1_2_2"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_1_2_3"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_1_2_4"
+                    }
+                }
+            },
+            "3": {
+                "name": "Estrategia Auditiva 3",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_1_3_1"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_1_3_2"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_1_3_3"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_1_3_4"
+                    }
+                }
+            },
+            "4": {
+                "name": "Estrategia Visual 1",
+                "steps": {
+                    "1": {
+                        "content_type": "image",
+                        "content_value": "example_image_1_4_1"
+                    },
+                    "2": {
+                        "content_type": "image",
+                        "content_value": "example_image_1_4_2"
+                    },
+                    "3": {
+                        "content_type": "image",
+                        "content_value": "example_image_1_4_3"
+                    },
+                    "4": {
+                        "content_type": "image",
+                        "content_value": "example_image_1_4_4"
+                    }
+                }
+            },
+            "5": {
+                "name": "Estrategia Visual 2",
+                "steps": {
+                    "1": {
+                        "content_type": "image",
+                        "content_value": "example_image_1_5_1"
+                    },
+                    "2": {
+                        "content_type": "image",
+                        "content_value": "example_image_1_5_2"
+                    },
+                    "3": {
+                        "content_type": "image",
+                        "content_value": "example_image_1_5_3"
+                    },
+                    "4": {
+                        "content_type": "image",
+                        "content_value": "example_image_1_5_4"
+                    }
+                }
+            },
+            "6": {
+                "name": "Estrategia Visual 3",
+                "steps": {
+                    "1": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_1_6_1"
+                    },
+                    "2": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_1_6_2"
+                    },
+                    "3": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_1_6_3"
+                    },
+                    "4": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_1_6_4"
+                    }
+                }
+            },
+            "7": {
+                "name": "Estrategia Multimodal 1",
+                "steps": {
+                    "1": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_1_7_1"
+                    },
+                    "2": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_1_7_2"
+                    },
+                    "3": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_1_7_3"
+                    },
+                    "4": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_1_7_4"
+                    }
+                }
+            },
+            "8": {
+                "name": "Estrategia Multimodal 2",
+                "steps": {
+                    "1": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_1_8_1"
+                    },
+                    "2": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_1_8_2"
+                    },
+                    "3": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_1_8_3"
+                    },
+                    "4": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_1_8_4"
+                    }
+                }
+            },
+            "9": {
+                "name": "Estrategia Multimodal 3",
+                "steps": {
+                    "1": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_1_9_1"
+                    },
+                    "2": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_1_9_2"
+                    },
+                    "3": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_1_9_3"
+                    },
+                    "4": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_1_9_4"
+                    }
+                }
+            }
+        }
+    },
+    "2": {
+        "name": "Lavarse la cara",
+        "strategies": {
+            "1": {
+                "name": "Estrategia Auditiva 1",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_1_1"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_1_2"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_1_3"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_1_4"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_1_5"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_1_6"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_1_7"
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_1_8"
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_1_9"
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_1_10"
+                    }
+                }
+            },
+            "2": {
+                "name": "Estrategia Auditiva 2",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_2_1"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_2_2"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_2_3"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_2_4"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_2_5"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_2_6"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_2_7"
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_2_8"
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_2_9"
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_2_10"
+                    }
+                }
+            },
+            "3": {
+                "name": "Estrategia Auditiva 3",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_3_1"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_3_2"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_3_3"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_3_4"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_3_5"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_3_6"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_3_7"
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_3_8"
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_3_9"
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_2_3_10"
+                    }
+                }
+            },
+            "4": {
+                "name": "Estrategia Visual 1",
+                "steps": {
+                    "1": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_4_1"
+                    },
+                    "2": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_4_2"
+                    },
+                    "3": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_4_3"
+                    },
+                    "4": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_4_4"
+                    },
+                    "5": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_4_5"
+                    },
+                    "6": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_4_6"
+                    },
+                    "7": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_4_7"
+                    },
+                    "8": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_4_8"
+                    },
+                    "9": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_4_9"
+                    },
+                    "10": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_4_10"
+                    }
+                }
+            },
+            "5": {
+                "name": "Estrategia Visual 2",
+                "steps": {
+                    "1": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_5_1"
+                    },
+                    "2": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_5_2"
+                    },
+                    "3": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_5_3"
+                    },
+                    "4": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_5_4"
+                    },
+                    "5": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_5_5"
+                    },
+                    "6": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_5_6"
+                    },
+                    "7": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_5_7"
+                    },
+                    "8": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_5_8"
+                    },
+                    "9": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_5_9"
+                    },
+                    "10": {
+                        "content_type": "image",
+                        "content_value": "example_image_2_5_10"
+                    }
+                }
+            },
+            "6": {
+                "name": "Estrategia Visual 3",
+                "steps": {
+                    "1": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_2_6_1"
+                    },
+                    "2": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_2_6_2"
+                    },
+                    "3": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_2_6_3"
+                    },
+                    "4": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_2_6_4"
+                    },
+                    "5": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_2_6_5"
+                    },
+                    "6": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_2_6_6"
+                    },
+                    "7": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_2_6_7"
+                    },
+                    "8": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_2_6_8"
+                    },
+                    "9": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_2_6_9"
+                    },
+                    "10": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_2_6_10"
+                    }
+                }
+            },
+            "7": {
+                "name": "Estrategia Multimodal 1",
+                "steps": {
+                    "1": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_2_7_1"
+                    },
+                    "2": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_2_7_2"
+                    },
+                    "3": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_2_7_3"
+                    },
+                    "4": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_2_7_4"
+                    },
+                    "5": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_2_7_5"
+                    },
+                    "6": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_2_7_6"
+                    },
+                    "7": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_2_7_7"
+                    },
+                    "8": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_2_7_8"
+                    },
+                    "9": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_2_7_9"
+                    },
+                    "10": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_2_7_10"
+                    }
+                }
+            },
+            "8": {
+                "name": "Estrategia Multimodal 2",
+                "steps": {
+                    "1": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_2_8_1"
+                    },
+                    "2": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_2_8_2"
+                    },
+                    "3": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_2_8_3"
+                    },
+                    "4": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_2_8_4"
+                    },
+                    "5": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_2_8_5"
+                    },
+                    "6": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_2_8_6"
+                    },
+                    "7": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_2_8_7"
+                    },
+                    "8": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_2_8_8"
+                    },
+                    "9": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_2_8_9"
+                    },
+                    "10": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_2_8_10"
+                    }
+                }
+            },
+            "9": {
+                "name": "Estrategia Multimodal 3",
+                "steps": {
+                    "1": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_2_9_1"
+                    },
+                    "2": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_2_9_2"
+                    },
+                    "3": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_2_9_3"
+                    },
+                    "4": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_2_9_4"
+                    },
+                    "5": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_2_9_5"
+                    },
+                    "6": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_2_9_6"
+                    },
+                    "7": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_2_9_7"
+                    },
+                    "8": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_2_9_8"
+                    },
+                    "9": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_2_9_9"
+                    },
+                    "10": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_2_9_10"
+                    }
+                }
+            }
+        }
+    },
+    "3": {
+        "name": "Preparar una tostada",
+        "strategies": {
+            "1": {
+                "name": "Estrategia Auditiva 1",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_1_1"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_1_2"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_1_3"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_1_4"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_1_5"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_1_6"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_1_7"
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_1_8"
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_1_9"
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_1_10"
+                    },
+                    "11": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_1_11"
+                    }
+                }
+            },
+            "2": {
+                "name": "Estrategia Auditiva 2",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_2_1"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_2_2"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_2_3"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_2_4"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_2_5"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_2_6"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_2_7"
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_2_8"
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_2_9"
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_2_10"
+                    },
+                    "11": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_2_11"
+                    }
+                }
+            },
+            "3": {
+                "name": "Estrategia Auditiva 3",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_3_1"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_3_2"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_3_3"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_3_4"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_3_5"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_3_6"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_3_7"
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_3_8"
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_3_9"
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_3_10"
+                    },
+                    "11": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_3_3_11"
+                    }
+                }
+            },
+            "4": {
+                "name": "Estrategia Visual 1",
+                "steps": {
+                    "1": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_4_1"
+                    },
+                    "2": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_4_2"
+                    },
+                    "3": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_4_3"
+                    },
+                    "4": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_4_4"
+                    },
+                    "5": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_4_5"
+                    },
+                    "6": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_4_6"
+                    },
+                    "7": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_4_7"
+                    },
+                    "8": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_4_8"
+                    },
+                    "9": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_4_9"
+                    },
+                    "10": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_4_10"
+                    },
+                    "11": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_4_11"
+                    }
+                }
+            },
+            "5": {
+                "name": "Estrategia Visual 2",
+                "steps": {
+                    "1": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_5_1"
+                    },
+                    "2": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_5_2"
+                    },
+                    "3": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_5_3"
+                    },
+                    "4": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_5_4"
+                    },
+                    "5": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_5_5"
+                    },
+                    "6": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_5_6"
+                    },
+                    "7": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_5_7"
+                    },
+                    "8": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_5_8"
+                    },
+                    "9": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_5_9"
+                    },
+                    "10": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_5_10"
+                    },
+                    "11": {
+                        "content_type": "image",
+                        "content_value": "example_image_3_5_11"
+                    }
+                }
+            },
+            "6": {
+                "name": "Estrategia Visual 3",
+                "steps": {
+                    "1": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_3_6_1"
+                    },
+                    "2": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_3_6_2"
+                    },
+                    "3": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_3_6_3"
+                    },
+                    "4": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_3_6_4"
+                    },
+                    "5": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_3_6_5"
+                    },
+                    "6": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_3_6_6"
+                    },
+                    "7": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_3_6_7"
+                    },
+                    "8": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_3_6_8"
+                    },
+                    "9": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_3_6_9"
+                    },
+                    "10": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_3_6_10"
+                    },
+                    "11": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_3_6_11"
+                    }
+                }
+            },
+            "7": {
+                "name": "Estrategia Multimodal 1",
+                "steps": {
+                    "1": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_3_7_1"
+                    },
+                    "2": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_3_7_2"
+                    },
+                    "3": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_3_7_3"
+                    },
+                    "4": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_3_7_4"
+                    },
+                    "5": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_3_7_5"
+                    },
+                    "6": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_3_7_6"
+                    },
+                    "7": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_3_7_7"
+                    },
+                    "8": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_3_7_8"
+                    },
+                    "9": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_3_7_9"
+                    },
+                    "10": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_3_7_10"
+                    },
+                    "11": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_3_7_11"
+                    }
+                }
+            },
+            "8": {
+                "name": "Estrategia Multimodal 2",
+                "steps": {
+                    "1": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_3_8_1"
+                    },
+                    "2": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_3_8_2"
+                    },
+                    "3": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_3_8_3"
+                    },
+                    "4": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_3_8_4"
+                    },
+                    "5": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_3_8_5"
+                    },
+                    "6": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_3_8_6"
+                    },
+                    "7": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_3_8_7"
+                    },
+                    "8": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_3_8_8"
+                    },
+                    "9": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_3_8_9"
+                    },
+                    "10": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_3_8_10"
+                    },
+                    "11": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_3_8_11"
+                    }
+                }
+            },
+            "9": {
+                "name": "Estrategia Multimodal 3",
+                "steps": {
+                    "1": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_3_9_1"
+                    },
+                    "2": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_3_9_2"
+                    },
+                    "3": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_3_9_3"
+                    },
+                    "4": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_3_9_4"
+                    },
+                    "5": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_3_9_5"
+                    },
+                    "6": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_3_9_6"
+                    },
+                    "7": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_3_9_7"
+                    },
+                    "8": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_3_9_8"
+                    },
+                    "9": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_3_9_9"
+                    },
+                    "10": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_3_9_10"
+                    },
+                    "11": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_3_9_11"
+                    }
+                }
+            }
+        }
+    },
+    "4": {
+        "name": "Comer una tostada",
+        "strategies": {
+            "1": {
+                "name": "Estrategia Auditiva 1",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_1_1"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_1_2"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_1_3"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_1_4"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_1_5"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_1_6"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_1_7"
+                    }
+                }
+            },
+            "2": {
+                "name": "Estrategia Auditiva 2",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_2_1"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_2_2"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_2_3"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_2_4"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_2_5"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_2_6"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_2_7"
+                    }
+                }
+            },
+            "3": {
+                "name": "Estrategia Auditiva 3",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_3_1"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_3_2"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_3_3"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_3_4"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_3_5"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_3_6"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_4_3_7"
+                    }
+                }
+            },
+            "4": {
+                "name": "Estrategia Visual 1",
+                "steps": {
+                    "1": {
+                        "content_type": "image",
+                        "content_value": "example_image_4_4_1"
+                    },
+                    "2": {
+                        "content_type": "image",
+                        "content_value": "example_image_4_4_2"
+                    },
+                    "3": {
+                        "content_type": "image",
+                        "content_value": "example_image_4_4_3"
+                    },
+                    "4": {
+                        "content_type": "image",
+                        "content_value": "example_image_4_4_4"
+                    },
+                    "5": {
+                        "content_type": "image",
+                        "content_value": "example_image_4_4_5"
+                    },
+                    "6": {
+                        "content_type": "image",
+                        "content_value": "example_image_4_4_6"
+                    },
+                    "7": {
+                        "content_type": "image",
+                        "content_value": "example_image_4_4_7"
+                    }
+                }
+            },
+            "5": {
+                "name": "Estrategia Visual 2",
+                "steps": {
+                    "1": {
+                        "content_type": "image",
+                        "content_value": "example_image_4_5_1"
+                    },
+                    "2": {
+                        "content_type": "image",
+                        "content_value": "example_image_4_5_2"
+                    },
+                    "3": {
+                        "content_type": "image",
+                        "content_value": "example_image_4_5_3"
+                    },
+                    "4": {
+                        "content_type": "image",
+                        "content_value": "example_image_4_5_4"
+                    },
+                    "5": {
+                        "content_type": "image",
+                        "content_value": "example_image_4_5_5"
+                    },
+                    "6": {
+                        "content_type": "image",
+                        "content_value": "example_image_4_5_6"
+                    },
+                    "7": {
+                        "content_type": "image",
+                        "content_value": "example_image_4_5_7"
+                    }
+                }
+            },
+            "6": {
+                "name": "Estrategia Visual 3",
+                "steps": {
+                    "1": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_4_6_1"
+                    },
+                    "2": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_4_6_2"
+                    },
+                    "3": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_4_6_3"
+                    },
+                    "4": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_4_6_4"
+                    },
+                    "5": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_4_6_5"
+                    },
+                    "6": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_4_6_6"
+                    },
+                    "7": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_4_6_7"
+                    }
+                }
+            },
+            "7": {
+                "name": "Estrategia Multimodal 1",
+                "steps": {
+                    "1": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_4_7_1"
+                    },
+                    "2": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_4_7_2"
+                    },
+                    "3": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_4_7_3"
+                    },
+                    "4": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_4_7_4"
+                    },
+                    "5": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_4_7_5"
+                    },
+                    "6": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_4_7_6"
+                    },
+                    "7": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_4_7_7"
+                    }
+                }
+            },
+            "8": {
+                "name": "Estrategia Multimodal 2",
+                "steps": {
+                    "1": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_4_8_1"
+                    },
+                    "2": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_4_8_2"
+                    },
+                    "3": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_4_8_3"
+                    },
+                    "4": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_4_8_4"
+                    },
+                    "5": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_4_8_5"
+                    },
+                    "6": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_4_8_6"
+                    },
+                    "7": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_4_8_7"
+                    }
+                }
+            },
+            "9": {
+                "name": "Estrategia Multimodal 3",
+                "steps": {
+                    "1": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_4_9_1"
+                    },
+                    "2": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_4_9_2"
+                    },
+                    "3": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_4_9_3"
+                    },
+                    "4": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_4_9_4"
+                    },
+                    "5": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_4_9_5"
+                    },
+                    "6": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_4_9_6"
+                    },
+                    "7": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_4_9_7"
+                    }
+                }
+            }
+        }
+    },
+    "5": {
+        "name": "Vestirse",
+        "strategies": {
+            "1": {
+                "name": "Estrategia Auditiva 1",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_1_1"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_1_2"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_1_3"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_1_4"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_1_5"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_1_6"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_1_7"
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_1_8"
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_1_9"
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_1_10"
+                    },
+                    "11": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_1_11"
+                    },
+                    "12": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_1_12"
+                    },
+                    "13": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_1_13"
+                    }
+                }
+            },
+            "2": {
+                "name": "Estrategia Auditiva 2",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_2_1"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_2_2"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_2_3"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_2_4"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_2_5"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_2_6"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_2_7"
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_2_8"
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_2_9"
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_2_10"
+                    },
+                    "11": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_2_11"
+                    },
+                    "12": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_2_12"
+                    },
+                    "13": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_2_13"
+                    }
+                }
+            },
+            "3": {
+                "name": "Estrategia Auditiva 3",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_3_1"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_3_2"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_3_3"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_3_4"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_3_5"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_3_6"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_3_7"
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_3_8"
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_3_9"
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_3_10"
+                    },
+                    "11": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_3_11"
+                    },
+                    "12": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_3_12"
+                    },
+                    "13": {
+                        "content_type": "audio",
+                        "content_value": "example_audio_5_3_13"
+                    }
+                }
+            },
+            "4": {
+                "name": "Estrategia Visual 1",
+                "steps": {
+                    "1": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_4_1"
+                    },
+                    "2": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_4_2"
+                    },
+                    "3": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_4_3"
+                    },
+                    "4": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_4_4"
+                    },
+                    "5": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_4_5"
+                    },
+                    "6": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_4_6"
+                    },
+                    "7": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_4_7"
+                    },
+                    "8": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_4_8"
+                    },
+                    "9": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_4_9"
+                    },
+                    "10": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_4_10"
+                    },
+                    "11": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_4_11"
+                    },
+                    "12": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_4_12"
+                    },
+                    "13": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_4_13"
+                    }
+                }
+            },
+            "5": {
+                "name": "Estrategia Visual 2",
+                "steps": {
+                    "1": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_5_1"
+                    },
+                    "2": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_5_2"
+                    },
+                    "3": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_5_3"
+                    },
+                    "4": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_5_4"
+                    },
+                    "5": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_5_5"
+                    },
+                    "6": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_5_6"
+                    },
+                    "7": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_5_7"
+                    },
+                    "8": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_5_8"
+                    },
+                    "9": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_5_9"
+                    },
+                    "10": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_5_10"
+                    },
+                    "11": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_5_11"
+                    },
+                    "12": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_5_12"
+                    },
+                    "13": {
+                        "content_type": "image",
+                        "content_value": "example_image_5_5_13"
+                    }
+                }
+            },
+            "6": {
+                "name": "Estrategia Visual 3",
+                "steps": {
+                    "1": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_5_6_1"
+                    },
+                    "2": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_5_6_2"
+                    },
+                    "3": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_5_6_3"
+                    },
+                    "4": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_5_6_4"
+                    },
+                    "5": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_5_6_5"
+                    },
+                    "6": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_5_6_6"
+                    },
+                    "7": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_5_6_7"
+                    },
+                    "8": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_5_6_8"
+                    },
+                    "9": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_5_6_9"
+                    },
+                    "10": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_5_6_10"
+                    },
+                    "11": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_5_6_11"
+                    },
+                    "12": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_5_6_12"
+                    },
+                    "13": {
+                        "content_type": "algorithm",
+                        "content_value": "example_algorithm_5_6_13"
+                    }
+                }
+            },
+            "7": {
+                "name": "Estrategia Multimodal 1",
+                "steps": {
+                    "1": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_5_7_1"
+                    },
+                    "2": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_5_7_2"
+                    },
+                    "3": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_5_7_3"
+                    },
+                    "4": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_5_7_4"
+                    },
+                    "5": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_5_7_5"
+                    },
+                    "6": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_5_7_6"
+                    },
+                    "7": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_5_7_7"
+                    },
+                    "8": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_5_7_8"
+                    },
+                    "9": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_5_7_9"
+                    },
+                    "10": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_5_7_10"
+                    },
+                    "11": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_5_7_11"
+                    },
+                    "12": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_5_7_12"
+                    },
+                    "13": {
+                        "content_type": "image-audio",
+                        "content_value": "example_image-audio_5_7_13"
+                    }
+                }
+            },
+            "8": {
+                "name": "Estrategia Multimodal 2",
+                "steps": {
+                    "1": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_5_8_1"
+                    },
+                    "2": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_5_8_2"
+                    },
+                    "3": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_5_8_3"
+                    },
+                    "4": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_5_8_4"
+                    },
+                    "5": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_5_8_5"
+                    },
+                    "6": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_5_8_6"
+                    },
+                    "7": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_5_8_7"
+                    },
+                    "8": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_5_8_8"
+                    },
+                    "9": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_5_8_9"
+                    },
+                    "10": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_5_8_10"
+                    },
+                    "11": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_5_8_11"
+                    },
+                    "12": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_5_8_12"
+                    },
+                    "13": {
+                        "content_type": "audio-algorithm",
+                        "content_value": "example_audio-algorithm_5_8_13"
+                    }
+                }
+            },
+            "9": {
+                "name": "Estrategia Multimodal 3",
+                "steps": {
+                    "1": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_5_9_1"
+                    },
+                    "2": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_5_9_2"
+                    },
+                    "3": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_5_9_3"
+                    },
+                    "4": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_5_9_4"
+                    },
+                    "5": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_5_9_5"
+                    },
+                    "6": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_5_9_6"
+                    },
+                    "7": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_5_9_7"
+                    },
+                    "8": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_5_9_8"
+                    },
+                    "9": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_5_9_9"
+                    },
+                    "10": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_5_9_10"
+                    },
+                    "11": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_5_9_11"
+                    },
+                    "12": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_5_9_12"
+                    },
+                    "13": {
+                        "content_type": "image-algorithm",
+                        "content_value": "example_image-algorithm_5_9_13"
+                    }
+                }
+            }
+        }
+    }
+}
