@@ -1,9 +1,8 @@
 # Importa las bibliotecas necesarias
 import asyncio  # Biblioteca para manejar tareas asíncronas
 import json  # Biblioteca para manejar datos en formato JSON
-from websockets.asyncio.server import serve  # Importa la función `serve` para crear un servidor WebSocket
 import socket
-import os
+from websockets.asyncio.server import serve  # Importa la función `serve` para crear un servidor WebSocket
 
 # Diccionario para gestionar múltiples clientes conectados
 clients = {
@@ -15,7 +14,8 @@ clients = {
 
 # Variables globales que se actualizan con los datos recibidos de los clientes
 datos_globales = {
-    "EMG_counter": 0,  # Contador de señales EMG (actividad muscular)
+    "EMGA_counter": 0,  # Contador de señales EMG (actividad muscular)
+    "EMGB_counter": 0,  # Contador de señales EMG (actividad muscular)
     "Heart_Rate": 0,  # Frecuencia cardíaca
     "actividad": 0,  # Actividad actual seleccionada
     "paso_actividad": 0,  # Paso específico dentro de la actividad
@@ -75,7 +75,14 @@ async def handler(websocket):
             # Procesa el mensaje dependiendo del tipo de cliente
             if client_type == "esp32":  
                 # Actualiza las variables globales con los datos del ESP32
-                datos_globales["EMG_counter"] = data.get("EMG_counter", 0)
+                if list(data.keys())[0] == "EMGA_counter":
+                    datos_globales["EMGA_counter"] = data.get("EMGA_counter", 0)
+                    print("EMGA_counter: " + datos_globales["EMGA_counter"])
+                elif list(data.keys())[0] == "EMGB_counter":
+                    datos_globales["EMGB_counter"] = data.get("EMGB_counter", 0)
+                    print("EMGB_counter: " + datos_globales["EMGB_counter"])
+                else:
+                    print("LLAME DESCONOCIDA!")
     
             elif client_type == "HRControl":
                 # Actualiza las variables globales con los datos del HRControl
@@ -111,7 +118,6 @@ async def handler(websocket):
 
 # Función principal del servidor WebSocket
 async def main():
-    os.system("ipconfig | findstr /C:\"Wireless LAN adapter Wi-Fi\" /C:\"IPv4 Address\"")
     # Inicia el servidor WebSocket en la dirección 0.0.0.0 (todas las interfaces de red) en el puerto 7890
     async with serve(handler, "0.0.0.0", 7890):
         print("🚀 Servidor WebSocket escuchando en el puerto 7890...")

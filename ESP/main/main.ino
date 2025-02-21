@@ -1,6 +1,7 @@
 #include "config.h"
 #include "wifi_communicator.h"
 #include <esp_wifi.h>
+#include <WiFiUdp.h>
 #include <esp_netif.h>
 #include "esp_wifi.h"
 #include "esp_netif.h"
@@ -11,9 +12,14 @@
 
 
 //button values
-int buttonState = 0;
-int buttonLastState = 0;
+int EMGA = 0;
+int EMGB = 0;
+int lastEMGA = 0;
+int lastEMGB = 0;
+int EMGA_counter = 0;
+int EMGB_counter = 0;
 int gripType = 0;
+int lastGripType = 0;
 
 void setup() {
   Serial.begin(115200);
@@ -39,7 +45,8 @@ void setup() {
 
   pinMode(GT_PIN, OUTPUT); //Salida para la prótesis
   
-  pinMode(BTN_PIN, INPUT_PULLUP); //Simulador EMG
+  pinMode(EMGA_PIN, INPUT_PULLUP); //Simulador EMG
+  pinMode(EMGB_PIN, INPUT_PULLUP); //Simulador EMG
 }
 
 void loop() {
@@ -57,20 +64,31 @@ void loop() {
 
   gripType = getGT();
 
-  for (int i = 0; i < gripType; i ++) { //pulso de salida frecuencia de 1s
-    digitalWrite(GT_PIN, HIGH);
-    delay(500);
-    digitalWrite(GT_PIN, LOW);
-    delay(500);
-  }
-
-  buttonState = digitalRead(BTN_PIN); 
-
-  if (buttonState != buttonLastState) { //Detección de borda
-    if (buttonState == 1) {
-      sendJSON("EMG_counter", "2");
+  if (gripType != lastGripType) {
+    lastGripType = gripType;
+    for (int i = 0; i < gripType; i ++) { //pulso de salida frecuencia de 1s
+      digitalWrite(GT_PIN, HIGH);
+      delay(500);
+      digitalWrite(GT_PIN, LOW);
+      delay(500);
     }
   }
 
-  buttonLastState = buttonState;
+  EMGA = digitalRead(EMGA_PIN); 
+  EMGB = digitalRead(EMGB_PIN);
+
+  if (EMGA != lastEMGA && EMGA == LOW) {
+    lastEMGA = EMGA;
+    EMGA_counter++;
+    sendJSON("EMGA_counter", String(EMGA_counter).c_str());
+  }
+
+  if (EMGB != lastEMGB && EMGB == LOW) {
+    lastEMGB = EMGB;
+    EMGB_counter++;
+    sendJSON("EMGB_counter", String(EMGB_counter).c_str());
+  }
+
+  lastEMGA = EMGA;
+  lastEMGB = EMGB;
 }

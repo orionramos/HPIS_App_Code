@@ -3,7 +3,8 @@
 
 /* Pins definitions */
 #define GT_PIN                     4 //Pin de salida para la prótesis
-#define BTN_PIN                     5 //Pin de entrada EMG
+#define EMGA_PIN                     16 //Pin de entrada EMGA
+#define EMGB_PIN                     17 //Pin de entrada EMGB
 
 /* WiFi params */
 #define WIFI_SSID                   "ESP32" //Nombre de la red WIFI
