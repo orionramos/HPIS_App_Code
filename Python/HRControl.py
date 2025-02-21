@@ -1,4 +1,4 @@
-import websocket
+import websocket as ws_client
 import socket
 from websockets.asyncio.client import connect
 import _thread
@@ -43,7 +43,7 @@ if __name__ == "__main__":
     #CONTROL_SERVER_URI = "ws://" + IPAddr + ":7890"
     CONTROL_SERVER_URI = "ws://localhost:7890"                                                                                                                                                                                                                                                                                                                                                                                
     
-    ws = websocket.WebSocketApp("wss://dev.pulsoid.net/api/v1/data/real_time?access_token=dd1ade8e-28ea-4b9c-8020-b98344c72a1e&response_mode=text_plain_only_heart_rate",
+    ws = ws_client.WebSocketApp("wss://dev.pulsoid.net/api/v1/data/real_time?access_token=dd1ade8e-28ea-4b9c-8020-b98344c72a1e&response_mode=text_plain_only_heart_rate",
                               on_open=on_open,
                               on_message=on_message,
                               on_error=on_error,
