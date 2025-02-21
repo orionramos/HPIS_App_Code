@@ -2,6 +2,8 @@
 import asyncio  # Biblioteca para manejar tareas asíncronas
 import json  # Biblioteca para manejar datos en formato JSON
 from websockets.asyncio.server import serve  # Importa la función `serve` para crear un servidor WebSocket
+import socket
+import os
 
 # Diccionario para gestionar múltiples clientes conectados
 clients = {
@@ -109,6 +111,7 @@ async def handler(websocket):
 
 # Función principal del servidor WebSocket
 async def main():
+    os.system("ipconfig | findstr /C:\"Wireless LAN adapter Wi-Fi\" /C:\"IPv4 Address\"")
     # Inicia el servidor WebSocket en la dirección 0.0.0.0 (todas las interfaces de red) en el puerto 7890
     async with serve(handler, "0.0.0.0", 7890):
         print("🚀 Servidor WebSocket escuchando en el puerto 7890...")
