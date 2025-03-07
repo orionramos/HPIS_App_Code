@@ -12,6 +12,7 @@ class AplicacionHRI:
         self.actividad = None  # Actividad seleccionada
         self.paso_actividad = 1  # El primer paso de la actividad
         self.keep_alive_active = True  # Control para mantener activo el keep-alive
+        self.running = True # Flag to control the main loop
 
         # Diccionario con información de actividades y valores GT por paso
         self.actividades = {
@@ -68,12 +69,15 @@ class AplicacionHRI:
             "actividad": int(self.actividad),
             "paso_actividad": self.paso_actividad,
             "HRI_strategy": int(self.estrategia),
-            "GT": gt_value
+            "GT": int(gt_value),
+            "UserID":int(self.participante)
         }
 
     # Método para avanzar al siguiente paso de la actividad
     def avanzar_paso(self):
         self.paso_actividad += 1
+        if self.paso_actividad > self.actividades[self.actividad]['pasos']:
+             self.running = False # set to false when the activity is finished
 
 # Función asíncrona para enviar keep-alive periódicamente
 async def enviar_keep_alive(websocket, app):
@@ -97,7 +101,7 @@ async def enviar_datos_al_servidor(app):
         keep_alive_task = asyncio.create_task(enviar_keep_alive(websocket, app))  # Iniciar keep-alive
 
         try:
-            while app.paso_actividad <= app.actividades[app.actividad]['pasos']:  # Mientras haya pasos
+            while app.running:  # Mientras haya pasos and the app is running
                 datos = app.obtener_datos()  # Obtener datos actuales
                 await websocket.send(json.dumps(datos))  # Enviar datos
                 print(f">>> Datos enviados: {datos}")
@@ -108,16 +112,20 @@ async def enviar_datos_al_servidor(app):
                 except asyncio.TimeoutError:
                     print("Tiempo de espera agotado. No se recibió respuesta del servidor.")
 
-                await ainput("Presiona Enter para continuar al siguiente paso...")  # Esperar input del usuario
-                app.avanzar_paso()  # Avanzar al siguiente paso
+                if app.running:
+                    await ainput("Presiona Enter para continuar al siguiente paso...")  # Esperar input del usuario
+                    app.avanzar_paso()  # Avanzar al siguiente paso
 
-            app.keep_alive_active = False  # Detener el keep-alive cuando la actividad finalice
-            await keep_alive_task  # Asegurar que la tarea de keep-alive finaliza
             print("✅ Actividad completada, cerrando conexión.")
+
         except Exception as e:
             print(f"Error en la comunicación con el servidor: {e}")
-            app.keep_alive_active = False  # Detener keep-alive en caso de error
-            await keep_alive_task  # Asegurar cierre correcto
+
+        finally:
+            app.keep_alive_active = False  # Detener el keep-alive
+            await keep_alive_task  # Asegurar que la tarea de keep-alive finaliza
+            await websocket.close() # close websocket
+            print("🔌 Conexión cerrada.")
 
 # Punto de entrada principal del programa
 if __name__ == "__main__":

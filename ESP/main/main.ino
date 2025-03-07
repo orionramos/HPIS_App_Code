@@ -54,6 +54,12 @@ void loop() {
   // if we lost connection, we attempt to reconnect (blocking)
   if (!is_client_conected()) { 
 
+    EMGA_counter=0;
+    EMGB_counter=0;
+    lastEMGA=0;
+    lastEMGA=0;
+    EMGA = 0;
+    EMGB = 0;
     Serial.println("Client not connected!");
     
     connect_client("192.168.4.2"); 

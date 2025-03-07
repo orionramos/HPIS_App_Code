@@ -36,7 +36,7 @@ async def main():
     """
     Función principal que establece la conexión WebSocket y ejecuta las tareas de envío y recepción en paralelo.
     """
-    uri = "ws://192.168.50.52:7890"  # Dirección del servidor WebSocket.
+    uri = "ws://LocalHost:7890" # Dirección del servidor WebSocket.
     async with connect(uri) as websocket:  # Se conecta al servidor WebSocket.
         await websocket.send(json.dumps({"type": "esp32"}))  # Envía un mensaje de identificación como "esp32".
         
