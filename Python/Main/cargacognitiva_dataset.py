@@ -61,8 +61,8 @@ async def main():
 
     # Pedir carga cognitiva
     while True:
-        choice = input("Introduce ID de carga cognitiva para la prueba [1–3]: ").strip()
-        if choice in ('1', '2', '3'):
+        choice = input("Introduce ID de carga cognitiva para la prueba [1–6]: ").strip()
+        if choice in ('1', '2', '3', '4', '5', '6'):
             test_load_id = int(choice)
             break
     print(f"\n✔️ La prueba será carga cognitiva {test_load_id}\n")
@@ -82,8 +82,8 @@ async def main():
         # Fase de reposo
         state = "RESTING"
         phase_start = time.monotonic()
-        print("⏺️ Grabando FC en reposo durante 3 minutos (carga = 0)...")
-        await asyncio.sleep(100)
+        print("⏺️ Grabando FC en reposo durante 5 minutos (carga = 0)...")
+        await asyncio.sleep(60*5)
         print("⏹️ Reposo finalizado.\n")
 
         # Fase de prueba
