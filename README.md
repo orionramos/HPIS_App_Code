@@ -72,7 +72,8 @@ pip install -r requirements.txt
 - Asegúrate de estar conectado a la misma red que el servidor.
 - Configura la IP y puerto del servidor WebSocket correctamente en cada cliente si es necesario.
 - El ESP32 real debería sustituir al script `ClienteESP32.py` en un entorno de prueba real.
-  en arduino toca instalar ArduinoJson, ESPping
+  en arduino toca instalar ArduinoJson, ESPping.
+  - es importante configurar en el PC la red ESP32 como privada y desactivar el FIREWALL de las redes privadas para que funcione
 
 ---
 
