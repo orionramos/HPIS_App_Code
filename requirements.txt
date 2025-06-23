@@ -1,6 +1,4 @@
 asyncio
 websockets
-json
-random
 aioconsole
 rel
