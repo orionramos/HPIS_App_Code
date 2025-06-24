@@ -2,3 +2,4 @@ asyncio
 websockets
 aioconsole
 rel
+bleak
