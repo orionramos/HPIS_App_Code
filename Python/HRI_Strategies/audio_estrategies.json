@@ -28,7 +28,7 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Coloca taza – mano sana"
+                        "content_value": "Acomoda taza – mano sana"
                     },
                     "2": {
                         "content_type": "audio",
@@ -132,7 +132,7 @@
                     },
                     "4": {
                         "content_type": "audio",
-                        "content_value": "Aplica jabón – mano sana"
+                        "content_value": "Aplica jabón – dedo prótesis, Aplica jabón cara – mano sana"
                     },
                     "5": {
                         "content_type": "audio",
@@ -156,7 +156,7 @@
                     },
                     "10": {
                         "content_type": "audio",
-                        "content_value": "Coloca toalla – ambas manos"
+                        "content_value": "Guarda toalla – ambas manos"
                     }
                 }
             },
@@ -264,7 +264,7 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Agarra bolsa – prótesis"
+                        "content_value": "Agarra bolsa – prótesis y pecho"
                     },
                     "2": {
                         "content_type": "audio",
@@ -272,7 +272,7 @@
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Sujeta bolsa – prótesis"
+                        "content_value": "Reacomoda bolsa – prótesis"
                     },
                     "4": {
                         "content_type": "audio",
@@ -280,19 +280,19 @@
                     },
                     "5": {
                         "content_type": "audio",
-                        "content_value": "Coloca pan – mano sana"
+                        "content_value": "Coloca pan en tostadora – mano sana"
                     },
                     "6": {
                         "content_type": "audio",
-                        "content_value": "Cierra tapa – mano sana"
+                        "content_value": "activa tostadora – dedo prótesis"
                     },
                     "7": {
                         "content_type": "audio",
-                        "content_value": "Retira pan – mano sana"
+                        "content_value": "Retira pan a plato – mano sana"
                     },
                     "8": {
                         "content_type": "audio",
-                        "content_value": "Sujeta queso – prótesis"
+                        "content_value": "Sujeta queso – prótesis agarre lateral"
                     },
                     "9": {
                         "content_type": "audio",
@@ -304,7 +304,7 @@
                     },
                     "11": {
                         "content_type": "audio",
-                        "content_value": "Limpia superficie – prótesis"
+                        "content_value": "Limpia superficie con trapo – prótesis"
                     }
                 }
             },
@@ -400,7 +400,7 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Coloca tenedor – prótesis"
+                        "content_value": "posiciona tenedor – mano sana"
                     },
                     "2": {
                         "content_type": "audio",
@@ -528,7 +528,7 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Toma pantalón – mano sana"
+                        "content_value": "Busque pantalón – mano sana"
                     },
                     "2": {
                         "content_type": "audio",
@@ -540,7 +540,7 @@
                     },
                     "4": {
                         "content_type": "audio",
-                        "content_value": "Asegura broche – mano sana"
+                        "content_value": "Ubique broche en prótesis – ambas manos"
                     },
                     "5": {
                         "content_type": "audio",
@@ -556,7 +556,7 @@
                     },
                     "8": {
                         "content_type": "audio",
-                        "content_value": "Sujeta manga – mano sana"
+                        "content_value": "Sujeta manga derecha – mano sana"
                     },
                     "9": {
                         "content_type": "audio",
@@ -568,7 +568,7 @@
                     },
                     "11": {
                         "content_type": "audio",
-                        "content_value": "Ajusta camisa – mano sana, prótesis"
+                        "content_value": "Ajusta borde camisa – mano sana en prótesis"
                     },
                     "12": {
                         "content_type": "audio",
@@ -576,7 +576,7 @@
                     },
                     "13": {
                         "content_type": "audio",
-                        "content_value": "Abotona camisa – mano sana"
+                        "content_value": "Continue abotonando camisa – mano sana"
                     }
                 }
             },
