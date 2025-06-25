@@ -1,642 +1,642 @@
 {
-	"1": {
-		"name": "Beber líquido",
-		"strategies": {
-			"1": {
-				"name": "Estrategia Auditiva 1",
-				"steps": {
-					"1": {
-						"content_type": "audio",
-						"content_value": "Use su mano sana para colocar la taza en una posición cómoda que permita sujetarla con su prótesis."
-					},
-					"2": {
-						"content_type": "audio",
-						"content_value": "Con su prótesis, agarre la taza firmemente y use la mano sana para estabilizarla y evitar derrames."
-					},
-					"3": {
-						"content_type": "audio",
-						"content_value": "Acerque la taza a su boca cuidadosamente, mantenga el equilibrio y beba el primer sorbo de líquido."
-					},
-					"4": {
-						"content_type": "audio",
-						"content_value": "Repita el proceso de llevar la taza a la boca y beber dos sorbos más, asegurándose de no derramar el líquido."
-					}
-				}
-			},
-			"2": {
-				"name": "Estrategia Auditiva 2",
-				"steps": {
-					"1": {
-						"content_type": "audio",
-						"content_value": "Coloca taza – mano sana"
-					},
-					"2": {
-						"content_type": "audio",
-						"content_value": "Agarra taza – prótesis; estabiliza – mano sana"
-					},
-					"3": {
-						"content_type": "audio",
-						"content_value": "Acerca taza – prótesis"
-					},
-					"4": {
-						"content_type": "audio",
-						"content_value": "Repite beber – prótesis"
-					}
-				}
-			},
-			"3": {
-				"name": "Estrategia Auditiva 3",
-				"steps": {
-					"1": {
-						"content_type": "audio",
-						"content_value": "Por favor, utiliza tu mano sana para colocar la taza en una posición cómoda que te permita sujetarla con tu prótesis."
-					},
-					"2": {
-						"content_type": "audio",
-						"content_value": "Por favor, utiliza tu prótesis para agarrar la taza con firmeza y apoya con tu mano sana para evitar derrames."
-					},
-					"3": {
-						"content_type": "audio",
-						"content_value": "Por favor, acerca la taza con tu prótesis hasta tu boca con cuidado, mantén el equilibrio y bebe el primer sorbo."
-					},
-					"4": {
-						"content_type": "audio",
-						"content_value": "Por favor, repite el proceso de llevar la taza a tu boca y toma dos sorbos más, evitando derramar el líquido."
-					}
-				}
-			}
-		}
-	},
-	"2": {
-		"name": "Lavarse la cara",
-		"strategies": {
-			"1": {
-				"name": "Estrategia Auditiva 1",
-				"steps": {
-					"1": {
-						"content_type": "audio",
-						"content_value": "Gire la manija del grifo con su mano protésica para abrir el agua. deslice la protesis para sacarla del grifo"
-					},
-					"2": {
-						"content_type": "audio",
-						"content_value": "Coloque su mano sana bajo el chorro de agua"
-					},
-					"3": {
-						"content_type": "audio",
-						"content_value": "Use su mano protésica para presionar el dispensador de jabón hasta obtener la cantidad deseada. coloque la mano sana debajo del dispensador"
-					},
-					"4": {
-						"content_type": "audio",
-						"content_value": "Distribuya el jabón en su mano sana y aplíquelo suavemente en su cara."
-					},
-					"5": {
-						"content_type": "audio",
-						"content_value": "Enjuague su mano sana bajo el agua para quitar el jabón."
-					},
-					"6": {
-						"content_type": "audio",
-						"content_value": "Use su mano sana para enjuagar el jabón de su cara con agua."
-					},
-					"7": {
-						"content_type": "audio",
-						"content_value": "Utilice su mano protésica para cerrar el grifo girando la manija."
-					},
-					"8": {
-						"content_type": "audio",
-						"content_value": "Agarre la toalla con ambas manos"
-					},
-					"9": {
-						"content_type": "audio",
-						"content_value": "Use la toalla para secar su cara de manera uniforme."
-					},
-					"10": {
-						"content_type": "audio",
-						"content_value": "Ponga la toalla de vuelta en el mostrador utilizando ambas manos."
-					}
-				}
-			},
-			"2": {
-				"name": "Estrategia Auditiva 2",
-				"steps": {
-					"1": {
-						"content_type": "audio",
-						"content_value": "Abre grifo – prótesis"
-					},
-					"2": {
-						"content_type": "audio",
-						"content_value": "Coloca mano – mano sana"
-					},
-					"3": {
-						"content_type": "audio",
-						"content_value": "Presiona jabón – prótesis"
-					},
-					"4": {
-						"content_type": "audio",
-						"content_value": "Aplica jabón – mano sana"
-					},
-					"5": {
-						"content_type": "audio",
-						"content_value": "Enjuaga mano – mano sana"
-					},
-					"6": {
-						"content_type": "audio",
-						"content_value": "Enjuaga cara – mano sana"
-					},
-					"7": {
-						"content_type": "audio",
-						"content_value": "Cierra grifo – prótesis"
-					},
-					"8": {
-						"content_type": "audio",
-						"content_value": "Agarra toalla – ambas manos"
-					},
-					"9": {
-						"content_type": "audio",
-						"content_value": "Seca cara – ambas manos"
-					},
-					"10": {
-						"content_type": "audio",
-						"content_value": "Coloca toalla – ambas manos"
-					}
-				}
-			},
-			"3": {
-				"name": "Estrategia Auditiva 3",
-				"steps": {
-					"1": {
-						"content_type": "audio",
-						"content_value": "Por favor, gira la manija del grifo con tu prótesis para abrir el agua y luego desliza la prótesis para retirarla del grifo."
-					},
-					"2": {
-						"content_type": "audio",
-						"content_value": "Por favor, coloca tu mano sana bajo el chorro de agua."
-					},
-					"3": {
-						"content_type": "audio",
-						"content_value": "Por favor, presiona el dispensador de jabón con tu prótesis hasta obtener la cantidad deseada y coloca tu mano sana debajo para recibir el jabón."
-					},
-					"4": {
-						"content_type": "audio",
-						"content_value": "Por favor, distribuye el jabón en tu mano sana y aplícalo suavemente en tu cara."
-					},
-					"5": {
-						"content_type": "audio",
-						"content_value": "Por favor, enjuaga tu mano sana bajo el agua para retirar el jabón."
-					},
-					"6": {
-						"content_type": "audio",
-						"content_value": "Por favor, utiliza tu mano sana para enjuagar el jabón de tu cara con agua."
-					},
-					"7": {
-						"content_type": "audio",
-						"content_value": "Por favor, cierra el grifo con tu prótesis girando la manija."
-					},
-					"8": {
-						"content_type": "audio",
-						"content_value": "Por favor, agarra la toalla con ambas manos."
-					},
-					"9": {
-						"content_type": "audio",
-						"content_value": "Por favor, utiliza la toalla para secar tu cara de manera uniforme."
-					},
-					"10": {
-						"content_type": "audio",
-						"content_value": "Por favor, coloca la toalla de vuelta en el mostrador con ambas manos."
-					}
-				}
-			}
-		}
-	},
-	"3": {
-		"name": "Preparar una tostada",
-		"strategies": {
-			"1": {
-				"name": "Estrategia Auditiva 1",
-				"steps": {
-					"1": {
-						"content_type": "audio",
-						"content_value": "Agarre la bolsa de pan con la mano protésica usando un agarre firme."
-					},
-					"2": {
-						"content_type": "audio",
-						"content_value": "Con su mano sana, deslice el cierre de la bolsa para abrirla."
-					},
-					"3": {
-						"content_type": "audio",
-						"content_value": "Use la prótesis para sujetar la bolsa más abajo, ajustando la posición para mayor control. puede usar su pecho si es necesario"
-					},
-					"4": {
-						"content_type": "audio",
-						"content_value": "Con su mano sana, tome una rebanada de pan de la bolsa."
-					},
-					"5": {
-						"content_type": "audio",
-						"content_value": "Ponga la rebanada de pan en la sanduchera para tostarla con su mano sana"
-					},
-					"6": {
-						"content_type": "audio",
-						"content_value": "Cierre la tapa de la sanduchera y espere a que termine de tostar el pan."
-					},
-					"7": {
-						"content_type": "audio",
-						"content_value": "Cuando el pan esté tostado, retire la rebanada con la mano sana y colóquela en un plato."
-					},
-					"8": {
-						"content_type": "audio",
-						"content_value": "Use la prótesis para sujetar el paquete de queso firmemente."
-					},
-					"9": {
-						"content_type": "audio",
-						"content_value": "Con su mano sana, retire una rebanada de queso del paquete."
-					},
-					"10": {
-						"content_type": "audio",
-						"content_value": "Ponga la rebanada de queso sobre el pan tostado en el plato."
-					},
-					"11": {
-						"content_type": "audio",
-						"content_value": "Use la prótesis para sostener un trapo y limpiar la superficie de trabajo."
-					}
-				}
-			},
-			"2": {
-				"name": "Estrategia Auditiva 2",
-				"steps": {
-					"1": {
-						"content_type": "audio",
-						"content_value": "Agarra bolsa – prótesis"
-					},
-					"2": {
-						"content_type": "audio",
-						"content_value": "Abre bolsa – mano sana"
-					},
-					"3": {
-						"content_type": "audio",
-						"content_value": "Sujeta bolsa – prótesis"
-					},
-					"4": {
-						"content_type": "audio",
-						"content_value": "Toma pan – mano sana"
-					},
-					"5": {
-						"content_type": "audio",
-						"content_value": "Coloca pan – mano sana"
-					},
-					"6": {
-						"content_type": "audio",
-						"content_value": "Cierra tapa – mano sana"
-					},
-					"7": {
-						"content_type": "audio",
-						"content_value": "Retira pan – mano sana"
-					},
-					"8": {
-						"content_type": "audio",
-						"content_value": "Sujeta queso – prótesis"
-					},
-					"9": {
-						"content_type": "audio",
-						"content_value": "Toma queso – mano sana"
-					},
-					"10": {
-						"content_type": "audio",
-						"content_value": "Coloca queso – mano sana"
-					},
-					"11": {
-						"content_type": "audio",
-						"content_value": "Limpia superficie – prótesis"
-					}
-				}
-			},
-			"3": {
-				"name": "Estrategia Auditiva 3",
-				"steps": {
-					"1": {
-						"content_type": "audio",
-						"content_value": "Por favor, sujeta la bolsa de pan con tu prótesis utilizando un agarre firme."
-					},
-					"2": {
-						"content_type": "audio",
-						"content_value": "Por favor, utiliza tu mano sana para deslizar el cierre de la bolsa y abrirla."
-					},
-					"3": {
-						"content_type": "audio",
-						"content_value": "Por favor, sujeta la bolsa con tu prótesis a una posición más baja para mayor control; si lo requieres, apóyate en tu pecho."
-					},
-					"4": {
-						"content_type": "audio",
-						"content_value": "Por favor, utiliza tu mano sana para tomar una rebanada de pan de la bolsa."
-					},
-					"5": {
-						"content_type": "audio",
-						"content_value": "Por favor, coloca la rebanada de pan en la sanduchera con tu mano sana para tostarla."
-					},
-					"6": {
-						"content_type": "audio",
-						"content_value": "Por favor, cierra la tapa de la sanduchera y espera a que el pan esté tostado."
-					},
-					"7": {
-						"content_type": "audio",
-						"content_value": "Por favor, cuando el pan esté tostado, retira la rebanada con tu mano sana y colócala en un plato."
-					},
-					"8": {
-						"content_type": "audio",
-						"content_value": "Por favor, utiliza tu prótesis para sujetar firmemente el paquete de queso."
-					},
-					"9": {
-						"content_type": "audio",
-						"content_value": "Por favor, utiliza tu mano sana para retirar una rebanada de queso del paquete."
-					},
-					"10": {
-						"content_type": "audio",
-						"content_value": "Por favor, coloca la rebanada de queso sobre el pan tostado en el plato."
-					},
-					"11": {
-						"content_type": "audio",
-						"content_value": "Por favor, sujeta un trapo con tu prótesis y limpia la superficie de trabajo."
-					}
-				}
-			}
-		}
-	},
-	"4": {
-		"name": "Comer una tostada",
-		"strategies": {
-			"1": {
-				"name": "Estrategia Auditiva 1",
-				"steps": {
-					"1": {
-						"content_type": "audio",
-						"content_value": "Tome el tenedor con su mano sana y colóquelo en la prótesis."
-					},
-					"2": {
-						"content_type": "audio",
-						"content_value": "Agarre firmemente el tenedor con la prótesis, asegurando un buen control."
-					},
-					"3": {
-						"content_type": "audio",
-						"content_value": "Use el tenedor con la prótesis para atrinchar el pan y sujete el cuchillo con la mano sana."
-					},
-					"4": {
-						"content_type": "audio",
-						"content_value": "Corte un pedazo pequeño de la tostada con el cuchillo utilizando la mano sana."
-					},
-					"5": {
-						"content_type": "audio",
-						"content_value": "Suelte el cuchillo y tome de nuevo el tenedor con su mano sana."
-					},
-					"6": {
-						"content_type": "audio",
-						"content_value": "Lleve el tenedor a la boca con su mano sana y coma."
-					},
-					"7": {
-						"content_type": "audio",
-						"content_value": "Repita los pasos hasta terminar de comer toda la tostada."
-					}
-				}
-			},
-			"2": {
-				"name": "Estrategia Auditiva 2",
-				"steps": {
-					"1": {
-						"content_type": "audio",
-						"content_value": "Coloca tenedor – prótesis"
-					},
-					"2": {
-						"content_type": "audio",
-						"content_value": "Agarra tenedor – prótesis"
-					},
-					"3": {
-						"content_type": "audio",
-						"content_value": "Pincha pan – prótesis; sujeta cuchillo – mano sana"
-					},
-					"4": {
-						"content_type": "audio",
-						"content_value": "Corta tostada – mano sana"
-					},
-					"5": {
-						"content_type": "audio",
-						"content_value": "Suelta cuchillo – mano sana; toma tenedor – mano sana"
-					},
-					"6": {
-						"content_type": "audio",
-						"content_value": "Come – mano sana"
-					},
-					"7": {
-						"content_type": "audio",
-						"content_value": "Repite comer – mano sana"
-					}
-				}
-			},
-			"3": {
-				"name": "Estrategia Auditiva 3",
-				"steps": {
-					"1": {
-						"content_type": "audio",
-						"content_value": "Por favor, toma el tenedor con tu mano sana y colócalo en tu prótesis."
-					},
-					"2": {
-						"content_type": "audio",
-						"content_value": "Por favor, agarra el tenedor con tu prótesis de manera firme para asegurar un buen control."
-					},
-					"3": {
-						"content_type": "audio",
-						"content_value": "Por favor, utiliza la prótesis para pinchar el pan con el tenedor y sujeta el cuchillo con tu mano sana."
-					},
-					"4": {
-						"content_type": "audio",
-						"content_value": "Por favor, corta un trozo pequeño de la tostada con el cuchillo en tu mano sana."
-					},
-					"5": {
-						"content_type": "audio",
-						"content_value": "Por favor, suelta el cuchillo y vuelve a tomar el tenedor con tu mano sana."
-					},
-					"6": {
-						"content_type": "audio",
-						"content_value": "Por favor, lleva el tenedor a tu boca con la mano sana y come."
-					},
-					"7": {
-						"content_type": "audio",
-						"content_value": "Por favor, repite estos pasos hasta terminar la tostada."
-					}
-				}
-			}
-		}
-	},
-	"5": {
-		"name": "Vestirse",
-		"strategies": {
-			"1": {
-				"name": "Estrategia Auditiva 1",
-				"steps": {
-					"1": {
-						"content_type": "audio",
-						"content_value": "Busque su pantalón en el montón de ropa y sáquelo."
-					},
-					"2": {
-						"content_type": "audio",
-						"content_value": "Tome el pantalón con ambas manos, asegurando con la mano sana que el pantalón quede bien sujeto en la prótesis"
-					},
-					"3": {
-						"content_type": "audio",
-						"content_value": "Colóquese el pantalón cuidadosamente, asegurándose de que cada pierna entre correctamente."
-					},
-					"4": {
-						"content_type": "audio",
-						"content_value": "Utilice la mano sana para asegurar la punta del broche en la prótesis."
-					},
-					"5": {
-						"content_type": "audio",
-						"content_value": "Cierre el botón y suba la cremallera del pantalón usando su mano sana."
-					},
-					"6": {
-						"content_type": "audio",
-						"content_value": "Encuentre su camisa en el montón de ropa."
-					},
-					"7": {
-						"content_type": "audio",
-						"content_value": "Sujete la camisa con ambas manos, asegurando que esté firmemente agarrada por la prótesis."
-					},
-					"8": {
-						"content_type": "audio",
-						"content_value": "Localice la manga derecha y sujete el extremo con la mano sana para pasar la prótesis a través de ella."
-					},
-					"9": {
-						"content_type": "audio",
-						"content_value": "Deslice la prótesis cuidadosamente a través de la manga derecha."
-					},
-					"10": {
-						"content_type": "audio",
-						"content_value": "Pase su mano sana por la manga izquierda."
-					},
-					"11": {
-						"content_type": "audio",
-						"content_value": "Agarre la parte inferior derecha de la camisa con la mano sana y colóquela en la prótesis."
-					},
-					"12": {
-						"content_type": "audio",
-						"content_value": "Use su mano sana para abrochar el primer botón de la camisa."
-					},
-					"13": {
-						"content_type": "audio",
-						"content_value": "Continúe abotonando la camisa siguiendo el mismo procedimiento."
-					}
-				}
-			},
-			"2": {
-				"name": "Estrategia Auditiva 2",
-				"steps": {
-					"1": {
-						"content_type": "audio",
-						"content_value": "Toma pantalón – mano sana"
-					},
-					"2": {
-						"content_type": "audio",
-						"content_value": "Sujeta pantalón – ambas manos"
-					},
-					"3": {
-						"content_type": "audio",
-						"content_value": "Ponte pantalón – ambas manos"
-					},
-					"4": {
-						"content_type": "audio",
-						"content_value": "Asegura broche – mano sana"
-					},
-					"5": {
-						"content_type": "audio",
-						"content_value": "Cierra botón; sube cremallera – mano sana"
-					},
-					"6": {
-						"content_type": "audio",
-						"content_value": "Busca camisa – mano sana"
-					},
-					"7": {
-						"content_type": "audio",
-						"content_value": "Sujeta camisa – ambas manos"
-					},
-					"8": {
-						"content_type": "audio",
-						"content_value": "Sujeta manga – mano sana"
-					},
-					"9": {
-						"content_type": "audio",
-						"content_value": "Desliza prótesis – manga derecha"
-					},
-					"10": {
-						"content_type": "audio",
-						"content_value": "Pasa mano – manga izquierda"
-					},
-					"11": {
-						"content_type": "audio",
-						"content_value": "Ajusta camisa – mano sana, prótesis"
-					},
-					"12": {
-						"content_type": "audio",
-						"content_value": "Abrocha botón – mano sana"
-					},
-					"13": {
-						"content_type": "audio",
-						"content_value": "Abotona camisa – mano sana"
-					}
-				}
-			},
-			"3": {
-				"name": "Estrategia Auditiva 3",
-				"steps": {
-					"1": {
-						"content_type": "audio",
-						"content_value": "Por favor, localiza tu pantalón en la ropa y retíralo."
-					},
-					"2": {
-						"content_type": "audio",
-						"content_value": "Por favor, toma el pantalón con ambas manos y asegúralo con tu mano sana en la prótesis."
-					},
-					"3": {
-						"content_type": "audio",
-						"content_value": "Por favor, colócate el pantalón con cuidado, revisando que cada pierna entre correctamente."
-					},
-					"4": {
-						"content_type": "audio",
-						"content_value": "Por favor, utiliza tu mano sana para encajar la punta del broche en la prótesis."
-					},
-					"5": {
-						"content_type": "audio",
-						"content_value": "Por favor, cierra el botón y sube la cremallera del pantalón con tu mano sana."
-					},
-					"6": {
-						"content_type": "audio",
-						"content_value": "Por favor, localiza tu camisa en la ropa."
-					},
-					"7": {
-						"content_type": "audio",
-						"content_value": "Por favor, sujeta la camisa con ambas manos, asegurando que la prótesis la agarre firmemente."
-					},
-					"8": {
-						"content_type": "audio",
-						"content_value": "Por favor, localiza la manga derecha, sujeta el extremo con tu mano sana y pasa la prótesis a través."
-					},
-					"9": {
-						"content_type": "audio",
-						"content_value": "Por favor, desliza cuidadosamente la prótesis a través de la manga derecha."
-					},
-					"10": {
-						"content_type": "audio",
-						"content_value": "Por favor, introduce tu mano sana en la manga izquierda."
-					},
-					"11": {
-						"content_type": "audio",
-						"content_value": "Por favor, sujeta la parte inferior derecha de la camisa con tu mano sana y colócala en la prótesis."
-					},
-					"12": {
-						"content_type": "audio",
-						"content_value": "Por favor, utiliza tu mano sana para abrochar el primer botón de la camisa."
-					},
-					"13": {
-						"content_type": "audio",
-						"content_value": "Por favor, continúa abotonando la camisa de la misma forma."
-					}
-				}
-			}
-		}
-	}
+    "1": {
+        "name": "Beber líquido",
+        "strategies": {
+            "1": {
+                "name": "Estrategia Auditiva 1",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "Use su mano sana para colocar la taza en una posición cómoda que permita sujetarla con su prótesis."
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "Con su prótesis, agarre la taza firmemente y use la mano sana para estabilizarla y evitar derrames."
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "Acerque la taza a su boca cuidadosamente, mantenga el equilibrio y beba el primer sorbo de líquido."
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "Repita el proceso de llevar la taza a la boca y beber dos sorbos más, asegurándose de no derramar el líquido."
+                    }
+                }
+            },
+            "2": {
+                "name": "Estrategia Auditiva 2",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "Coloca taza – mano sana"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "Agarra taza – prótesis; estabiliza – mano sana"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "Acerca taza – prótesis"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "Repite beber – prótesis"
+                    }
+                }
+            },
+            "3": {
+                "name": "Estrategia Auditiva 3",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, utiliza tu mano sana para colocar la taza en una posición cómoda que te permita sujetarla con tu prótesis."
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, utiliza tu prótesis para agarrar la taza con firmeza y apoya con tu mano sana para evitar derrames."
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, acerca la taza con tu prótesis hasta tu boca con cuidado, mantén el equilibrio y bebe el primer sorbo."
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, repite el proceso de llevar la taza a tu boca y toma dos sorbos más, evitando derramar el líquido."
+                    }
+                }
+            }
+        }
+    },
+    "2": {
+        "name": "Lavarse la cara",
+        "strategies": {
+            "1": {
+                "name": "Estrategia Auditiva 1",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "Gire la manija del grifo con su mano protésica para abrir el agua. Deslice la prótesis para sacarla del grifo."
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "Coloque su mano sana bajo el chorro de agua."
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "Coloque la mano sana debajo del dispensador de jabón. Use su mano protésica para presionar el dispensador de jabón hasta obtener la cantidad deseada."
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "Distribuya el jabón en su mano sana con el dedo de la prótesis y aplíquelo suavemente en su cara."
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "Enjuague su mano sana bajo el agua para quitar el jabón."
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Use su mano sana para enjuagar el jabón de su cara con agua."
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "Utilice su mano protésica para cerrar el grifo girando la manija."
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "Agarre la toalla con ambas manos."
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "Use la toalla para secar su cara de manera uniforme."
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "Ponga la toalla de vuelta en el mostrador utilizando ambas manos."
+                    }
+                }
+            },
+            "2": {
+                "name": "Estrategia Auditiva 2",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "Abre grifo – prótesis"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "Coloca mano – mano sana"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "Presiona jabón – prótesis"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "Aplica jabón – mano sana"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "Enjuaga mano – mano sana"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Enjuaga cara – mano sana"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "Cierra grifo – prótesis"
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "Agarra toalla – ambas manos"
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "Seca cara – ambas manos"
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "Coloca toalla – ambas manos"
+                    }
+                }
+            },
+            "3": {
+                "name": "Estrategia Auditiva 3",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, gira la manija del grifo con tu prótesis para abrir el agua y luego desliza la prótesis para retirarla del grifo."
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, coloca tu mano sana bajo el chorro de agua."
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, presiona el dispensador de jabón con tu prótesis hasta obtener la cantidad deseada y coloca tu mano sana debajo para recibir el jabón."
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, distribuye el jabón en tu mano sana y aplícalo suavemente en tu cara."
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, enjuaga tu mano sana bajo el agua para retirar el jabón."
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, utiliza tu mano sana para enjuagar el jabón de tu cara con agua."
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, cierra el grifo con tu prótesis girando la manija."
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, agarra la toalla con ambas manos."
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, utiliza la toalla para secar tu cara de manera uniforme."
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, coloca la toalla de vuelta en el mostrador con ambas manos."
+                    }
+                }
+            }
+        }
+    },
+    "3": {
+        "name": "Preparar una tostada",
+        "strategies": {
+            "1": {
+                "name": "Estrategia Auditiva 1",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "Agarre la bolsa de pan por el medio con la mano protésica y su pecho."
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "Con su mano sana, deslice el cierre de la bolsa para abrirla."
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "Use la prótesis para sujetar la bolsa más abajo, ajustando la posición para mayor control. Puede usar su pecho si es necesario."
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "Con su mano sana, tome una rebanada de pan de la bolsa."
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "Con su mano sana, ponga la rebanada de pan en la tostadora."
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Active la tostadora con el dedo de la prótesis y espere a que termine de tostar el pan."
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "Cuando el pan esté tostado, retire la rebanada con la mano sana y colóquela en un plato."
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "Con el agarre lateral de la prótesis, sujete el paquete del queso. Ayúdese con la mano sana."
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "Con su mano sana, retire una rebanada de queso del paquete."
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "Ponga la rebanada de queso sobre el pan tostado en el plato."
+                    },
+                    "11": {
+                        "content_type": "audio",
+                        "content_value": "Use la prótesis para sostener un trapo y limpiar la superficie de trabajo."
+                    }
+                }
+            },
+            "2": {
+                "name": "Estrategia Auditiva 2",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "Agarra bolsa – prótesis"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "Abre bolsa – mano sana"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "Sujeta bolsa – prótesis"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "Toma pan – mano sana"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "Coloca pan – mano sana"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Cierra tapa – mano sana"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "Retira pan – mano sana"
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "Sujeta queso – prótesis"
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "Toma queso – mano sana"
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "Coloca queso – mano sana"
+                    },
+                    "11": {
+                        "content_type": "audio",
+                        "content_value": "Limpia superficie – prótesis"
+                    }
+                }
+            },
+            "3": {
+                "name": "Estrategia Auditiva 3",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, sujeta la bolsa de pan con tu prótesis utilizando un agarre firme."
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, utiliza tu mano sana para deslizar el cierre de la bolsa y abrirla."
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, sujeta la bolsa con tu prótesis a una posición más baja para mayor control; si lo requieres, apóyate en tu pecho."
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, utiliza tu mano sana para tomar una rebanada de pan de la bolsa."
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, coloca la rebanada de pan en la sanduchera con tu mano sana para tostarla."
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, cierra la tapa de la sanduchera y espera a que el pan esté tostado."
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, cuando el pan esté tostado, retira la rebanada con tu mano sana y colócala en un plato."
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, utiliza tu prótesis para sujetar firmemente el paquete de queso."
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, utiliza tu mano sana para retirar una rebanada de queso del paquete."
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, coloca la rebanada de queso sobre el pan tostado en el plato."
+                    },
+                    "11": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, sujeta un trapo con tu prótesis y limpia la superficie de trabajo."
+                    }
+                }
+            }
+        }
+    },
+    "4": {
+        "name": "Comer una tostada",
+        "strategies": {
+            "1": {
+                "name": "Estrategia Auditiva 1",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "Tome el tenedor con su mano sana y colóquelo en la prótesis."
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "Agarre firmemente el tenedor con la prótesis, asegurando un buen control."
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "Use el tenedor con la prótesis para atrinchar el pan y sujete el cuchillo con la mano sana."
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "Corte un pedazo pequeño de la tostada con el cuchillo utilizando la mano sana."
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "Suelte el cuchillo y tome de nuevo el tenedor con su mano sana."
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Lleve el tenedor a la boca con su mano sana y coma."
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "Repita los pasos hasta terminar de comer toda la tostada."
+                    }
+                }
+            },
+            "2": {
+                "name": "Estrategia Auditiva 2",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "Coloca tenedor – prótesis"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "Agarra tenedor – prótesis"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "Pincha pan – prótesis; sujeta cuchillo – mano sana"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "Corta tostada – mano sana"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "Suelta cuchillo – mano sana; toma tenedor – mano sana"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Come – mano sana"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "Repite comer – mano sana"
+                    }
+                }
+            },
+            "3": {
+                "name": "Estrategia Auditiva 3",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, toma el tenedor con tu mano sana y colócalo en tu prótesis."
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, agarra el tenedor con tu prótesis de manera firme para asegurar un buen control."
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, utiliza la prótesis para pinchar el pan con el tenedor y sujeta el cuchillo con tu mano sana."
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, corta un trozo pequeño de la tostada con el cuchillo en tu mano sana."
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, suelta el cuchillo y vuelve a tomar el tenedor con tu mano sana."
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, lleva el tenedor a tu boca con la mano sana y come."
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, repite estos pasos hasta terminar la tostada."
+                    }
+                }
+            }
+        }
+    },
+    "5": {
+        "name": "Vestirse",
+        "strategies": {
+            "1": {
+                "name": "Estrategia Auditiva 1",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "Busque su pantalón en el montón de ropa."
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "Tome el pantalón con ambas manos, asegurando con la mano sana que el pantalón quede bien sujeto en la prótesis."
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "Colóquese el pantalón cuidadosamente, asegurándose de que cada pierna entre correctamente."
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "Utilice la mano sana para asegurar la punta del broche en la prótesis. Gire la muñeca de la prótesis si es necesario."
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "Cierre el botón y suba la cremallera del pantalón usando su mano sana."
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Encuentre su camisa en el montón de ropa."
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "Sujete la camisa con ambas manos, asegurando que esté firmemente agarrada por la prótesis."
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "Localice la manga derecha y sujete el extremo con la mano sana para pasar la prótesis a través de ella."
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "Deslice la prótesis cuidadosamente a través de la manga derecha."
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "Pase su mano sana por la manga izquierda."
+                    },
+                    "11": {
+                        "content_type": "audio",
+                        "content_value": "Agarre la parte inferior derecha de la camisa con la mano sana y ayúdese para sujetarla con la prótesis."
+                    },
+                    "12": {
+                        "content_type": "audio",
+                        "content_value": "Use su mano sana para abrochar el primer botón de la camisa."
+                    },
+                    "13": {
+                        "content_type": "audio",
+                        "content_value": "Continúe abotonando la camisa siguiendo el mismo procedimiento."
+                    }
+                }
+            },
+            "2": {
+                "name": "Estrategia Auditiva 2",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "Toma pantalón – mano sana"
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "Sujeta pantalón – ambas manos"
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "Ponte pantalón – ambas manos"
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "Asegura broche – mano sana"
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "Cierra botón; sube cremallera – mano sana"
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Busca camisa – mano sana"
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "Sujeta camisa – ambas manos"
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "Sujeta manga – mano sana"
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "Desliza prótesis – manga derecha"
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "Pasa mano – manga izquierda"
+                    },
+                    "11": {
+                        "content_type": "audio",
+                        "content_value": "Ajusta camisa – mano sana, prótesis"
+                    },
+                    "12": {
+                        "content_type": "audio",
+                        "content_value": "Abrocha botón – mano sana"
+                    },
+                    "13": {
+                        "content_type": "audio",
+                        "content_value": "Abotona camisa – mano sana"
+                    }
+                }
+            },
+            "3": {
+                "name": "Estrategia Auditiva 3",
+                "steps": {
+                    "1": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, localiza tu pantalón en la ropa y retíralo."
+                    },
+                    "2": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, toma el pantalón con ambas manos y asegúralo con tu mano sana en la prótesis."
+                    },
+                    "3": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, colócate el pantalón con cuidado, revisando que cada pierna entre correctamente."
+                    },
+                    "4": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, utiliza tu mano sana para encajar la punta del broche en la prótesis."
+                    },
+                    "5": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, cierra el botón y sube la cremallera del pantalón con tu mano sana."
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, localiza tu camisa en la ropa."
+                    },
+                    "7": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, sujeta la camisa con ambas manos, asegurando que la prótesis la agarre firmemente."
+                    },
+                    "8": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, localiza la manga derecha, sujeta el extremo con tu mano sana y pasa la prótesis a través."
+                    },
+                    "9": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, desliza cuidadosamente la prótesis a través de la manga derecha."
+                    },
+                    "10": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, introduce tu mano sana en la manga izquierda."
+                    },
+                    "11": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, sujeta la parte inferior derecha de la camisa con tu mano sana y colócala en la prótesis."
+                    },
+                    "12": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, utiliza tu mano sana para abrochar el primer botón de la camisa."
+                    },
+                    "13": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, continúa abotonando la camisa de la misma forma."
+                    }
+                }
+            }
+        }
+    }
 }
