@@ -7,17 +7,21 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Use su mano sana para colocar la taza en una posición cómoda que permita sujetarla con su prótesis."
+                        "content_value": "Asegúrese de tener la prótesis con la palma mirando a la izquierda."
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Con su prótesis, agarre la taza firmemente y use la mano sana para estabilizarla y evitar derrames."
+                        "content_value": "Use su mano sana para colocar la taza en una posición cómoda que permita sujetarla con su prótesis."
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Acerque la taza a su boca cuidadosamente, mantenga el equilibrio y beba el primer sorbo de líquido."
+                        "content_value": "Con su prótesis, agarre la taza firmemente y use la mano sana para estabilizarla y evitar derrames."
                     },
                     "4": {
+                        "content_type": "audio",
+                        "content_value": "Acerque la taza a su boca cuidadosamente, mantenga el equilibrio y beba el primer sorbo de líquido."
+                    },
+                    "5": {
                         "content_type": "audio",
                         "content_value": "Repita el proceso de llevar la taza a la boca y beber dos sorbos más, asegurándose de no derramar el líquido."
                     }
@@ -28,17 +32,21 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Acomoda taza – mano sana"
+                        "content_value": "Ubica Prótesis – palma izquierda"
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Agarra taza – prótesis; estabiliza – mano sana"
+                        "content_value": "Acomoda taza – mano sana"
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Acerca taza – prótesis"
+                        "content_value": "Agarra taza – prótesis; estabiliza – mano sana"
                     },
                     "4": {
+                        "content_type": "audio",
+                        "content_value": "Acerca taza – prótesis"
+                    },
+                    "5": {
                         "content_type": "audio",
                         "content_value": "Repite beber – prótesis"
                     }
@@ -49,17 +57,21 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Por favor, utiliza tu mano sana para colocar la taza en una posición cómoda que te permita sujetarla con tu prótesis."
+                        "content_value": "Por favor, verifica que la palma de tu prótesis esté orientada a la izquierda."
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Por favor, utiliza tu prótesis para agarrar la taza con firmeza y apoya con tu mano sana para evitar derrames."
+                        "content_value": "Por favor, utiliza tu mano sana para colocar la taza en una posición cómoda que te permita sujetarla con tu prótesis."
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Por favor, acerca la taza con tu prótesis hasta tu boca con cuidado, mantén el equilibrio y bebe el primer sorbo."
+                        "content_value": "Por favor, utiliza tu prótesis para agarrar la taza con firmeza y apoya con tu mano sana para evitar derrames."
                     },
                     "4": {
+                        "content_type": "audio",
+                        "content_value": "Por favor, acerca la taza con tu prótesis hasta tu boca con cuidado, mantén el equilibrio y bebe el primer sorbo."
+                    },
+                    "5": {
                         "content_type": "audio",
                         "content_value": "Por favor, repite el proceso de llevar la taza a tu boca y toma dos sorbos más, evitando derramar el líquido."
                     }

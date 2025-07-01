@@ -14,14 +14,15 @@ class AplicacionHRI:
         self.keep_alive_active = True  # Control para mantener activo el keep-alive
         self.running = True # Flag to control the main loop
 
-        # Diccionario con información de actividades y valores GT por paso
+      # Diccionario con información de actividades y valores GT y gM por paso
         self.actividades = {
-            '1': {'pasos': 4, 'gt': {1: 1, 2: 1, 3: 1, 4: 1}},
-            '2': {'pasos': 10, 'gt': {1: 1, 2: 1, 3: 1, 4: 4, 5: 4, 6: 4, 7: 1, 8: 3, 9: 3, 10: 3}},
-            '3': {'pasos': 11, 'gt': {1: 4, 2: 4, 3: 4, 4: 4, 5: 4, 6: 4, 7: 4, 8: 3, 9: 3 , 10:3, 11:3}},
-            '4': {'pasos': 7, 'gt': {1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1, 7: 1}},
-            '5': {'pasos': 13, 'gt': {1: 3, 2: 3, 3: 3, 4: 3, 5: 3, 6: 3, 7: 3, 8: 3, 9: 3, 10:3, 11:3, 12: 3, 13:3}}
+            '1': {'pasos': 5, 'gt': {1: 1, 2: 1, 3: 1, 4: 1, 5: 1}, 'gM': {1:1, 2: 2, 3: 3, 4: 1, 5: 1}},
+            '2': {'pasos': 10, 'gt': {1: 1, 2: 1, 3: 1, 4: 4, 5: 4, 6: 4, 7: 1, 8: 3, 9: 3, 10: 3}, 'gM': {1: 1, 2: 1, 3: 1, 4: 4, 5: 4, 6: 4, 7: 1, 8: 3, 9: 3, 10: 3}},
+            '3': {'pasos': 11, 'gt': {1: 4, 2: 4, 3: 4, 4: 4, 5: 4, 6: 4, 7: 4, 8: 3, 9: 3 , 10:3, 11:3}, 'gM': {1: 4, 2: 4, 3: 4, 4: 4, 5: 4, 6: 4, 7: 4, 8: 3, 9: 3 , 10:3, 11:3}},
+            '4': {'pasos': 7, 'gt': {1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1, 7: 1}, 'gM': {1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1, 7: 1}},
+            '5': {'pasos': 13, 'gt': {1: 3, 2: 3, 3: 3, 4: 3, 5: 3, 6: 3, 7: 3, 8: 3, 9: 3, 10:3, 11:3, 12: 3, 13:3}, 'gM': {1: 3, 2: 3, 3: 3, 4: 3, 5: 3, 6: 3, 7: 3, 8: 3, 9: 3, 10:3, 11:3, 12: 3, 13:3}}
         }
+       
 
     # Método para seleccionar el participante
     def seleccionar_participante(self):
@@ -64,13 +65,15 @@ class AplicacionHRI:
     # Método para obtener los datos actuales y enviarlos al servidor
     def obtener_datos(self):
         gt_value = self.actividades[self.actividad]['gt'].get(self.paso_actividad, 1)
+        gM_value = self.actividades[self.actividad]['gM'].get(self.paso_actividad, 1)
         return {
             "type": "activity-data",  # Tipo de mensaje
             "actividad": int(self.actividad),
             "paso_actividad": self.paso_actividad,
             "HRI_strategy": int(self.estrategia),
             "GT": int(gt_value),
-            "UserID":int(self.participante)
+            "UserID":int(self.participante),
+            "GM": int(gM_value)
         }
 
     # Método para avanzar al siguiente paso de la actividad
