@@ -27,7 +27,8 @@ datos_globales = {
     "HRI_strategy": 0,      # Estrategia de interacción humano-robot utilizada
     "GT": 0,                # Mensaje GT que se envía al ESP32
     "tiempo": 0,            # Tiempo transcurrido (se actualiza automáticamente)
-    "UserID" : 0          # Id del usuario
+    "UserID" : 0,          # Id del usuario
+    "GM": 0
 }
 
 # Variable global para controlar el tiempo desde que se conecta HPISControl
@@ -146,7 +147,8 @@ async def handler(websocket):
                         "paso_actividad": data.get("paso_actividad", 0),
                         "HRI_strategy": data.get("HRI_strategy", 0),
                         "GT": data.get("GT", 0),
-                        "UserID": data.get("UserID", 0) # Get the UserID from the client
+                        "UserID": data.get("UserID", 0),# Get the UserID from the client
+                        "GM": data.get("GM", 0)
                     })
                     respuesta = {
                         "status": "OK",
