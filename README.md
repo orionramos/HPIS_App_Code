@@ -76,5 +76,20 @@ pip install -r requirements.txt
   - es importante configurar en el PC la red ESP32 como privada y desactivar el FIREWALL de las redes privadas para que funcione
 
 ---
+### 🕓 Conversión de Unix Timestamp a Fecha legible en Excel
 
+Para convertir timestamps como `1753885744.20129` (segundos desde 1970) a fecha y hora legible en Excel:
+
+1. Escribe el valor en una celda (ej. A1).
+2. Usa esta fórmula:
+
+```excel
+= A1 / 86400 + DATE(1970,1,1)
+```
+
+3. Aplica formato personalizado:
+```
+dd/mm/yyyy hh:mm:ss.000
+```
+---
 **Autor:** Orion
