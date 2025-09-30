@@ -8,6 +8,7 @@ import pandas as pd
 import numpy as np
 import re
 import os
+from datetime import datetime
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -229,113 +230,156 @@ def plot_pairwise(wins, outdir):
     plt.close()
     return path
 
-def analyze_best_combinations(totals, df_counts, wins):
+def analyze_combinations(ratings_stats, rankings_df, total_ratings, pairwise_wins):
     """
-    Analiza y determina las 3 mejores combinaciones basándose en múltiples criterios.
+    Realiza un análisis exhaustivo y estandarizado de las combinaciones.
     """
-    # Create Spanish to English mappings with descriptions
-    name_mapping = {
-        'Combinación 1-4': 'Combination 1 - 4 (audio experto + texto experto)',
-        'Combinación 1-5': 'Combination 1 - 5 (audio experto + video)',
-        'Combinación 1-6': 'Combination 1 - 6 (audio experto + animacion 3D)',
-        'Combinación 2-4': 'Combination 2 - 4 (audio minimo + texto experto)',
-        'Combinación 2-5': 'Combination 2 - 5 (audio minimo +video)',
-        'Combinación 2-6': 'Combination 2 - 6 (audio minimo + animacion 3D)',
-        'Combinación 3-4': 'Combination 3 - 4 (audio LLM+ texto experto)',
-        'Combinación 3-5': 'Combination 3 - 5 (audio LLM+ video)',
-        'Combinación 3-6': 'Combination 3 - 6 (audio LLM+ animacion 3D)'
-    }
-    
-    # Create mapping from Spanish to English names
-    short_to_full = {}
-    for sp_name, en_name in name_mapping.items():
-        short_to_full[sp_name] = en_name
-    
-    # Normalizar las puntuaciones totales
-    total_scores = totals.copy()
-    total_scores = (total_scores - total_scores.min()) / (total_scores.max() - total_scores.min())
-    
-    # Renombrar índices para que coincidan
-    df_counts.index = [name.replace(" - ", "-") for name in df_counts.index]
-    wins.index = [name.replace(" - ", "-") for name in wins.index]
-    wins.columns = [name.replace(" - ", "-") for name in wins.columns]
-    # Normalizar las puntuaciones totales
-    total_scores = totals.copy()
-    total_scores = (total_scores - total_scores.min()) / (total_scores.max() - total_scores.min())
-    
-    # Obtener puntuaciones Borda normalizadas
-    borda_scores = df_counts['borda_norm']
-    
-    # Calcular victorias netas (victorias - derrotas) de comparaciones por pares
-    net_wins = pd.DataFrame(wins).subtract(wins.T).sum(axis=1)
-    net_wins = (net_wins - net_wins.min()) / (net_wins.max() - net_wins.min())
-    
-    # Combinar las métricas con pesos
-    final_scores = pd.DataFrame({
-        'total_rating': total_scores,
-        'borda_score': borda_scores,
-        'net_wins': net_wins,
-        'total_first': df_counts['top1'],
-        'total_top3': df_counts[['top1', 'top2', 'top3']].sum(axis=1)
-    })
-    
-    # Calcular score final ponderado
-    final_scores['weighted_score'] = (
-        final_scores['total_rating'] * 0.3 +  # Calificaciones totales
-        final_scores['borda_score'] * 0.3 +   # Ranking Borda
-        final_scores['net_wins'] * 0.2 +      # Victorias netas en comparaciones
-        (final_scores['total_first'] / final_scores['total_first'].max()) * 0.1 +  # Primeros lugares
-        (final_scores['total_top3'] / final_scores['total_top3'].max()) * 0.1      # Apariciones en top-3
-    )
-    
-    # Obtener las 3 mejores combinaciones
-    top3 = final_scores['weighted_score'].nlargest(3)
-    
-    # Preparar el análisis detallado
     analysis = []
-    analysis.append("\n=== RECOMMENDED COMBINATIONS FOR IMPLEMENTATION ===\n")
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
-    for i, (comb_short, score) in enumerate(top3.items(), 1):
-        # Convert name format to match df_counts index
-        num_match = re.search(r'Combinación (\d-\d)', comb_short)
-        if num_match:
-            lookup_name = next(name for name in df_counts.index if name.startswith(f"Combination {num_match.group(1)}"))
-            full_name = lookup_name
-        else:
-            continue
-        
-        analysis.append(f"{i}. {full_name}")
-        analysis.append(f"   - Total Rating Score: {totals[comb_short]:.1f}")
-        analysis.append(f"   - Times Ranked 1st: {df_counts.loc[lookup_name, 'top1']}")
-        analysis.append(f"   - Times in Top-3: {df_counts.loc[lookup_name, ['top1','top2','top3']].sum()}")
-        analysis.append(f"   - Borda Score: {df_counts.loc[lookup_name, 'borda']}")
-        analysis.append(f"   - Net Wins in Pairwise Comparison: {pd.DataFrame(wins).subtract(wins.T).sum(axis=1)[lookup_name]}\n")
+    # 1. Encabezado del análisis
+    analysis.append("=== COMPREHENSIVE MULTIMODAL ANALYSIS REPORT ===")
+    analysis.append(f"Generated on: {current_time}\n")
     
-    analysis.append("\nJustification:")
+    # Preparar diccionarios para análisis de modalidades
+    modality_scores = {
+        'audio_expert': {'borda': [], 'first': [], 'combinations': []},
+        'audio_minimal': {'borda': [], 'first': [], 'combinations': []},
+        'audio_llm': {'borda': [], 'first': [], 'combinations': []},
+        'text_expert': {'borda': [], 'first': [], 'combinations': []},
+        'video': {'borda': [], 'first': [], 'combinations': []},
+        'animation_3d': {'borda': [], 'first': [], 'combinations': []}
+    }
+
+    # 2. Resumen General de Participación
+    analysis.append("1. GENERAL PARTICIPATION METRICS")
+    analysis.append("-" * 50)
+    total_rankings = rankings_df['top1'].sum()
+    total_ratings = ratings_stats.loc['count'].mean()
+    analysis.append(f"Total participants in rankings: {total_rankings}")
+    analysis.append(f"Average ratings per combination: {total_ratings:.1f}\n")
+
+    # 3. Análisis de las Mejores Combinaciones
+    analysis.append("2. TOP PERFORMING COMBINATIONS")
+    analysis.append("-" * 50)
+    top_combinations = rankings_df.sort_values('borda_norm', ascending=False).head(3)
     
-    # Añadir justificación específica para cada combinación
-    for comb_short in top3.index:
-        # Convert name format to match df_counts index
-        num_match = re.search(r'Combinación (\d-\d)', comb_short)
-        if num_match:
-            lookup_name = next(name for name in df_counts.index if name.startswith(f"Combination {num_match.group(1)}"))
-            full_name = lookup_name
-        else:
-            continue
-        
-        strengths = []
-        if total_scores[comb_short] > total_scores.mean():
-            strengths.append("high overall rating")
-        if df_counts.loc[lookup_name, 'top1'] > df_counts['top1'].mean():
-            strengths.append("frequently ranked as first choice")
-        if df_counts.loc[lookup_name, 'borda'] > df_counts['borda'].mean():
-            strengths.append("strong performance in Borda count")
-        if net_wins[lookup_name] > net_wins.mean():
-            strengths.append("won most pairwise comparisons")
+    for i, (comb, row) in enumerate(top_combinations.iterrows(), 1):
+        analysis.append(f"\n{i}. {comb}")
+        analysis.append(f"   Borda Score: {row['borda']:.1f} (normalized: {row['borda_norm']:.3f})")
+        analysis.append(f"   First Place Rankings: {row['top1']} times")
+        analysis.append(f"   Total Top-3 Appearances: {row[['top1','top2','top3']].sum()}")
+        net_wins = pairwise_wins.loc[comb].sum() - pairwise_wins[comb].sum()
+        analysis.append(f"   Net Wins in Pairwise Comparisons: {net_wins}")
+
+    # 4. Análisis de las Peores Combinaciones
+    analysis.append("\n3. LOWEST PERFORMING COMBINATIONS")
+    analysis.append("-" * 50)
+    bottom_combinations = rankings_df.sort_values('borda_norm').head(3)
+    
+    for i, (comb, row) in enumerate(bottom_combinations.iterrows(), 1):
+        analysis.append(f"\n{i}. {comb}")
+        analysis.append(f"   Borda Score: {row['borda']:.1f} (normalized: {row['borda_norm']:.3f})")
+        analysis.append(f"   First Place Rankings: {row['top1']} times")
+        analysis.append(f"   Total Top-3 Appearances: {row[['top1','top2','top3']].sum()}")
+        net_wins = pairwise_wins.loc[comb].sum() - pairwise_wins[comb].sum()
+        analysis.append(f"   Net Wins in Pairwise Comparisons: {net_wins}")
+
+    # 5. Análisis de Patrones
+    analysis.append("\n4. PATTERN ANALYSIS")
+    analysis.append("-" * 50)
+    
+    # Analizar patrones en los tipos de modalidad
+    for idx, row in rankings_df.iterrows():
+        # Clasificar por tipo de audio
+        if '1 -' in idx or '1-' in idx:
+            modality_scores['audio_expert']['borda'].append(row['borda'])
+            modality_scores['audio_expert']['first'].append(row['top1'])
+            modality_scores['audio_expert']['combinations'].append(idx)
+        elif '2 -' in idx or '2-' in idx:
+            modality_scores['audio_minimal']['borda'].append(row['borda'])
+            modality_scores['audio_minimal']['first'].append(row['top1'])
+            modality_scores['audio_minimal']['combinations'].append(idx)
+        elif '3 -' in idx or '3-' in idx:
+            modality_scores['audio_llm']['borda'].append(row['borda'])
+            modality_scores['audio_llm']['first'].append(row['top1'])
+            modality_scores['audio_llm']['combinations'].append(idx)
             
-        analysis.append(f"\n{full_name}:")
-        analysis.append(f"Selected for its {', '.join(strengths)}.")
+        # Clasificar por tipo de presentación
+        if '- 4' in idx or '-4' in idx:
+            modality_scores['text_expert']['borda'].append(row['borda'])
+            modality_scores['text_expert']['first'].append(row['top1'])
+            modality_scores['text_expert']['combinations'].append(idx)
+        elif '- 5' in idx or '-5' in idx:
+            modality_scores['video']['borda'].append(row['borda'])
+            modality_scores['video']['first'].append(row['top1'])
+            modality_scores['video']['combinations'].append(idx)
+        elif '- 6' in idx or '-6' in idx:
+            modality_scores['animation_3d']['borda'].append(row['borda'])
+            modality_scores['animation_3d']['first'].append(row['top1'])
+            modality_scores['animation_3d']['combinations'].append(idx)
+
+    analysis.append("\nModality Performance Analysis:")
+    modality_avg_scores = {}
     
+    for modality_name, data in modality_scores.items():
+        if data['borda']:  # Solo si hay datos para esta modalidad
+            avg_borda = sum(data['borda']) / len(data['borda'])
+            avg_first = sum(data['first']) / len(data['first'])
+            modality_avg_scores[modality_name] = avg_borda
+            
+            analysis.append(f"\n{modality_name.replace('_', ' ').title()}:")
+            analysis.append(f"   Average Borda Score: {avg_borda:.2f}")
+            analysis.append(f"   Average First Place Rankings: {avg_first:.2f}")
+            analysis.append(f"   Number of combinations: {len(data['combinations'])}")
+
+    # 6. Estadísticas Descriptivas
+    analysis.append("\n5. DESCRIPTIVE STATISTICS")
+    analysis.append("-" * 50)
+    stats_summary = ratings_stats.round(2)
+    analysis.append("\nRatings Statistics:")
+    analysis.append(str(stats_summary))
+
+    # 7. Conclusiones y Recomendaciones
+    analysis.append("\n6. CONCLUSIONS AND RECOMMENDATIONS")
+    analysis.append("-" * 50)
+    
+    # Identificar tendencias principales basadas en los promedios calculados
+    best_modality = max(modality_avg_scores.items(), key=lambda x: x[1])
+    worst_modality = min(modality_avg_scores.items(), key=lambda x: x[1])
+    
+    analysis.append("\nKey Findings:")
+    analysis.append(f"1. Most Effective Modality: {best_modality[0].replace('_', ' ').title()} (Average Borda: {best_modality[1]:.2f})")
+    analysis.append(f"2. Least Effective Modality: {worst_modality[0].replace('_', ' ').title()} (Average Borda: {worst_modality[1]:.2f})")
+    
+    # Calcular la brecha de preferencia
+    preference_gap = rankings_df['borda_norm'].max() - rankings_df['borda_norm'].min()
+    analysis.append(f"3. Preference Gap: {preference_gap:.3f}")
+    
+    consensus_level = "strong" if preference_gap > 0.15 else "moderate" if preference_gap > 0.1 else "weak"
+    analysis.append(f"4. User Consensus Level: {consensus_level.title()}")
+    
+    # Añadir análisis de submodalidades
+    analysis.append("\nDetailed Modal Analysis:")
+    
+    # Análisis de tipos de audio
+    audio_types = {
+        'audio_expert': sum(modality_scores['audio_expert']['borda']) / len(modality_scores['audio_expert']['borda']) if modality_scores['audio_expert']['borda'] else 0,
+        'audio_minimal': sum(modality_scores['audio_minimal']['borda']) / len(modality_scores['audio_minimal']['borda']) if modality_scores['audio_minimal']['borda'] else 0,
+        'audio_llm': sum(modality_scores['audio_llm']['borda']) / len(modality_scores['audio_llm']['borda']) if modality_scores['audio_llm']['borda'] else 0
+    }
+    best_audio = max(audio_types.items(), key=lambda x: x[1])
+    analysis.append(f"- Best Audio Type: {best_audio[0].replace('_', ' ').title()} (Borda: {best_audio[1]:.2f})")
+    
+    # Análisis de tipos de presentación visual
+    visual_types = {
+        'text_expert': sum(modality_scores['text_expert']['borda']) / len(modality_scores['text_expert']['borda']) if modality_scores['text_expert']['borda'] else 0,
+        'video': sum(modality_scores['video']['borda']) / len(modality_scores['video']['borda']) if modality_scores['video']['borda'] else 0,
+        'animation_3d': sum(modality_scores['animation_3d']['borda']) / len(modality_scores['animation_3d']['borda']) if modality_scores['animation_3d']['borda'] else 0
+    }
+    best_visual = max(visual_types.items(), key=lambda x: x[1])
+    analysis.append(f"- Best Visual Type: {best_visual[0].replace('_', ' ').title()} (Borda: {best_visual[1]:.2f})")
+
     return "\n".join(analysis)
 
 def plot_ratings_analysis(df, processed_ratings, outdir):
@@ -378,12 +422,7 @@ def plot_ratings_analysis(df, processed_ratings, outdir):
     plt.savefig(path_sums, dpi=300, bbox_inches='tight')
     plt.close()
     
-    # Save totals to CSV with English headers
-    totals_df = pd.DataFrame({
-        'Combination': totals.index,
-        'Total': totals.values
-    })
-    totals_df.to_csv(os.path.join(outdir, 'ratings_totals.csv'), index=False)
+    # Print totals
     print("\nTotal ratings by combination:")
     print(totals.to_string())
     
@@ -405,12 +444,10 @@ def main():
     # Procesar calificaciones según secuencias
     print("Procesando calificaciones...")
     processed_ratings = process_ratings(df)
-    processed_ratings.to_csv(os.path.join(outdir, 'processed_ratings.csv'))
     
     # Calcular estadísticas por combinación
     print("Calculando estadísticas...")
     ratings_stats = processed_ratings.agg(['mean', 'std', 'count']).round(2)
-    ratings_stats.to_csv(os.path.join(outdir, 'ratings_stats.csv'))
     
     # Visualizar distribución de calificaciones
     print("Generando gráficas de calificaciones...")
@@ -445,14 +482,17 @@ def main():
     print("\nResumen de rankings:")
     print(df_counts)
     
-    # Analizar y recomendar las mejores combinaciones
+    # Generar análisis completo
     totals = calculate_total_ratings(df)
-    recommendation = analyze_best_combinations(totals, df_counts, wins)
-    print(recommendation)
+    analysis = analyze_combinations(ratings_stats, df_counts, totals, wins)
+    print("\nAnálisis completo generado:")
+    print(analysis)
     
-    # Guardar la recomendación en un archivo
-    with open(os.path.join(outdir, 'recommendation.txt'), 'w', encoding='utf-8') as f:
-        f.write(recommendation)
+    # Guardar el análisis en un archivo
+    analysis_file = os.path.join(outdir, 'comprehensive_analysis.txt')
+    with open(analysis_file, 'w', encoding='utf-8') as f:
+        f.write(analysis)
+    print(f"\nAnálisis completo guardado en: {analysis_file}")
 
 if __name__ == '__main__':
     main()
