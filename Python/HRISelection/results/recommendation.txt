@@ -1,0 +1,35 @@
+
+=== RECOMMENDED COMBINATIONS FOR IMPLEMENTATION ===
+
+1. Combination 1-4 (audio experto + texto experto)
+   - Total Rating Score: 54.0
+   - Times Ranked 1st: 4
+   - Times in Top-3: 6.0
+   - Borda Score: 16
+   - Net Wins in Pairwise Comparison: 26
+
+2. Combination 1-5 (audio experto + video)
+   - Total Rating Score: 53.0
+   - Times Ranked 1st: 3
+   - Times in Top-3: 6.0
+   - Borda Score: 15
+   - Net Wins in Pairwise Comparison: 24
+
+3. Combination 1-6 (audio experto + animacion 3D)
+   - Total Rating Score: 55.0
+   - Times Ranked 1st: 1
+   - Times in Top-3: 4.0
+   - Borda Score: 6
+   - Net Wins in Pairwise Comparison: -4
+
+
+Justification:
+
+Combination 1-4 (audio experto + texto experto):
+Selected for its frequently ranked as first choice, strong performance in Borda count, won most pairwise comparisons.
+
+Combination 1-5 (audio experto + video):
+Selected for its frequently ranked as first choice, strong performance in Borda count, won most pairwise comparisons.
+
+Combination 1-6 (audio experto + animacion 3D):
+Selected for its high overall rating.

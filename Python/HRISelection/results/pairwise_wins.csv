@@ -1,0 +1,10 @@
+,Combinación 1 - 4 (audio experto + texto experto),Combinación 1 - 5 (audio experto + video),Combinación 1 - 6 (audio experto + animacion 3D),Combinación 2 - 4 (audio minimo + texto experto),Combinación 2 - 5 (audio minimo +video),Combinación 2 - 6 (audio minimo + animacion 3D),Combinación 3 - 4 (audio LLM+ texto experto),Combinación 3 - 5 (audio LLM+ video),Combinación 3 - 6 (audio LLM+ animacion 3D)
+Combinación 1 - 4 (audio experto + texto experto),0,6,6,6,5,6,5,6,6
+Combinación 1 - 5 (audio experto + video),3,0,6,6,6,6,6,6,6
+Combinación 1 - 6 (audio experto + animacion 3D),2,2,0,4,4,3,4,4,3
+Combinación 2 - 4 (audio minimo + texto experto),1,2,1,0,2,2,2,2,2
+Combinación 2 - 5 (audio minimo +video),6,3,5,5,0,6,6,5,6
+Combinación 2 - 6 (audio minimo + animacion 3D),2,3,4,4,3,0,3,4,3
+Combinación 3 - 4 (audio LLM+ texto experto),2,3,3,2,2,2,0,3,3
+Combinación 3 - 5 (audio LLM+ video),3,0,3,3,1,3,3,0,3
+Combinación 3 - 6 (audio LLM+ animacion 3D),1,2,2,2,1,2,2,2,0
