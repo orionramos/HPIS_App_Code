@@ -1,5 +1,5 @@
 === COMPREHENSIVE MULTIMODAL ANALYSIS REPORT ===
-Generated on: 2026-02-02 15:20:40
+Generated on: 2026-02-02 15:44:38
 
 1. GENERAL PARTICIPATION METRICS
 --------------------------------------------------
@@ -105,10 +105,96 @@ Animation 3D:
    Combinations: Combination 1 - 6 (audio experto + animacion 3D), Combination 3 - 6 (audio LLM+ animacion 3D), Combination 2 - 6 (audio minimo + animacion 3D)
 
 
-5. DESCRIPTIVE STATISTICS
---------------------------------------------------
 
-Ratings Statistics:
+5. COGNITIVE CLARITY METRICS (Likert Scale 1-7)
+======================================================================
+
+Data Source: Individual video clarity evaluation (How clear was the video?)
+Scale: 1 = Not clear at all | 7 = Extremely clear
+Interpretation: MEASURES COGNITIVE UNDERSTANDING AND CLARITY
+(This is an OBJECTIVE measure of how well users understood the content)
+
+Ranking by Cognitive Clarity (sorted by average rating):
+
+1. Combination 1 - 5 (audio experto + video)
+   Average Clarity: 6.67/7.0 (±0.58)
+   Based on: 3 ratings
+
+2. Combination 3 - 5 (audio LLM+ video)
+   Average Clarity: 6.67/7.0 (±0.58)
+   Based on: 3 ratings
+
+3. Combination 3 - 6 (audio LLM+ animacion 3D)
+   Average Clarity: 6.67/7.0 (±0.58)
+   Based on: 3 ratings
+
+4. Combination 2 - 5 (audio minimo +video)
+   Average Clarity: 6.33/7.0 (±0.58)
+   Based on: 3 ratings
+
+5. Combination 1 - 6 (audio experto + animacion 3D)
+   Average Clarity: 6.00/7.0 (±1.00)
+   Based on: 3 ratings
+
+6. Combination 2 - 6 (audio minimo + animacion 3D)
+   Average Clarity: 6.00/7.0 (±1.00)
+   Based on: 3 ratings
+
+7. Combination 1 - 4 (audio experto + texto experto)
+   Average Clarity: 4.33/7.0 (±2.08)
+   Based on: 3 ratings
+
+
+6. USER PREFERENCE METRICS (Borda Count from Top-3 Rankings)
+======================================================================
+
+Data Source: User ranking of top 3 preferred combinations
+Calculation: 1st place = 3 points | 2nd place = 2 points | 3rd place = 1 point
+Interpretation: MEASURES USER SATISFACTION AND CONSENSUS
+(This is a SUBJECTIVE measure of user preference, NOT clarity)
+
+Ranking by User Preference (sorted by Borda score):
+
+1. Combination 1 - 5 (audio experto + video)
+   Borda Score: 59 points
+   1st Place Votes: 16 | 2nd Place: 5 | 3rd Place: 1
+   Total Top-3 Appearances: 22
+
+2. Combination 3 - 5 (audio LLM+ video)
+   Borda Score: 37 points
+   1st Place Votes: 8 | 2nd Place: 4 | 3rd Place: 5
+   Total Top-3 Appearances: 17
+
+3. Combination 1 - 6 (audio experto + animacion 3D)
+   Borda Score: 28 points
+   1st Place Votes: 3 | 2nd Place: 8 | 3rd Place: 3
+   Total Top-3 Appearances: 14
+
+4. Combination 2 - 5 (audio minimo +video)
+   Borda Score: 21 points
+   1st Place Votes: 1 | 2nd Place: 5 | 3rd Place: 8
+   Total Top-3 Appearances: 14
+
+5. Combination 3 - 6 (audio LLM+ animacion 3D)
+   Borda Score: 12 points
+   1st Place Votes: 0 | 2nd Place: 3 | 3rd Place: 6
+   Total Top-3 Appearances: 9
+
+6. Combination 1 - 4 (audio experto + texto experto)
+   Borda Score: 8 points
+   1st Place Votes: 1 | 2nd Place: 1 | 3rd Place: 3
+   Total Top-3 Appearances: 5
+
+7. Combination 2 - 6 (audio minimo + animacion 3D)
+   Borda Score: 7 points
+   1st Place Votes: 0 | 2nd Place: 3 | 3rd Place: 1
+   Total Top-3 Appearances: 4
+
+
+7. DETAILED STATISTICS TABLE
+----------------------------------------------------------------------
+
+Cognitive Clarity Statistics (Mean, Std Dev, Count):
        Combinación 1-4  Combinación 1-5  Combinación 1-6  ...  Combinación 3-4  Combinación 3-5  Combinación 3-6
 mean              4.33             6.67              6.0  ...              5.0             6.67             6.67
 std               2.08             0.58              1.0  ...              1.0             0.58             0.58
@@ -117,12 +203,12 @@ count             3.00             3.00              3.0  ...              3.0  
 [3 rows x 9 columns]
 
 
-6. CONCLUSIONS AND RECOMMENDATIONS
+8. CONCLUSIONS AND RECOMMENDATIONS
 --------------------------------------------------
 
 Key Findings:
-1. Most Effective Modality: Video (Average Borda: 39.00)
-2. Least Effective Modality: Text Expert (Average Borda: 8.00)
+1. Most Preferred Modality: Video (Average Borda: 39.00)
+2. Least Preferred Modality: Text Expert (Average Borda: 8.00)
 
 3. Preference Gap: 0.302
 4. User Consensus Level: Strong
@@ -142,70 +228,102 @@ Detailed Modal Analysis (for Top-3 Performing Combinations):
   → BEST VISUAL TYPE: Video (39.00)
 
 
-7. FINAL RECOMMENDATION
+9. COMBINED RANKING (Hybrid Metric)
+======================================================================
+
+Methodology Explanation:
 --------------------------------------------------
 
-Based on Borda scores and user preferences, the top 3 recommended combinations are:
+Why Combine Both Metrics?
+To balance OBJECTIVE clarity (what users understood) with SUBJECTIVE preference (what users liked).
+
+Mathematical Formula:
+  Combined_Score = (Normalized_Clarity_Rating × 0.5) + (Normalized_Borda_Score × 0.5)
+  Where:
+    - Normalized_Clarity_Rating = Average_Rating / 7.0 (converts 1-7 scale to 0-1)
+    - Normalized_Borda_Score = Borda_Score / Max_Borda_Score (converts to 0-1)
+    - 0.5 weight = equal importance to understanding and preference
+
+Interpretation:
+This hybrid score identifies strategies that are BOTH well-understood AND preferred by users.
+
+Complete Ranking by Combined Score (Clarity × 0.5 + Preference × 0.5):
 
 1. Combination 1 - 5 (audio experto + video)
-   - Borda Score: 59.0
-   - Times selected as 1st choice: 16
+   Combined Score: 0.976
+     ├─ Clarity Component: 0.953 (Rating: 6.67/7.0)
+     └─ Preference Component: 1.000 (Borda: 59)
+   Recommendation: STRONG RECOMMEND
 
 2. Combination 3 - 5 (audio LLM+ video)
-   - Borda Score: 37.0
-   - Times selected as 1st choice: 8
+   Combined Score: 0.790
+     ├─ Clarity Component: 0.953 (Rating: 6.67/7.0)
+     └─ Preference Component: 0.627 (Borda: 37)
+   Recommendation: STRONG RECOMMEND
 
 3. Combination 1 - 6 (audio experto + animacion 3D)
-   - Borda Score: 28.0
-   - Times selected as 1st choice: 3
+   Combined Score: 0.666
+     ├─ Clarity Component: 0.857 (Rating: 6.00/7.0)
+     └─ Preference Component: 0.475 (Borda: 28)
+   Recommendation: STRONG RECOMMEND
+
+4. Combination 2 - 5 (audio minimo +video)
+   Combined Score: 0.630
+     ├─ Clarity Component: 0.904 (Rating: 6.33/7.0)
+     └─ Preference Component: 0.356 (Borda: 21)
+   Recommendation: STRONG RECOMMEND
+
+5. Combination 3 - 6 (audio LLM+ animacion 3D)
+   Combined Score: 0.578
+     ├─ Clarity Component: 0.953 (Rating: 6.67/7.0)
+     └─ Preference Component: 0.203 (Borda: 12)
+   Recommendation: MODERATE
+
+6. Combination 2 - 6 (audio minimo + animacion 3D)
+   Combined Score: 0.488
+     ├─ Clarity Component: 0.857 (Rating: 6.00/7.0)
+     └─ Preference Component: 0.119 (Borda: 7)
+   Recommendation: MODERATE
+
+7. Combination 1 - 4 (audio experto + texto experto)
+   Combined Score: 0.377
+     ├─ Clarity Component: 0.619 (Rating: 4.33/7.0)
+     └─ Preference Component: 0.136 (Borda: 8)
+   Recommendation: CONSIDER
 
 
-8. COMBINED RANKING: BEST STRATEGIES FOR IMPLEMENTATION
-==================================================
-
-This ranking combines both quantitative metrics:
-- Average Ratings (how clear/effective was the strategy)
-- Borda Score (user preferences and selections)
-
-TOP 3 STRATEGIES FOR IMPLEMENTATION:
+10. TOP 3 STRATEGIES FOR IMPLEMENTATION
+======================================================================
 
 1. Combination 1 - 5 (audio experto + video)
-   Combined Score: 0.648
-   - Average Rating (1-7): 6.67
-   - Borda Score: 59
-   - Times as 1st Choice: 16
+   Combined Score: 0.976
+   Clarity Rating: 6.67/7.0 (objective understanding)
+   Borda Score: 59 points (user satisfaction)
+
+   Rationale:
+   - Users understood this strategy clearly (6.67/7.0)
+   - Users ranked it among their top 3 choices frequently (Borda: 59)
+   - This combination optimally balances understanding and preference
 
 2. Combination 3 - 5 (audio LLM+ video)
-   Combined Score: 0.584
-   - Average Rating (1-7): 6.67
-   - Borda Score: 37
-   - Times as 1st Choice: 8
+   Combined Score: 0.790
+   Clarity Rating: 6.67/7.0 (objective understanding)
+   Borda Score: 37 points (user satisfaction)
 
-3. Combination 2 - 5 (audio minimo +video)
-   Combined Score: 0.513
-   - Average Rating (1-7): 6.33
-   - Borda Score: 21
-   - Times as 1st Choice: 1
+   Rationale:
+   - Users understood this strategy clearly (6.67/7.0)
+   - Users ranked it among their top 3 choices frequently (Borda: 37)
+   - This combination optimally balances understanding and preference
 
+3. Combination 1 - 6 (audio experto + animacion 3D)
+   Combined Score: 0.666
+   Clarity Rating: 6.00/7.0 (objective understanding)
+   Borda Score: 28 points (user satisfaction)
 
-RATIONALE FOR THESE RECOMMENDATIONS:
---------------------------------------------------
-
-✓ Primary Strategy: Combination 1 - 5 (audio experto + video)
-  This strategy excels in both metrics:
-  - Users rated it 6.67/7.0 (clarity and effectiveness)
-  - Users selected it 16 times as their preferred choice
-  - Overall preference score: 0.648/1.0
-
-✓ Secondary Strategy: Combination 3 - 5 (audio LLM+ video)
-  - Users rated it 6.67/7.0
-  - Users selected it 8 times as their preferred choice
-  - This serves as a strong backup option
-
-✓ Tertiary Strategy: Combination 2 - 5 (audio minimo +video)
-  - Users rated it 6.33/7.0
-  - Users selected it 1 times as their preferred choice
-  - This provides additional flexibility and variety
+   Rationale:
+   - Users understood this strategy clearly (6.00/7.0)
+   - Users ranked it among their top 3 choices frequently (Borda: 28)
+   - This combination optimally balances understanding and preference
 
 IMPLEMENTATION PRIORITY:
 --------------------------------------------------
@@ -216,5 +334,5 @@ IMPLEMENTATION PRIORITY:
 2. Combination 3 - 5 (audio LLM+ video)
    Priority: HIGH - Implement as secondary/backup strategy
 
-3. Combination 2 - 5 (audio minimo +video)
+3. Combination 1 - 6 (audio experto + animacion 3D)
    Priority: MEDIUM - Consider for variety and flexibility

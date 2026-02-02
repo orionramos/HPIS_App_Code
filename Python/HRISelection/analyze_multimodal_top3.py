@@ -347,15 +347,96 @@ def analyze_combinations(ratings_stats, rankings_df, total_ratings, pairwise_win
             analysis.append(f"   Number of combinations: {len(data['combinations'])}")
             analysis.append(f"   Combinations: {', '.join(data['combinations'])}\n")
 
-    # 6. Estadísticas Descriptivas
-    analysis.append("\n5. DESCRIPTIVE STATISTICS")
-    analysis.append("-" * 50)
+    # 6. COGNITIVE CLARITY METRICS (Likert Scale 1-7)
+    analysis.append("\n\n5. COGNITIVE CLARITY METRICS (Likert Scale 1-7)")
+    analysis.append("=" * 70)
+    analysis.append("\nData Source: Individual video clarity evaluation (How clear was the video?)")
+    analysis.append("Scale: 1 = Not clear at all | 7 = Extremely clear")
+    analysis.append("Interpretation: MEASURES COGNITIVE UNDERSTANDING AND CLARITY")
+    analysis.append("(This is an OBJECTIVE measure of how well users understood the content)\n")
+    
+    # Crear ranking basado solo en calificaciones
+    clarity_ranking = []
+    for combo_name in rankings_df.index:
+        match = re.search(r'(\d+)\s*-\s*(\d+)', combo_name)
+        if match:
+            short_pattern = f"{match.group(1)}-{match.group(2)}"
+            rating_col_key = f"Combinación {short_pattern}"
+            
+            if rating_col_key in ratings_stats.columns:
+                avg_rating = ratings_stats.loc['mean', rating_col_key]
+                std_rating = ratings_stats.loc['std', rating_col_key]
+                count_rating = ratings_stats.loc['count', rating_col_key]
+            else:
+                avg_rating = 0
+                std_rating = 0
+                count_rating = 0
+        else:
+            avg_rating = 0
+            std_rating = 0
+            count_rating = 0
+        
+        clarity_ranking.append({
+            'combo_name': combo_name,
+            'avg_rating': avg_rating,
+            'std_rating': std_rating,
+            'count_rating': count_rating
+        })
+    
+    # Ordenar por promedio de calificación
+    clarity_ranking = sorted(clarity_ranking, key=lambda x: x['avg_rating'], reverse=True)
+    
+    analysis.append("Ranking by Cognitive Clarity (sorted by average rating):\n")
+    for i, item in enumerate(clarity_ranking, 1):
+        analysis.append(f"{i}. {item['combo_name']}")
+        analysis.append(f"   Average Clarity: {item['avg_rating']:.2f}/7.0 (±{item['std_rating']:.2f})")
+        analysis.append(f"   Based on: {int(item['count_rating'])} ratings\n")
+
+    # 7. USER PREFERENCE METRICS (Borda Count)
+    analysis.append("\n6. USER PREFERENCE METRICS (Borda Count from Top-3 Rankings)")
+    analysis.append("=" * 70)
+    analysis.append("\nData Source: User ranking of top 3 preferred combinations")
+    analysis.append("Calculation: 1st place = 3 points | 2nd place = 2 points | 3rd place = 1 point")
+    analysis.append("Interpretation: MEASURES USER SATISFACTION AND CONSENSUS")
+    analysis.append("(This is a SUBJECTIVE measure of user preference, NOT clarity)\n")
+    
+    # Crear ranking basado solo en Borda
+    preference_ranking = []
+    for combo_name in rankings_df.index:
+        borda_score = rankings_df.loc[combo_name, 'borda']
+        top1_count = rankings_df.loc[combo_name, 'top1']
+        top2_count = rankings_df.loc[combo_name, 'top2']
+        top3_count = rankings_df.loc[combo_name, 'top3']
+        total_appearances = top1_count + top2_count + top3_count
+        
+        preference_ranking.append({
+            'combo_name': combo_name,
+            'borda_score': borda_score,
+            'top1': top1_count,
+            'top2': top2_count,
+            'top3': top3_count,
+            'total_appearances': total_appearances
+        })
+    
+    # Ordenar por Borda
+    preference_ranking = sorted(preference_ranking, key=lambda x: x['borda_score'], reverse=True)
+    
+    analysis.append("Ranking by User Preference (sorted by Borda score):\n")
+    for i, item in enumerate(preference_ranking, 1):
+        analysis.append(f"{i}. {item['combo_name']}")
+        analysis.append(f"   Borda Score: {item['borda_score']:.0f} points")
+        analysis.append(f"   1st Place Votes: {int(item['top1'])} | 2nd Place: {int(item['top2'])} | 3rd Place: {int(item['top3'])}")
+        analysis.append(f"   Total Top-3 Appearances: {int(item['total_appearances'])}\n")
+
+    # 8. DETAILED STATISTICS TABLE
+    analysis.append("\n7. DETAILED STATISTICS TABLE")
+    analysis.append("-" * 70)
     stats_summary = ratings_stats.round(2)
-    analysis.append("\nRatings Statistics:")
+    analysis.append("\nCognitive Clarity Statistics (Mean, Std Dev, Count):")
     analysis.append(str(stats_summary))
 
-    # 7. Conclusiones y Recomendaciones
-    analysis.append("\n\n6. CONCLUSIONS AND RECOMMENDATIONS")
+    # 9. Conclusiones y Recomendaciones
+    analysis.append("\n\n8. CONCLUSIONS AND RECOMMENDATIONS")
     analysis.append("-" * 50)
     
     # Identificar tendencias principales basadas en los promedios calculados
@@ -364,8 +445,8 @@ def analyze_combinations(ratings_stats, rankings_df, total_ratings, pairwise_win
         worst_modality = min(modality_avg_scores.items(), key=lambda x: x[1])
         
         analysis.append("\nKey Findings:")
-        analysis.append(f"1. Most Effective Modality: {best_modality[0].replace('_', ' ').title()} (Average Borda: {best_modality[1]:.2f})")
-        analysis.append(f"2. Least Effective Modality: {worst_modality[0].replace('_', ' ').title()} (Average Borda: {worst_modality[1]:.2f})")
+        analysis.append(f"1. Most Preferred Modality: {best_modality[0].replace('_', ' ').title()} (Average Borda: {best_modality[1]:.2f})")
+        analysis.append(f"2. Least Preferred Modality: {worst_modality[0].replace('_', ' ').title()} (Average Borda: {worst_modality[1]:.2f})")
     
     # Calcular la brecha de preferencia (solo considerando las estrategias que aparecen en el top-3)
     top_3_strategies = top_combinations.index.tolist()
@@ -416,42 +497,36 @@ def analyze_combinations(ratings_stats, rankings_df, total_ratings, pairwise_win
         best_visual = max(visual_scores.items(), key=lambda x: x[1])
         analysis.append(f"\n  → BEST VISUAL TYPE: {best_visual[0]} ({best_visual[1]:.2f})")
     
-    # Recomendación final basada en top-3
-    analysis.append("\n\n7. FINAL RECOMMENDATION")
+    # 9. COMBINED RANKING ANALYSIS
+    analysis.append("\n\n9. COMBINED RANKING (Hybrid Metric)")
+    analysis.append("=" * 70)
+    analysis.append("\nMethodology Explanation:")
     analysis.append("-" * 50)
-    analysis.append("\nBased on Borda scores and user preferences, the top 3 recommended combinations are:")
-    for i, comb in enumerate(top_3_strategies, 1):
-        analysis.append(f"\n{i}. {comb}")
-        analysis.append(f"   - Borda Score: {rankings_df.loc[comb, 'borda']:.1f}")
-        analysis.append(f"   - Times selected as 1st choice: {int(rankings_df.loc[comb, 'top1'])}")
-
-    # 8. COMBINED RANKING - Mejores estrategias basadas en calificaciones Y selecciones
-    analysis.append("\n\n8. COMBINED RANKING: BEST STRATEGIES FOR IMPLEMENTATION")
-    analysis.append("=" * 50)
-    analysis.append("\nThis ranking combines both quantitative metrics:")
-    analysis.append("- Average Ratings (how clear/effective was the strategy)")
-    analysis.append("- Borda Score (user preferences and selections)\n")
+    analysis.append("\nWhy Combine Both Metrics?")
+    analysis.append("To balance OBJECTIVE clarity (what users understood) with SUBJECTIVE preference (what users liked).\n")
     
-    # Crear un mapping entre nombres cortos y largos
-    rating_to_ranking_map = {}
-    for combo_name in rankings_df.index:
-        # Extraer el patrón "X-Y" del nombre largo
-        # Ej: "Combination 1 - 5 (audio experto + video)" -> "1-5"
-        match = re.search(r'(\d+)\s*-\s*(\d+)', combo_name)
-        if match:
-            short_pattern = f"{match.group(1)}-{match.group(2)}"
-            rating_to_ranking_map[short_pattern] = combo_name
+    analysis.append("Mathematical Formula:")
+    analysis.append("  Combined_Score = (Normalized_Clarity_Rating × 0.5) + (Normalized_Borda_Score × 0.5)")
+    analysis.append("  Where:")
+    analysis.append("    - Normalized_Clarity_Rating = Average_Rating / 7.0 (converts 1-7 scale to 0-1)")
+    analysis.append("    - Normalized_Borda_Score = Borda_Score / Max_Borda_Score (converts to 0-1)")
+    analysis.append("    - 0.5 weight = equal importance to understanding and preference\n")
     
-    # Crear un ranking combinado
+    analysis.append("Interpretation:")
+    analysis.append("This hybrid score identifies strategies that are BOTH well-understood AND preferred by users.\n")
+    
+    # Calcular combined scores
     combined_ranking = []
+    
+    # Encontrar max Borda para normalización
+    max_borda = max([rankings_df.loc[idx, 'borda'] for idx in rankings_df.index], default=1)
+    
     for combo_name in rankings_df.index:
-        # Extraer el patrón "X-Y" del nombre en rankings_df
         match = re.search(r'(\d+)\s*-\s*(\d+)', combo_name)
         if match:
             short_pattern = f"{match.group(1)}-{match.group(2)}"
             rating_col_key = f"Combinación {short_pattern}"
             
-            # Buscar en ratings_stats
             if rating_col_key in ratings_stats.columns:
                 avg_rating = ratings_stats.loc['mean', rating_col_key]
             else:
@@ -462,56 +537,47 @@ def analyze_combinations(ratings_stats, rankings_df, total_ratings, pairwise_win
         borda_score = rankings_df.loc[combo_name, 'borda']
         top1_count = rankings_df.loc[combo_name, 'top1']
         
-        # Calcular puntuación combinada (normalizada)
-        rating_score = avg_rating / 7.0 if avg_rating > 0 else 0
-        borda_norm = borda_score / rankings_df['borda'].sum() if rankings_df['borda'].sum() > 0 else 0
+        # Normalizar métricas a escala 0-1
+        norm_rating = avg_rating / 7.0
+        norm_borda = borda_score / max(max_borda, 1)
         
-        # Promedio ponderado: 50% calificación, 50% preferencia (Borda)
-        combined_score = (rating_score * 0.5) + (borda_norm * 0.5)
+        # Calcular combined score
+        combined_score = (norm_rating * 0.5) + (norm_borda * 0.5)
         
         combined_ranking.append({
             'combo_name': combo_name,
             'avg_rating': avg_rating,
             'borda_score': borda_score,
             'top1_count': top1_count,
+            'norm_rating': norm_rating,
+            'norm_borda': norm_borda,
             'combined_score': combined_score
         })
     
-    # Ordenar por puntuación combinada
+    # Ordenar por combined score
     combined_ranking = sorted(combined_ranking, key=lambda x: x['combined_score'], reverse=True)
     
-    analysis.append("TOP 3 STRATEGIES FOR IMPLEMENTATION:\n")
-    for i, item in enumerate(combined_ranking[:3], 1):
+    analysis.append("Complete Ranking by Combined Score (Clarity × 0.5 + Preference × 0.5):\n")
+    for i, item in enumerate(combined_ranking, 1):
         analysis.append(f"{i}. {item['combo_name']}")
         analysis.append(f"   Combined Score: {item['combined_score']:.3f}")
-        analysis.append(f"   - Average Rating (1-7): {item['avg_rating']:.2f}")
-        analysis.append(f"   - Borda Score: {item['borda_score']:.0f}")
-        analysis.append(f"   - Times as 1st Choice: {int(item['top1_count'])}")
-        analysis.append("")
+        analysis.append(f"     ├─ Clarity Component: {item['norm_rating']:.3f} (Rating: {item['avg_rating']:.2f}/7.0)")
+        analysis.append(f"     └─ Preference Component: {item['norm_borda']:.3f} (Borda: {int(item['borda_score'])})")
+        analysis.append(f"   Recommendation: {'STRONG RECOMMEND' if item['combined_score'] >= 0.6 else 'MODERATE' if item['combined_score'] >= 0.4 else 'CONSIDER'}\n")
+
+    # TOP 3 ESTRATEGIAS
+    analysis.append("\n10. TOP 3 STRATEGIES FOR IMPLEMENTATION")
+    analysis.append("=" * 70)
     
-    analysis.append("\nRATIONALE FOR THESE RECOMMENDATIONS:")
-    analysis.append("-" * 50)
-    if combined_ranking:
-        best = combined_ranking[0]
-        analysis.append(f"\n✓ Primary Strategy: {best['combo_name']}")
-        analysis.append(f"  This strategy excels in both metrics:")
-        analysis.append(f"  - Users rated it {best['avg_rating']:.2f}/7.0 (clarity and effectiveness)")
-        analysis.append(f"  - Users selected it {int(best['top1_count'])} times as their preferred choice")
-        analysis.append(f"  - Overall preference score: {best['combined_score']:.3f}/1.0")
-    
-    if len(combined_ranking) > 1:
-        second = combined_ranking[1]
-        analysis.append(f"\n✓ Secondary Strategy: {second['combo_name']}")
-        analysis.append(f"  - Users rated it {second['avg_rating']:.2f}/7.0")
-        analysis.append(f"  - Users selected it {int(second['top1_count'])} times as their preferred choice")
-        analysis.append(f"  - This serves as a strong backup option")
-    
-    if len(combined_ranking) > 2:
-        third = combined_ranking[2]
-        analysis.append(f"\n✓ Tertiary Strategy: {third['combo_name']}")
-        analysis.append(f"  - Users rated it {third['avg_rating']:.2f}/7.0")
-        analysis.append(f"  - Users selected it {int(third['top1_count'])} times as their preferred choice")
-        analysis.append(f"  - This provides additional flexibility and variety")
+    for i, item in enumerate(combined_ranking[:3], 1):
+        analysis.append(f"\n{i}. {item['combo_name']}")
+        analysis.append(f"   Combined Score: {item['combined_score']:.3f}")
+        analysis.append(f"   Clarity Rating: {item['avg_rating']:.2f}/7.0 (objective understanding)")
+        analysis.append(f"   Borda Score: {int(item['borda_score'])} points (user satisfaction)")
+        analysis.append(f"\n   Rationale:")
+        analysis.append(f"   - Users understood this strategy clearly ({item['avg_rating']:.2f}/7.0)")
+        analysis.append(f"   - Users ranked it among their top 3 choices frequently (Borda: {int(item['borda_score'])})")
+        analysis.append(f"   - This combination optimally balances understanding and preference")
     
     analysis.append("\nIMPLEMENTATION PRIORITY:")
     analysis.append("-" * 50)
