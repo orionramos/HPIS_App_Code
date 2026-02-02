@@ -1,0 +1,8 @@
+,top1,top2,top3,borda,borda_norm
+Combinación 1 - 5 (audio experto + video),16,5,1,59,0.3430232558139535
+Combinación 3 - 5 (audio LLM+ video),8,4,5,37,0.21511627906976744
+Combinación 1 - 6 (audio experto + animacion 3D),3,8,3,28,0.16279069767441862
+Combinación 2 - 5 (audio minimo +video),1,5,8,21,0.12209302325581395
+Combinación 3 - 6 (audio LLM+ animacion 3D),0,3,6,12,0.06976744186046512
+Combinación 1 - 4 (audio experto + texto experto),1,1,3,8,0.046511627906976744
+Combinación 2 - 6 (audio minimo + animacion 3D),0,3,1,7,0.040697674418604654

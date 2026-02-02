@@ -1,0 +1,338 @@
+=== COMPREHENSIVE MULTIMODAL ANALYSIS REPORT ===
+Generated on: 2026-02-02 15:44:38
+
+1. GENERAL PARTICIPATION METRICS
+--------------------------------------------------
+Total participants: 29
+Total combinations evaluated: 7
+Total top-3 selections: 85
+
+2. TOP PERFORMING COMBINATIONS
+--------------------------------------------------
+
+1. Combination 1 - 5 (audio experto + video)
+   Borda Score: 59.0 (normalized: 0.343)
+   First Place Rankings: 16 times
+   Second Place Rankings: 5 times
+   Third Place Rankings: 1 times
+   Total Top-3 Appearances: 22
+   Net Wins in Pairwise Comparisons: 98
+
+2. Combination 3 - 5 (audio LLM+ video)
+   Borda Score: 37.0 (normalized: 0.215)
+   First Place Rankings: 8 times
+   Second Place Rankings: 4 times
+   Third Place Rankings: 5 times
+   Total Top-3 Appearances: 17
+   Net Wins in Pairwise Comparisons: 38
+
+3. Combination 1 - 6 (audio experto + animacion 3D)
+   Borda Score: 28.0 (normalized: 0.163)
+   First Place Rankings: 3 times
+   Second Place Rankings: 8 times
+   Third Place Rankings: 3 times
+   Total Top-3 Appearances: 14
+   Net Wins in Pairwise Comparisons: 13
+
+
+3. LOWEST PERFORMING COMBINATIONS
+--------------------------------------------------
+
+1. Combination 2 - 6 (audio minimo + animacion 3D)
+   Borda Score: 7.0 (normalized: 0.041)
+   First Place Rankings: 0 times
+   Second Place Rankings: 3 times
+   Third Place Rankings: 1 times
+   Total Top-3 Appearances: 4
+   Net Wins in Pairwise Comparisons: -59
+
+2. Combination 1 - 4 (audio experto + texto experto)
+   Borda Score: 8.0 (normalized: 0.047)
+   First Place Rankings: 1 times
+   Second Place Rankings: 1 times
+   Third Place Rankings: 3 times
+   Total Top-3 Appearances: 5
+   Net Wins in Pairwise Comparisons: -54
+
+3. Combination 3 - 6 (audio LLM+ animacion 3D)
+   Borda Score: 12.0 (normalized: 0.070)
+   First Place Rankings: 0 times
+   Second Place Rankings: 3 times
+   Third Place Rankings: 6 times
+   Total Top-3 Appearances: 9
+   Net Wins in Pairwise Comparisons: -35
+
+
+4. PATTERN ANALYSIS
+--------------------------------------------------
+
+Modality Performance Analysis:
+
+Audio Expert:
+   Average Borda Score: 31.67
+   Average First Place Rankings: 6.67
+   Number of combinations: 3
+   Combinations: Combination 1 - 5 (audio experto + video), Combination 1 - 6 (audio experto + animacion 3D), Combination 1 - 4 (audio experto + texto experto)
+
+Audio Minimal:
+   Average Borda Score: 14.00
+   Average First Place Rankings: 0.50
+   Number of combinations: 2
+   Combinations: Combination 2 - 5 (audio minimo +video), Combination 2 - 6 (audio minimo + animacion 3D)
+
+Audio Llm:
+   Average Borda Score: 24.50
+   Average First Place Rankings: 4.00
+   Number of combinations: 2
+   Combinations: Combination 3 - 5 (audio LLM+ video), Combination 3 - 6 (audio LLM+ animacion 3D)
+
+Text Expert:
+   Average Borda Score: 8.00
+   Average First Place Rankings: 1.00
+   Number of combinations: 1
+   Combinations: Combination 1 - 4 (audio experto + texto experto)
+
+Video:
+   Average Borda Score: 39.00
+   Average First Place Rankings: 8.33
+   Number of combinations: 3
+   Combinations: Combination 1 - 5 (audio experto + video), Combination 3 - 5 (audio LLM+ video), Combination 2 - 5 (audio minimo +video)
+
+Animation 3D:
+   Average Borda Score: 15.67
+   Average First Place Rankings: 1.00
+   Number of combinations: 3
+   Combinations: Combination 1 - 6 (audio experto + animacion 3D), Combination 3 - 6 (audio LLM+ animacion 3D), Combination 2 - 6 (audio minimo + animacion 3D)
+
+
+
+5. COGNITIVE CLARITY METRICS (Likert Scale 1-7)
+======================================================================
+
+Data Source: Individual video clarity evaluation (How clear was the video?)
+Scale: 1 = Not clear at all | 7 = Extremely clear
+Interpretation: MEASURES COGNITIVE UNDERSTANDING AND CLARITY
+(This is an OBJECTIVE measure of how well users understood the content)
+
+Ranking by Cognitive Clarity (sorted by average rating):
+
+1. Combination 1 - 5 (audio experto + video)
+   Average Clarity: 6.67/7.0 (±0.58)
+   Based on: 3 ratings
+
+2. Combination 3 - 5 (audio LLM+ video)
+   Average Clarity: 6.67/7.0 (±0.58)
+   Based on: 3 ratings
+
+3. Combination 3 - 6 (audio LLM+ animacion 3D)
+   Average Clarity: 6.67/7.0 (±0.58)
+   Based on: 3 ratings
+
+4. Combination 2 - 5 (audio minimo +video)
+   Average Clarity: 6.33/7.0 (±0.58)
+   Based on: 3 ratings
+
+5. Combination 1 - 6 (audio experto + animacion 3D)
+   Average Clarity: 6.00/7.0 (±1.00)
+   Based on: 3 ratings
+
+6. Combination 2 - 6 (audio minimo + animacion 3D)
+   Average Clarity: 6.00/7.0 (±1.00)
+   Based on: 3 ratings
+
+7. Combination 1 - 4 (audio experto + texto experto)
+   Average Clarity: 4.33/7.0 (±2.08)
+   Based on: 3 ratings
+
+
+6. USER PREFERENCE METRICS (Borda Count from Top-3 Rankings)
+======================================================================
+
+Data Source: User ranking of top 3 preferred combinations
+Calculation: 1st place = 3 points | 2nd place = 2 points | 3rd place = 1 point
+Interpretation: MEASURES USER SATISFACTION AND CONSENSUS
+(This is a SUBJECTIVE measure of user preference, NOT clarity)
+
+Ranking by User Preference (sorted by Borda score):
+
+1. Combination 1 - 5 (audio experto + video)
+   Borda Score: 59 points
+   1st Place Votes: 16 | 2nd Place: 5 | 3rd Place: 1
+   Total Top-3 Appearances: 22
+
+2. Combination 3 - 5 (audio LLM+ video)
+   Borda Score: 37 points
+   1st Place Votes: 8 | 2nd Place: 4 | 3rd Place: 5
+   Total Top-3 Appearances: 17
+
+3. Combination 1 - 6 (audio experto + animacion 3D)
+   Borda Score: 28 points
+   1st Place Votes: 3 | 2nd Place: 8 | 3rd Place: 3
+   Total Top-3 Appearances: 14
+
+4. Combination 2 - 5 (audio minimo +video)
+   Borda Score: 21 points
+   1st Place Votes: 1 | 2nd Place: 5 | 3rd Place: 8
+   Total Top-3 Appearances: 14
+
+5. Combination 3 - 6 (audio LLM+ animacion 3D)
+   Borda Score: 12 points
+   1st Place Votes: 0 | 2nd Place: 3 | 3rd Place: 6
+   Total Top-3 Appearances: 9
+
+6. Combination 1 - 4 (audio experto + texto experto)
+   Borda Score: 8 points
+   1st Place Votes: 1 | 2nd Place: 1 | 3rd Place: 3
+   Total Top-3 Appearances: 5
+
+7. Combination 2 - 6 (audio minimo + animacion 3D)
+   Borda Score: 7 points
+   1st Place Votes: 0 | 2nd Place: 3 | 3rd Place: 1
+   Total Top-3 Appearances: 4
+
+
+7. DETAILED STATISTICS TABLE
+----------------------------------------------------------------------
+
+Cognitive Clarity Statistics (Mean, Std Dev, Count):
+       Combinación 1-4  Combinación 1-5  Combinación 1-6  ...  Combinación 3-4  Combinación 3-5  Combinación 3-6
+mean              4.33             6.67              6.0  ...              5.0             6.67             6.67
+std               2.08             0.58              1.0  ...              1.0             0.58             0.58
+count             3.00             3.00              3.0  ...              3.0             3.00             3.00
+
+[3 rows x 9 columns]
+
+
+8. CONCLUSIONS AND RECOMMENDATIONS
+--------------------------------------------------
+
+Key Findings:
+1. Most Preferred Modality: Video (Average Borda: 39.00)
+2. Least Preferred Modality: Text Expert (Average Borda: 8.00)
+
+3. Preference Gap: 0.302
+4. User Consensus Level: Strong
+
+
+Detailed Modal Analysis (for Top-3 Performing Combinations):
+
+- Expert Audio: Avg Borda = 31.67
+- Minimal Audio: Avg Borda = 14.00
+- LLM Audio: Avg Borda = 24.50
+
+  → BEST AUDIO TYPE: Expert Audio (31.67)
+- Text Expert: Avg Borda = 8.00
+- Video: Avg Borda = 39.00
+- Animation 3D: Avg Borda = 15.67
+
+  → BEST VISUAL TYPE: Video (39.00)
+
+
+9. COMBINED RANKING (Hybrid Metric)
+======================================================================
+
+Methodology Explanation:
+--------------------------------------------------
+
+Why Combine Both Metrics?
+To balance OBJECTIVE clarity (what users understood) with SUBJECTIVE preference (what users liked).
+
+Mathematical Formula:
+  Combined_Score = (Normalized_Clarity_Rating × 0.5) + (Normalized_Borda_Score × 0.5)
+  Where:
+    - Normalized_Clarity_Rating = Average_Rating / 7.0 (converts 1-7 scale to 0-1)
+    - Normalized_Borda_Score = Borda_Score / Max_Borda_Score (converts to 0-1)
+    - 0.5 weight = equal importance to understanding and preference
+
+Interpretation:
+This hybrid score identifies strategies that are BOTH well-understood AND preferred by users.
+
+Complete Ranking by Combined Score (Clarity × 0.5 + Preference × 0.5):
+
+1. Combination 1 - 5 (audio experto + video)
+   Combined Score: 0.976
+     ├─ Clarity Component: 0.953 (Rating: 6.67/7.0)
+     └─ Preference Component: 1.000 (Borda: 59)
+   Recommendation: STRONG RECOMMEND
+
+2. Combination 3 - 5 (audio LLM+ video)
+   Combined Score: 0.790
+     ├─ Clarity Component: 0.953 (Rating: 6.67/7.0)
+     └─ Preference Component: 0.627 (Borda: 37)
+   Recommendation: STRONG RECOMMEND
+
+3. Combination 1 - 6 (audio experto + animacion 3D)
+   Combined Score: 0.666
+     ├─ Clarity Component: 0.857 (Rating: 6.00/7.0)
+     └─ Preference Component: 0.475 (Borda: 28)
+   Recommendation: STRONG RECOMMEND
+
+4. Combination 2 - 5 (audio minimo +video)
+   Combined Score: 0.630
+     ├─ Clarity Component: 0.904 (Rating: 6.33/7.0)
+     └─ Preference Component: 0.356 (Borda: 21)
+   Recommendation: STRONG RECOMMEND
+
+5. Combination 3 - 6 (audio LLM+ animacion 3D)
+   Combined Score: 0.578
+     ├─ Clarity Component: 0.953 (Rating: 6.67/7.0)
+     └─ Preference Component: 0.203 (Borda: 12)
+   Recommendation: MODERATE
+
+6. Combination 2 - 6 (audio minimo + animacion 3D)
+   Combined Score: 0.488
+     ├─ Clarity Component: 0.857 (Rating: 6.00/7.0)
+     └─ Preference Component: 0.119 (Borda: 7)
+   Recommendation: MODERATE
+
+7. Combination 1 - 4 (audio experto + texto experto)
+   Combined Score: 0.377
+     ├─ Clarity Component: 0.619 (Rating: 4.33/7.0)
+     └─ Preference Component: 0.136 (Borda: 8)
+   Recommendation: CONSIDER
+
+
+10. TOP 3 STRATEGIES FOR IMPLEMENTATION
+======================================================================
+
+1. Combination 1 - 5 (audio experto + video)
+   Combined Score: 0.976
+   Clarity Rating: 6.67/7.0 (objective understanding)
+   Borda Score: 59 points (user satisfaction)
+
+   Rationale:
+   - Users understood this strategy clearly (6.67/7.0)
+   - Users ranked it among their top 3 choices frequently (Borda: 59)
+   - This combination optimally balances understanding and preference
+
+2. Combination 3 - 5 (audio LLM+ video)
+   Combined Score: 0.790
+   Clarity Rating: 6.67/7.0 (objective understanding)
+   Borda Score: 37 points (user satisfaction)
+
+   Rationale:
+   - Users understood this strategy clearly (6.67/7.0)
+   - Users ranked it among their top 3 choices frequently (Borda: 37)
+   - This combination optimally balances understanding and preference
+
+3. Combination 1 - 6 (audio experto + animacion 3D)
+   Combined Score: 0.666
+   Clarity Rating: 6.00/7.0 (objective understanding)
+   Borda Score: 28 points (user satisfaction)
+
+   Rationale:
+   - Users understood this strategy clearly (6.00/7.0)
+   - Users ranked it among their top 3 choices frequently (Borda: 28)
+   - This combination optimally balances understanding and preference
+
+IMPLEMENTATION PRIORITY:
+--------------------------------------------------
+
+1. Combination 1 - 5 (audio experto + video)
+   Priority: HIGHEST - Implement immediately as primary strategy
+
+2. Combination 3 - 5 (audio LLM+ video)
+   Priority: HIGH - Implement as secondary/backup strategy
+
+3. Combination 1 - 6 (audio experto + animacion 3D)
+   Priority: MEDIUM - Consider for variety and flexibility
