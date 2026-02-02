@@ -1,52 +1,67 @@
 === COMPREHENSIVE MULTIMODAL ANALYSIS REPORT ===
-Generated on: 2025-09-30 12:06:28
+Generated on: 2026-02-02 15:20:40
 
 1. GENERAL PARTICIPATION METRICS
 --------------------------------------------------
-Total participants in rankings: 12
-Average ratings per combination: 2.0
+Total participants: 29
+Total combinations evaluated: 7
+Total top-3 selections: 85
 
 2. TOP PERFORMING COMBINATIONS
 --------------------------------------------------
 
-1. Combination 1 - 4 (audio experto + texto experto)
-   Borda Score: 16.0 (normalized: 0.222)
-   First Place Rankings: 4.0 times
-   Total Top-3 Appearances: 6.0
-   Net Wins in Pairwise Comparisons: 26
+1. Combination 1 - 5 (audio experto + video)
+   Borda Score: 59.0 (normalized: 0.343)
+   First Place Rankings: 16 times
+   Second Place Rankings: 5 times
+   Third Place Rankings: 1 times
+   Total Top-3 Appearances: 22
+   Net Wins in Pairwise Comparisons: 98
 
-2. Combination 1 - 5 (audio experto + video)
-   Borda Score: 15.0 (normalized: 0.208)
-   First Place Rankings: 3.0 times
-   Total Top-3 Appearances: 6.0
-   Net Wins in Pairwise Comparisons: 24
+2. Combination 3 - 5 (audio LLM+ video)
+   Borda Score: 37.0 (normalized: 0.215)
+   First Place Rankings: 8 times
+   Second Place Rankings: 4 times
+   Third Place Rankings: 5 times
+   Total Top-3 Appearances: 17
+   Net Wins in Pairwise Comparisons: 38
 
-3. Combination 2 - 5 (audio minimo +video)
-   Borda Score: 12.0 (normalized: 0.167)
-   First Place Rankings: 2.0 times
-   Total Top-3 Appearances: 6.0
-   Net Wins in Pairwise Comparisons: 18
+3. Combination 1 - 6 (audio experto + animacion 3D)
+   Borda Score: 28.0 (normalized: 0.163)
+   First Place Rankings: 3 times
+   Second Place Rankings: 8 times
+   Third Place Rankings: 3 times
+   Total Top-3 Appearances: 14
+   Net Wins in Pairwise Comparisons: 13
+
 
 3. LOWEST PERFORMING COMBINATIONS
 --------------------------------------------------
 
-1. Combination 2 - 4 (audio minimo + texto experto)
-   Borda Score: 4.0 (normalized: 0.056)
-   First Place Rankings: 0.0 times
-   Total Top-3 Appearances: 2.0
-   Net Wins in Pairwise Comparisons: -18
+1. Combination 2 - 6 (audio minimo + animacion 3D)
+   Borda Score: 7.0 (normalized: 0.041)
+   First Place Rankings: 0 times
+   Second Place Rankings: 3 times
+   Third Place Rankings: 1 times
+   Total Top-3 Appearances: 4
+   Net Wins in Pairwise Comparisons: -59
 
-2. Combination 3 - 5 (audio LLM+ video)
-   Borda Score: 4.0 (normalized: 0.056)
-   First Place Rankings: 0.0 times
-   Total Top-3 Appearances: 3.0
-   Net Wins in Pairwise Comparisons: -13
+2. Combination 1 - 4 (audio experto + texto experto)
+   Borda Score: 8.0 (normalized: 0.047)
+   First Place Rankings: 1 times
+   Second Place Rankings: 1 times
+   Third Place Rankings: 3 times
+   Total Top-3 Appearances: 5
+   Net Wins in Pairwise Comparisons: -54
 
 3. Combination 3 - 6 (audio LLM+ animacion 3D)
-   Borda Score: 4.0 (normalized: 0.056)
-   First Place Rankings: 1.0 times
-   Total Top-3 Appearances: 2.0
-   Net Wins in Pairwise Comparisons: -18
+   Borda Score: 12.0 (normalized: 0.070)
+   First Place Rankings: 0 times
+   Second Place Rankings: 3 times
+   Third Place Rankings: 6 times
+   Total Top-3 Appearances: 9
+   Net Wins in Pairwise Comparisons: -35
+
 
 4. PATTERN ANALYSIS
 --------------------------------------------------
@@ -54,55 +69,152 @@ Average ratings per combination: 2.0
 Modality Performance Analysis:
 
 Audio Expert:
-   Average Borda Score: 12.33
-   Average First Place Rankings: 2.67
+   Average Borda Score: 31.67
+   Average First Place Rankings: 6.67
    Number of combinations: 3
+   Combinations: Combination 1 - 5 (audio experto + video), Combination 1 - 6 (audio experto + animacion 3D), Combination 1 - 4 (audio experto + texto experto)
 
 Audio Minimal:
-   Average Borda Score: 7.33
-   Average First Place Rankings: 0.67
-   Number of combinations: 3
+   Average Borda Score: 14.00
+   Average First Place Rankings: 0.50
+   Number of combinations: 2
+   Combinations: Combination 2 - 5 (audio minimo +video), Combination 2 - 6 (audio minimo + animacion 3D)
 
 Audio Llm:
-   Average Borda Score: 4.33
-   Average First Place Rankings: 0.67
-   Number of combinations: 3
+   Average Borda Score: 24.50
+   Average First Place Rankings: 4.00
+   Number of combinations: 2
+   Combinations: Combination 3 - 5 (audio LLM+ video), Combination 3 - 6 (audio LLM+ animacion 3D)
 
 Text Expert:
-   Average Borda Score: 8.33
-   Average First Place Rankings: 1.67
-   Number of combinations: 3
+   Average Borda Score: 8.00
+   Average First Place Rankings: 1.00
+   Number of combinations: 1
+   Combinations: Combination 1 - 4 (audio experto + texto experto)
 
 Video:
-   Average Borda Score: 10.33
-   Average First Place Rankings: 1.67
+   Average Borda Score: 39.00
+   Average First Place Rankings: 8.33
    Number of combinations: 3
+   Combinations: Combination 1 - 5 (audio experto + video), Combination 3 - 5 (audio LLM+ video), Combination 2 - 5 (audio minimo +video)
 
 Animation 3D:
-   Average Borda Score: 5.33
-   Average First Place Rankings: 0.67
+   Average Borda Score: 15.67
+   Average First Place Rankings: 1.00
    Number of combinations: 3
+   Combinations: Combination 1 - 6 (audio experto + animacion 3D), Combination 3 - 6 (audio LLM+ animacion 3D), Combination 2 - 6 (audio minimo + animacion 3D)
+
 
 5. DESCRIPTIVE STATISTICS
 --------------------------------------------------
 
 Ratings Statistics:
        Combinación 1-4  Combinación 1-5  Combinación 1-6  ...  Combinación 3-4  Combinación 3-5  Combinación 3-6
-mean              2.00             2.50             3.00  ...             2.50             3.00             2.50
-std               1.41             2.12             2.83  ...             2.12             2.83             2.12
-count             2.00             2.00             2.00  ...             2.00             2.00             2.00
+mean              4.33             6.67              6.0  ...              5.0             6.67             6.67
+std               2.08             0.58              1.0  ...              1.0             0.58             0.58
+count             3.00             3.00              3.0  ...              3.0             3.00             3.00
 
 [3 rows x 9 columns]
+
 
 6. CONCLUSIONS AND RECOMMENDATIONS
 --------------------------------------------------
 
 Key Findings:
-1. Most Effective Modality: Audio Expert (Average Borda: 12.33)
-2. Least Effective Modality: Audio Llm (Average Borda: 4.33)
-3. Preference Gap: 0.167
+1. Most Effective Modality: Video (Average Borda: 39.00)
+2. Least Effective Modality: Text Expert (Average Borda: 8.00)
+
+3. Preference Gap: 0.302
 4. User Consensus Level: Strong
 
-Detailed Modal Analysis:
-- Best Audio Type: Audio Expert (Borda: 12.33)
-- Best Visual Type: Video (Borda: 10.33)
+
+Detailed Modal Analysis (for Top-3 Performing Combinations):
+
+- Expert Audio: Avg Borda = 31.67
+- Minimal Audio: Avg Borda = 14.00
+- LLM Audio: Avg Borda = 24.50
+
+  → BEST AUDIO TYPE: Expert Audio (31.67)
+- Text Expert: Avg Borda = 8.00
+- Video: Avg Borda = 39.00
+- Animation 3D: Avg Borda = 15.67
+
+  → BEST VISUAL TYPE: Video (39.00)
+
+
+7. FINAL RECOMMENDATION
+--------------------------------------------------
+
+Based on Borda scores and user preferences, the top 3 recommended combinations are:
+
+1. Combination 1 - 5 (audio experto + video)
+   - Borda Score: 59.0
+   - Times selected as 1st choice: 16
+
+2. Combination 3 - 5 (audio LLM+ video)
+   - Borda Score: 37.0
+   - Times selected as 1st choice: 8
+
+3. Combination 1 - 6 (audio experto + animacion 3D)
+   - Borda Score: 28.0
+   - Times selected as 1st choice: 3
+
+
+8. COMBINED RANKING: BEST STRATEGIES FOR IMPLEMENTATION
+==================================================
+
+This ranking combines both quantitative metrics:
+- Average Ratings (how clear/effective was the strategy)
+- Borda Score (user preferences and selections)
+
+TOP 3 STRATEGIES FOR IMPLEMENTATION:
+
+1. Combination 1 - 5 (audio experto + video)
+   Combined Score: 0.648
+   - Average Rating (1-7): 6.67
+   - Borda Score: 59
+   - Times as 1st Choice: 16
+
+2. Combination 3 - 5 (audio LLM+ video)
+   Combined Score: 0.584
+   - Average Rating (1-7): 6.67
+   - Borda Score: 37
+   - Times as 1st Choice: 8
+
+3. Combination 2 - 5 (audio minimo +video)
+   Combined Score: 0.513
+   - Average Rating (1-7): 6.33
+   - Borda Score: 21
+   - Times as 1st Choice: 1
+
+
+RATIONALE FOR THESE RECOMMENDATIONS:
+--------------------------------------------------
+
+✓ Primary Strategy: Combination 1 - 5 (audio experto + video)
+  This strategy excels in both metrics:
+  - Users rated it 6.67/7.0 (clarity and effectiveness)
+  - Users selected it 16 times as their preferred choice
+  - Overall preference score: 0.648/1.0
+
+✓ Secondary Strategy: Combination 3 - 5 (audio LLM+ video)
+  - Users rated it 6.67/7.0
+  - Users selected it 8 times as their preferred choice
+  - This serves as a strong backup option
+
+✓ Tertiary Strategy: Combination 2 - 5 (audio minimo +video)
+  - Users rated it 6.33/7.0
+  - Users selected it 1 times as their preferred choice
+  - This provides additional flexibility and variety
+
+IMPLEMENTATION PRIORITY:
+--------------------------------------------------
+
+1. Combination 1 - 5 (audio experto + video)
+   Priority: HIGHEST - Implement immediately as primary strategy
+
+2. Combination 3 - 5 (audio LLM+ video)
+   Priority: HIGH - Implement as secondary/backup strategy
+
+3. Combination 2 - 5 (audio minimo +video)
+   Priority: MEDIUM - Consider for variety and flexibility

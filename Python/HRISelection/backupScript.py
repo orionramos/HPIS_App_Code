@@ -432,33 +432,22 @@ def analyze_combinations(ratings_stats, rankings_df, total_ratings, pairwise_win
     analysis.append("- Average Ratings (how clear/effective was the strategy)")
     analysis.append("- Borda Score (user preferences and selections)\n")
     
-    # Crear un mapping entre nombres cortos y largos
-    rating_to_ranking_map = {}
-    for combo_name in rankings_df.index:
-        # Extraer el patrón "X-Y" del nombre largo
-        # Ej: "Combination 1 - 5 (audio experto + video)" -> "1-5"
-        match = re.search(r'(\d+)\s*-\s*(\d+)', combo_name)
-        if match:
-            short_pattern = f"{match.group(1)}-{match.group(2)}"
-            rating_to_ranking_map[short_pattern] = combo_name
-    
-    # Crear un ranking combinado
+    # Crear un ranking combinado iterando sobre rankings_df (que tiene los nombres correctos)
     combined_ranking = []
     for combo_name in rankings_df.index:
-        # Extraer el patrón "X-Y" del nombre en rankings_df
-        match = re.search(r'(\d+)\s*-\s*(\d+)', combo_name)
-        if match:
-            short_pattern = f"{match.group(1)}-{match.group(2)}"
-            rating_col_key = f"Combinación {short_pattern}"
-            
-            # Buscar en ratings_stats
-            if rating_col_key in ratings_stats.columns:
-                avg_rating = ratings_stats.loc['mean', rating_col_key]
-            else:
-                avg_rating = 0
-        else:
-            avg_rating = 0
+        # Buscar la columna correspondiente en ratings_stats
+        # El nombre en ratings_stats es "Combinación X-Y" 
+        # El nombre en rankings_df es "Combination X - Y (audio ... + ...)"
+        rating_col = None
+        for col in ratings_stats.columns:
+            # Extraer el patrón "X-Y" de ambos
+            pattern1 = col.replace('Combinación ', '').strip()  # "1-5"
+            # Buscar en el índice de rankings_df
+            if pattern1 in combo_name:
+                rating_col = col
+                break
         
+        avg_rating = ratings_stats[rating_col]['mean'] if rating_col else 0
         borda_score = rankings_df.loc[combo_name, 'borda']
         top1_count = rankings_df.loc[combo_name, 'top1']
         
