@@ -16,9 +16,9 @@ class AplicacionHRI:
 
       # Diccionario con información de actividades y valores GT y gM por paso
         self.actividades = {
-            '1': {'pasos': 5, 
-                'gt': {1:1, 2:1, 3:1, 4:1, 5:1}, 
-                'gM': {1:1, 2:1, 3:1, 4:1, 5:1}},
+            '1': {'pasos': 6, 
+                'gt': {1:1, 2:1, 3:1, 4:1, 5:1, 6:1}, 
+                'gM': {1:1, 2:1, 3:1, 4:1, 5:1, 6:1}},
             
             '2': {'pasos': 11, 
                 'gt': {1:1, 2:1, 3:1, 4:1, 5:4, 6:1, 7:1, 8:1, 9:3, 10:3, 11:3}, 

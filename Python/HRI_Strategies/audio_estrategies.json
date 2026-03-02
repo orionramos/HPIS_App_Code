@@ -7,27 +7,30 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Asegúrese de tener la prótesis con la palma mirando a la izquierda."
+                        "content_value": "Iniciando agarre de poder para objeto cilíndrico. Oriente la palma de la prótesis hacia la izquierda y manténgala abierta."
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Use su mano sana para colocar la taza en una posición cómoda que permita sujetarla con su prótesis."
+                        "content_value": "Con la mano no prostética, sujete la taza por el asa. Ubique el fondo de la taza justo encima de los dedos inferiores."
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Con su prótesis, agarre la taza firmemente y use la mano sana para estabilizarla y evitar derrames."
+                        "content_value": "Cierre la prótesis para sujetar la taza. Ahora puede soltar el asa con su mano no prostética."
                     },
                     "4": {
                         "content_type": "audio",
-                        "content_value": "Acerque la taza a su boca cuidadosamente, mantenga el equilibrio y beba el primer sorbo de líquido."
+                        "content_value": "Acerque su boca a la taza. Incline el brazo lentamente para el primer sorbo. Al finalizar, baje el brazo."
                     },
                     "5": {
                         "content_type": "audio",
-                        "content_value": "Repita el proceso de llevar la taza a la boca y beber dos sorbos más, asegurándose de no derramar el líquido."
+                        "content_value": "Repita la secuencia: acerque su boca e incline el brazo para dos sorbos más."
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Sujete el asa con la mano no prostética. Abra la prótesis y deposite la taza sobre la mesa."
                     }
                 }
             },
-
             "2": {
                 "name": "Estrategia Auditiva 2",
                 "steps": {
