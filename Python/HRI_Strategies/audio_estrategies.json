@@ -36,23 +36,27 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Ubica Prótesis – palma izquierda"
+                        "content_value": "Agarre poder. Gire palma izquierda. Abra prótesis."
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Acomoda taza – mano sana"
+                        "content_value": "Sujete taza, mano no prostética. Apoye fondo sobre dedos."
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Agarra taza – prótesis; estabiliza – mano sana"
+                        "content_value": "Cierre prótesis. Suelte asa, mano no prostética."
                     },
                     "4": {
                         "content_type": "audio",
-                        "content_value": "Acerca taza a boca – prótesis"
+                        "content_value": "Acerque boca. Incline brazo, beba. Baje brazo."
                     },
                     "5": {
                         "content_type": "audio",
-                        "content_value": "bebe liquido – prótesis dos veces mas"
+                        "content_value": "Repita secuencia: acerque, incline, beba."
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Sujete asa, mano no prostética. Abra prótesis. Apoye taza."
                     }
                 }
             },
@@ -296,59 +300,51 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Ubica prótesis – palma izquierda"
+                        "content_value": "Apoye bolsa en mesa, mano no prostética."
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Agarra bolsa – prótesis y pecho"
+                        "content_value": "Agarre pinza. Mantenga prótesis abierta."
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Abre bolsa – mano sana"
+                        "content_value": "Sujete bolsa bajo cierre, prótesis. Retire sello, mano no prostética."
                     },
                     "4": {
                         "content_type": "audio",
-                        "content_value": "Toma pan – mano sana"
+                        "content_value": "Abra bolsa. Deje pulgar dentro, prótesis."
                     },
                     "5": {
                         "content_type": "audio",
-                        "content_value": "Coloca pan en tostadora – mano sana"
+                        "content_value": "Retire dos rebanadas, mano no prostética. Abra prótesis. Suelte bolsa."
                     },
                     "6": {
                         "content_type": "audio",
-                        "content_value": "Deja bolsa en mesa – mano sana"
+                        "content_value": "Sujete rebanada, prótesis. Inserte otra rebanada, mano no prostética."
                     },
                     "7": {
                         "content_type": "audio",
-                        "content_value": "Cambia agarre a dedo índice – prótesis; gira palma abajo – mano sana"
+                        "content_value": "Pase rebanada a mano no prostética. Inserte. Encienda tostadora."
                     },
                     "8": {
                         "content_type": "audio",
-                        "content_value": "Presiona botón – dedo prótesis"
+                        "content_value": "Espere tostado. Deje enfriar."
                     },
                     "9": {
                         "content_type": "audio",
-                        "content_value": "Cambia a pulgar lateral – prótesis"
+                        "content_value": "Eleve botón, mano no prostética. Lleve pan a plato, prótesis."
                     },
                     "10": {
                         "content_type": "audio",
-                        "content_value": "Espera tostada lista"
+                        "content_value": "Estabilice plato, prótesis. Coloque queso, mano no prostética."
                     },
                     "11": {
                         "content_type": "audio",
-                        "content_value": "Espera enfríe; retira tostada a plato – mano sana"
+                        "content_value": "Coloque segunda rebanada, mano no prostética."
                     },
                     "12": {
                         "content_type": "audio",
-                        "content_value": "Toma queso; coloca en tostada – mano sana"
-                    },
-                    "13": {
-                        "content_type": "audio",
-                        "content_value": "Toma trapo; sujeta con prótesis – mano sana"
-                    },
-                    "14": {
-                        "content_type": "audio",
-                        "content_value": "Limpia superficie – trapo con prótesis y mano sana"
+                        "content_value": "Tome trapo. Limpie mesa."
                     }
                 }
             },
@@ -451,28 +447,28 @@
                 "name": "Estrategia Auditiva 2",
                 "steps": {
                     "1": {
-                    "content_type": "audio",
-                    "content_value": "Ajusta prótesis – palma izquierda"
+                        "content_type": "audio",
+                        "content_value": "Agarre poder. Gire palma izquierda. Abra prótesis."
                     },
                     "2": {
-                    "content_type": "audio",
-                    "content_value": "Coloca tenedor en prótesis – mano sana; cierra prótesis – prótesis"
+                        "content_type": "audio",
+                        "content_value": "Coloque tenedor en prótesis, mano no prostética. Cierre prótesis. Active bloqueo."
                     },
                     "3": {
-                    "content_type": "audio",
-                    "content_value": "Asegura tostada – prótesis"
+                        "content_type": "audio",
+                        "content_value": "Trinche comida, prótesis. Corte comida, mano no prostética."
                     },
                     "4": {
-                    "content_type": "audio",
-                    "content_value": "Corta tostada – mano sana; suelta cuchillo – mano sana"
+                        "content_type": "audio",
+                        "content_value": "Libere tenedor. Deje cuchillo. Desbloquee prótesis. Pase tenedor a mano no prostética."
                     },
                     "5": {
-                    "content_type": "audio",
-                    "content_value": "Toma tenedor – mano sana; abre prótesis – prótesis; retira tenedor – mano sana; come tostada – mano sana"
+                        "content_type": "audio",
+                        "content_value": "Lleve tenedor a boca, mano no prostética. Coma."
                     },
                     "6": {
-                    "content_type": "audio",
-                    "content_value": "Repite comer – mano sana"
+                        "content_type": "audio",
+                        "content_value": "Repita secuencia: trinche, corte, pase, coma."
                     }
                 }
             },
@@ -556,59 +552,39 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Ubica prótesis – palma abajo"
+                        "content_value": "Tome camisa, mano no prostética."
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Busca pantalón – mano sana"
+                        "content_value": "Sujete extremo, prótesis. Desabotone camisa, mano no prostética."
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Sujeta pantalón – ambas manos"
+                        "content_value": "Sujete camisa, mano no prostética. Abra prótesis. Introduzca brazo derecho."
                     },
                     "4": {
                         "content_type": "audio",
-                        "content_value": "Ponte pantalón – ambas manos"
+                        "content_value": "Acomode manga derecha. Introduzca mano no prostética en manga izquierda."
                     },
                     "5": {
                         "content_type": "audio",
-                        "content_value": "Ubica broche en prótesis – ambas manos"
+                        "content_value": "Agarre pinza. Alinee camisa, mano no prostética."
                     },
                     "6": {
                         "content_type": "audio",
-                        "content_value": "Cierra botón; sube cremallera – mano sana"
+                        "content_value": "Junte bordes, mano no prostética. Sujete tela, prótesis. Inserte botón, mano no prostética."
                     },
                     "7": {
                         "content_type": "audio",
-                        "content_value": "Busca camisa – mano sana"
+                        "content_value": "Mantenga sujeción, prótesis. Inserte segundo botón, mano no prostética."
                     },
                     "8": {
                         "content_type": "audio",
-                        "content_value": "Sujeta camisa – ambas manos"
+                        "content_value": "Abotone resto. Use solo mano no prostética para botones superiores."
                     },
                     "9": {
                         "content_type": "audio",
-                        "content_value": "Sujeta manga derecha – mano sana"
-                    },
-                    "10": {
-                        "content_type": "audio",
-                        "content_value": "Desliza prótesis – manga derecha"
-                    },
-                    "11": {
-                        "content_type": "audio",
-                        "content_value": "Pasa mano – manga izquierda"
-                    },
-                    "12": {
-                        "content_type": "audio",
-                        "content_value": "Ajusta borde camisa – mano sana en prótesis"
-                    },
-                    "13": {
-                        "content_type": "audio",
-                        "content_value": "Abrocha botón – mano sana"
-                    },
-                    "14": {
-                        "content_type": "audio",
-                        "content_value": "Continúa abotonando camisa – mano sana"
+                        "content_value": "Organice cuello, mano no prostética."
                     }
                 }
             },
