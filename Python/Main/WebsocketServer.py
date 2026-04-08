@@ -28,7 +28,7 @@ datos_globales = {
     "HRI_strategy": 0,      # Estrategia de interacción humano-robot utilizada
     "GT": 0,                # Mensaje GT que se envía al ESP32
     "tiempo": 0,            # Tiempo transcurrido (se actualiza automáticamente)
-    "UserID" : 0,          # Id del usuario
+    "nombre_participante": 0,          # Nombre del participante
     "GM": 0
 }
 
@@ -159,7 +159,7 @@ async def handler(websocket):
                         "paso_actividad": data.get("paso_actividad", 0),
                         "HRI_strategy": data.get("HRI_strategy", 0),
                         "GT": data.get("GT", 0),
-                        "UserID": data.get("UserID", 0),# Get the UserID from the client
+                        "nombre_participante": data.get("nombre_participante", 0),
                         "GM": data.get("GM", 0)
                     })
                     respuesta = {

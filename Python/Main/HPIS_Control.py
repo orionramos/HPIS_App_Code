@@ -10,7 +10,7 @@ interrupted_event = None
 class AplicacionHRI:
     def __init__(self):
         # Variables de configuración inicial
-        self.participante = None  # Número de participante evaluado
+        self.participante = None  # Nombre del participante
         self.estrategia = None  # Estrategia de HRI seleccionada
         self.actividad = None  # Actividad seleccionada
         self.paso_actividad = 1  # El primer paso de la actividad
@@ -40,10 +40,9 @@ class AplicacionHRI:
                 'gM': {1:2, 2:2, 3:2, 4:2, 5:2, 6:2, 7:2, 8:2, 9:2}}
         }
             
-
     # Método para seleccionar el participante
     def seleccionar_participante(self):
-        self.participante = input("Ingresa el número de participante a evaluar: ")
+        self.participante = input("Ingresa el nombre del participante a evaluar: ")
 
     # Método para seleccionar la actividad de la lista predefinida
     def seleccionar_actividad(self):
@@ -89,10 +88,10 @@ class AplicacionHRI:
             "paso_actividad": self.paso_actividad,
             "HRI_strategy": int(self.estrategia),
             "GT": int(gt_value),
-            "UserID":int(self.participante),
+            "nombre_participante": str(self.participante),
             "GM": int(gM_value)
         }
-
+    
     # Nuevo método para obtener datos de finalización
     def obtener_datos_fin(self):
         """Retorna un mensaje de finalización que señala a Unity que limpie todo el feedback"""
