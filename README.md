@@ -34,7 +34,7 @@ Contiene la lista de bibliotecas necesarias para ejecutar los scripts en este re
 
 ### 8. `install_requirements.py`
 
-Script que instala automáticamente todas las dependencias listadas en `requirements.txt`.
+Script  python -m pip install -r requirements.txt que instala automáticamente todas las dependencias listadas en `requirements.txt`.
 
 ## Instalación y ejecución
 
