@@ -11,7 +11,8 @@ import os
 clients = {
     "esp32": None,              # Cliente ESP32, encargado de enviar datos de sensores
     "HPISControl": None,        # Cliente HPISControl, envía datos de actividad
-    "Unity_receiver": None,     # Cliente Unity, encargado de recibir y mostrar datos en la interfaz
+    "Unity_receiver": None,     # Cliente Unity, encargado de recibir y mostrar datos en la interfaz (Metaquests)
+    "Unity_receiverPC": None,   # Cliente Unity en PC, encargado de recibir y mostrar datos en la interfaz
     "HRControl": None,
     "Client_Data_Recorder": None # Cliente para registrar los datos en csv
 }
@@ -44,13 +45,24 @@ async def enviar_datos_a_unity():
         if hp_control_start_time is not None:
             datos_globales["tiempo"] = time.time() - hp_control_start_time
 
+        # Enviar datos a Unity_receiver (Metaquests)
         if clients["Unity_receiver"]:
             try:
                 await clients["Unity_receiver"].send(json.dumps(datos_globales))
-                print(f">>> Datos enviados a Unity: {datos_globales}")
+                print(f">>> Datos enviados a Unity (Metaquests): {datos_globales}")
             except Exception as e:
-                print(f"Error enviando a Unity: {e}")
+                print(f"Error enviando a Unity (Metaquests): {e}")
                 clients["Unity_receiver"] = None
+        
+        # Enviar datos a Unity_receiverPC (PC)
+        if clients["Unity_receiverPC"]:
+            try:
+                await clients["Unity_receiverPC"].send(json.dumps(datos_globales))
+                print(f">>> Datos enviados a Unity (PC): {datos_globales}")
+            except Exception as e:
+                print(f"Error enviando a Unity (PC): {e}")
+                clients["Unity_receiverPC"] = None
+        
         await asyncio.sleep(0.3)
 
 # Función asíncrona para enviar el mensaje GT al ESP32 periódicamente

@@ -7,49 +7,56 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Asegúrese de tener la prótesis con la palma mirando a la izquierda."
+                        "content_value": "Iniciando agarre de poder para objeto cilíndrico. Oriente la palma de la prótesis hacia la izquierda y manténgala abierta."
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Use su mano sana para colocar la taza en una posición cómoda que permita sujetarla con su prótesis."
+                        "content_value": "Con la mano no prostética, sujete la taza por el asa. Ubique el fondo de la taza justo encima de los dedos inferiores."
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Con su prótesis, agarre la taza firmemente y use la mano sana para estabilizarla y evitar derrames."
+                        "content_value": "Cierre la prótesis para sujetar la taza. Ahora puede soltar el asa con su mano no prostética."
                     },
                     "4": {
                         "content_type": "audio",
-                        "content_value": "Acerque la taza a su boca cuidadosamente, mantenga el equilibrio y beba el primer sorbo de líquido."
+                        "content_value": "Acerque su boca a la taza. Incline el brazo lentamente para el primer sorbo. Al finalizar, baje el brazo."
                     },
                     "5": {
                         "content_type": "audio",
-                        "content_value": "Repita el proceso de llevar la taza a la boca y beber dos sorbos más, asegurándose de no derramar el líquido."
+                        "content_value": "Repita la secuencia: acerque su boca e incline el brazo para dos sorbos más."
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Sujete el asa con la mano no prostética. Abra la prótesis y deposite la taza sobre la mesa."
                     }
                 }
             },
-
             "2": {
                 "name": "Estrategia Auditiva 2",
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Ubica Prótesis – palma izquierda"
+                        "content_value": "Agarre poder. Gire palma izquierda. Abra prótesis."
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Acomoda taza – mano sana"
+                        "content_value": "Sujete taza, mano no prostética. Apoye fondo sobre dedos."
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Agarra taza – prótesis; estabiliza – mano sana"
+                        "content_value": "Cierre prótesis. Suelte asa, mano no prostética."
                     },
                     "4": {
                         "content_type": "audio",
-                        "content_value": "Acerca taza a boca – prótesis"
+                        "content_value": "Acerque boca. Incline brazo, beba. Baje brazo."
                     },
                     "5": {
                         "content_type": "audio",
-                        "content_value": "bebe liquido – prótesis dos veces mas"
+                        "content_value": "Repita secuencia: acerque, incline, beba."
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Sujete asa, mano no prostética. Abra prótesis. Apoye taza."
                     }
                 }
             },
@@ -58,23 +65,27 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Verifica que la palma de tu prótesis esté orientada hacia la izquierda."
+                        "content_value": "Hola. He configurado la prótesis en el modo de agarre de poder. Para comenzar, por favor gire la palma de la prótesis hacia la izquierda y manténgala completamente abierta."
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Usa tu mano sana para colocar la taza en una posición cómoda que permita sujetarla con la prótesis."
+                        "content_value": "A continuación, utilice su mano no prostética para tomar la taza por el asa. Muévala con cuidado hasta que el fondo de la taza quede flotando justo por encima de los dedos inferiores de su prótesis."
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Agárra la taza con tu prótesis con firmeza y estabiliza con tu mano sana para evitar derrames."
+                        "content_value": "Perfecto. Ahora puede cerrar la prótesis para asegurar la taza. Una vez que el agarre sea firme, retire su mano no prostética del asa con total seguridad."
                     },
                     "4": {
                         "content_type": "audio",
-                        "content_value": "Acerca la taza a tu boca con cuidado usando la prótesis y bebe el primer sorbo."
+                        "content_value": "Para evitar derrames, le sugiero acercar su boca a la taza. Luego, incline su brazo lentamente hacia arriba para tomar el primer sorbo. Al terminar, vuelva a bajar el brazo."
                     },
                     "5": {
                         "content_type": "audio",
-                        "content_value": "Lleva la taza a tu boca y bebe dos veces más, evitando derrames."
+                        "content_value": "Muy bien hecho. Vamos a repetir este movimiento. Acerque nuevamente su boca a la taza e incline el brazo despacio para disfrutar de dos sorbos adicionales."
+                    },
+                    "6": {
+                        "content_type": "audio",
+                        "content_value": "Para finalizar, vuelva a sujetar el asa con su mano no prostética para estabilizar la taza. Ahora, proceda a abrir la prótesis y deposite la taza suavemente sobre la mesa. Tarea completada con éxito."
                     }
                 }
             }
@@ -240,59 +251,51 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Asegúrese de tener la prótesis con la palma mirando a la izquierda."
+                        "content_value": "Apoye la bolsa sobre la mesa con su mano no prostética para obtener estabilidad inicial."
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Agarre la bolsa de pan por el medio con la mano protésica y su pecho."
+                        "content_value": "El sistema activará el agarre de pinza, ideal para manipular el plástico de la bolsa."
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Con su mano sana, deslice el cierre de la bolsa para abrirla."
+                        "content_value": "Sujete la bolsa bajo el cierre con la prótesis para que sirva de soporte, mientras retira el sello con su mano no prostética."
                     },
                     "4": {
                         "content_type": "audio",
-                        "content_value": "Con su mano sana, tome una rebanada de pan de la bolsa."
+                        "content_value": "Al abrir la bolsa, deje el pulgar de la prótesis por dentro para actuar como marco y evitar que se cierre."
                     },
                     "5": {
                         "content_type": "audio",
-                        "content_value": "Con su mano sana, coloque la rebanada de pan en la tostadora."
+                        "content_value": "Retire dos rebanadas con la mano no prostética. Abra la prótesis solo cuando el pan esté fuera para evitar desgarros."
                     },
                     "6": {
                         "content_type": "audio",
-                        "content_value": "Deje la bolsa de pan sobre la mesa con su mano sana."
+                        "content_value": "Sujete una rebanada con la prótesis. Use su mano no prostética para la primera ranura de la tostadora, ya que requiere más precisión."
                     },
                     "7": {
                         "content_type": "audio",
-                        "content_value": "Cambie el agarre de la prótesis al agarre de dedo índice y gire la prótesis con su mano sana, de modo que la palma quede mirando hacia abajo."
+                        "content_value": "Pase la rebanada de la prótesis a su mano no prostética. Colóquela en la tostadora y enciéndala."
                     },
                     "8": {
                         "content_type": "audio",
-                        "content_value": "Con el dedo índice de la prótesis, presione el botón para encender la tostadora."
+                        "content_value": "Espere a que el pan esté tostado. Deje enfriar un minuto para evitar quemaduras."
                     },
                     "9": {
                         "content_type": "audio",
-                        "content_value": "Mientras se tuesta el pan, cambie la prótesis al agarre de pulgar lateral."
+                        "content_value": "Eleve el botón de la tostadora con la mano no prostética. Use la prótesis para llevar el pan al plato."
                     },
                     "10": {
                         "content_type": "audio",
-                        "content_value": "Espere a que la tostada salga automáticamente de la tostadora."
+                        "content_value": "Use la mano no prostética para colocar el queso en la tostada. Si es necesario, estabilice el plato con la prótesis."
                     },
                     "11": {
                         "content_type": "audio",
-                        "content_value": "Espere unos momentos para que la tostada se enfríe un poco, luego retire la rebanada con su mano sana y colóquela en un plato."
+                        "content_value": "Con la mano no prostética, coloque la segunda rebanada para cerrar el sándwich."
                     },
                     "12": {
                         "content_type": "audio",
-                        "content_value": "Con su mano sana, tome una rebanada de queso y colóquela sobre la tostada en el plato."
-                    },
-                    "13": {
-                        "content_type": "audio",
-                        "content_value": "Con su mano sana, tome el trapo de la mesa y ayúdese a sujetarlo firmemente con la prótesis."
-                    },
-                    "14": {
-                        "content_type": "audio",
-                        "content_value": "Limpie la superficie de trabajo con el trapo, utilizando la prótesis y la mano sana como apoyo para mantener una buena posición."
+                        "content_value": "Use el trapo para limpiar la mesa con la mano que le resulte más cómoda. Puede usar la prótesis para practicar presión constante sobre superficies planas."
                     }
                 }
             },
@@ -301,59 +304,51 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Ubica prótesis – palma izquierda"
+                        "content_value": "Apoye bolsa en mesa, mano no prostética."
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Agarra bolsa – prótesis y pecho"
+                        "content_value": "Agarre pinza. Mantenga prótesis abierta."
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Abre bolsa – mano sana"
+                        "content_value": "Sujete bolsa bajo cierre, prótesis. Retire sello, mano no prostética."
                     },
                     "4": {
                         "content_type": "audio",
-                        "content_value": "Toma pan – mano sana"
+                        "content_value": "Abra bolsa. Deje pulgar dentro, prótesis."
                     },
                     "5": {
                         "content_type": "audio",
-                        "content_value": "Coloca pan en tostadora – mano sana"
+                        "content_value": "Retire dos rebanadas, mano no prostética. Abra prótesis. Suelte bolsa."
                     },
                     "6": {
                         "content_type": "audio",
-                        "content_value": "Deja bolsa en mesa – mano sana"
+                        "content_value": "Sujete rebanada, prótesis. Inserte otra rebanada, mano no prostética."
                     },
                     "7": {
                         "content_type": "audio",
-                        "content_value": "Cambia agarre a dedo índice – prótesis; gira palma abajo – mano sana"
+                        "content_value": "Pase rebanada a mano no prostética. Inserte. Encienda tostadora."
                     },
                     "8": {
                         "content_type": "audio",
-                        "content_value": "Presiona botón – dedo prótesis"
+                        "content_value": "Espere tostado. Deje enfriar."
                     },
                     "9": {
                         "content_type": "audio",
-                        "content_value": "Cambia a pulgar lateral – prótesis"
+                        "content_value": "Eleve botón, mano no prostética. Lleve pan a plato, prótesis."
                     },
                     "10": {
                         "content_type": "audio",
-                        "content_value": "Espera tostada lista"
+                        "content_value": "Estabilice plato, prótesis. Coloque queso, mano no prostética."
                     },
                     "11": {
                         "content_type": "audio",
-                        "content_value": "Espera enfríe; retira tostada a plato – mano sana"
+                        "content_value": "Coloque segunda rebanada, mano no prostética."
                     },
                     "12": {
                         "content_type": "audio",
-                        "content_value": "Toma queso; coloca en tostada – mano sana"
-                    },
-                    "13": {
-                        "content_type": "audio",
-                        "content_value": "Toma trapo; sujeta con prótesis – mano sana"
-                    },
-                    "14": {
-                        "content_type": "audio",
-                        "content_value": "Limpia superficie – trapo con prótesis y mano sana"
+                        "content_value": "Tome trapo. Limpie mesa."
                     }
                 }
             },
@@ -362,59 +357,51 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Antes de comenzar, verifica que tu prótesis esté bien ajustada, y que la palma mire hacia la izquierda para tener el mejor control durante toda la tarea."
+                        "content_value": "Para empezar a preparar su sándwich, por favor apoye la bolsa sobre la mesa con su mano no prostética. Esto nos dará una excelente estabilidad inicial."
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Ahora, sujeta la bolsa de pan por el medio, presionándola firmemente contra tu pecho con la prótesis para mayor estabilidad."
+                        "content_value": "He activado el modo de agarre de pinza en su prótesis, el cual es ideal para manipular plásticos delicados sin dañarlos."
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Con tu mano sana, desliza suavemente el cierre de la bolsa desde abajo hacia arriba para abrirla."
+                        "content_value": "Ahora, le sugiero sujetar la bolsa justo por debajo del cierre con la prótesis para que actúe como un soporte firme. Mientras tanto, use su mano no prostética para retirar el sello con tranquilidad."
                     },
                     "4": {
                         "content_type": "audio",
-                        "content_value": "Selecciona una rebanada de pan de tamaño adecuado y extráela con cuidado usando tu mano sana."
+                        "content_value": "Excelente. Al abrir la bolsa, un buen truco es dejar el pulgar de la prótesis por dentro; así funcionará como un marco y evitaremos que se cierre accidentalmente."
                     },
                     "5": {
                         "content_type": "audio",
-                        "content_value": "Coloca la rebanada de pan en la ranura de la tostadora, asegurándote de que esté centrada y bien posicionada."
+                        "content_value": "Proceda a retirar dos rebanadas utilizando su mano no prostética. Para cuidar el pan y evitar desgarros, recuerde abrir la prótesis solo cuando el pan esté completamente fuera de la bolsa."
                     },
                     "6": {
                         "content_type": "audio",
-                        "content_value": "Deja la bolsa de pan sobre la mesa con tu mano sana, para tener ambas manos libres en los próximos pasos."
+                        "content_value": "Muy bien. Ahora sostenga una rebanada con la prótesis. Para insertarla en la primera ranura de la tostadora, le recomiendo usar su mano no prostética, ya que nos dará la precisión necesaria."
                     },
                     "7": {
                         "content_type": "audio",
-                        "content_value": "Ahora prepárate para activar la tostadora: cambia el agarre de tu prótesis al agarre de dedo índice extendido, y rota la prótesis con ayuda de tu mano sana, para que la palma mire hacia abajo."
+                        "content_value": "Perfecto. Por favor, pase la rebanada que tiene en la prótesis a su mano no prostética, colóquela en la tostadora y proceda a encenderla."
                     },
                     "8": {
                         "content_type": "audio",
-                        "content_value": "Con el dedo índice de tu prótesis bien posicionado, presiona con firmeza pero control el botón de encendido de la tostadora."
+                        "content_value": "El pan se está tostando. Una vez que termine, le aconsejo esperar un minuto para que se enfríe un poco y así prevenir cualquier quemadura. Yo le acompañaré en la espera."
                     },
                     "9": {
                         "content_type": "audio",
-                        "content_value": "Mientras el pan se está tostando, cambia nuevamente el agarre de tu prótesis al agarre de pulgar lateral para mejorar tu estabilidad y confort durante la espera."
+                        "content_value": "Es hora de sacar el pan. Eleve el botón de la tostadora con su mano no prostética, y luego utilice la prótesis para trasladar el pan hacia el plato de forma segura."
                     },
                     "10": {
                         "content_type": "audio",
-                        "content_value": "Permanece atento y espera pacientemente a que la tostada salga automáticamente de la tostadora."
+                        "content_value": "Para armar nuestro sándwich, use su mano no prostética para colocar el queso sobre la tostada. Si siente que el plato se desliza, no dude en estabilizarlo apoyando la prótesis sobre él."
                     },
                     "11": {
                         "content_type": "audio",
-                        "content_value": "Espera unos momentos a que la tostada se enfríe lo suficiente para manipularla sin quemarte, luego retírala con cuidado usando tu mano sana y colócala en un plato limpio."
+                        "content_value": "Casi terminamos. Tome la segunda rebanada con su mano no prostética y colóquela con cuidado encima para cerrar el sándwich."
                     },
                     "12": {
                         "content_type": "audio",
-                        "content_value": "Toma una rebanada de queso del paquete con tu mano sana, y distribúyela de manera uniforme sobre la tostada caliente en el plato."
-                    },
-                    "13": {
-                        "content_type": "audio",
-                        "content_value": "Toma un trapo limpio de la mesa con tu mano sana y ayúdate con tu prótesis para sujetarlo firmemente, asegurando buen control del trapo."
-                    },
-                    "14": {
-                        "content_type": "audio",
-                        "content_value": "Ahora limpia la superficie de trabajo con movimientos suaves pero efectivos, utilizando el trapo con ayuda de tu prótesis y tu mano sana para mantener una buena posición, y evitar derrames o accidentes."
+                        "content_value": "¡Gran trabajo! Para finalizar, tome el trapo y limpie la mesa con la mano que le resulte más cómoda. Si lo desea, puede aprovechar este momento para usar la prótesis y practicar la presión constante sobre la superficie."
                     }
                 }
             }
@@ -427,86 +414,86 @@
                 "name": "Estrategia Auditiva 1",
                 "steps": {
                     "1": {
-                    "content_type": "audio",
-                    "content_value": "Asegúrese de que la prótesis esté con la palma hacia la izquierda y en agarre de poder."
+                        "content_type": "audio",
+                        "content_value": "Activando agarre de poder. Oriente la palma hacia la izquierda y mantenga la mano abierta para recibir el cubierto."
                     },
                     "2": {
-                    "content_type": "audio",
-                    "content_value": "Con su mano sana, tome el tenedor y colóquelo en la prótesis. Luego cierre la prótesis para sujetarlo con firmeza."
+                        "content_type": "audio",
+                        "content_value": "Coloque el tenedor en la prótesis. Cierre el agarre y active el bloqueo de seguridad para evitar que la herramienta se suelte al aplicar fuerza."
                     },
                     "3": {
-                    "content_type": "audio",
-                    "content_value": "Use el tenedor con la prótesis para asegurar la tostada sobre el plato."
+                        "content_type": "audio",
+                        "content_value": "Trinche la comida con la prótesis. Use la mano no prostética para cortar, aprovechando que la prótesis mantiene el alimento fijo."
                     },
                     "4": {
-                    "content_type": "audio",
-                    "content_value": "Con la mano sana, sujete el cuchillo y corte un pedazo pequeño de la tostada. Cuando termine, suelte el cuchillo."
+                        "content_type": "audio",
+                        "content_value": "Libere el tenedor de la comida. Deje el cuchillo y desbloquee la prótesis para transferir el tenedor a su mano no prostética."
                     },
                     "5": {
-                    "content_type": "audio",
-                    "content_value": "Con su mano sana, tome el tenedor para poder soltarlo de la prótesis. Abra la prótesis y retire el tenedor. Luego lleve el tenedor a la boca con su mano sana y coma el pedazo de tostada."
+                        "content_type": "audio",
+                        "content_value": "Use su mano no prostética para comer. Esto le permite rotar el alimento hacia su boca, movimiento que la prótesis no puede realizar."
                     },
                     "6": {
-                    "content_type": "audio",
-                    "content_value": "Repita los pasos hasta terminar de comer toda la tostada."
+                        "content_type": "audio",
+                        "content_value": "Repita la secuencia hasta terminar. Alterne entre el soporte de fuerza con la prótesis y la precisión con su mano no prostética."
                     }
-                }  
+                }
             },
             "2": {
                 "name": "Estrategia Auditiva 2",
                 "steps": {
                     "1": {
-                    "content_type": "audio",
-                    "content_value": "Ajusta prótesis – palma izquierda"
+                        "content_type": "audio",
+                        "content_value": "Agarre poder. Gire palma izquierda. Abra prótesis."
                     },
                     "2": {
-                    "content_type": "audio",
-                    "content_value": "Coloca tenedor en prótesis – mano sana; cierra prótesis – prótesis"
+                        "content_type": "audio",
+                        "content_value": "Coloque tenedor en prótesis, mano no prostética. Cierre prótesis. Active bloqueo."
                     },
                     "3": {
-                    "content_type": "audio",
-                    "content_value": "Asegura tostada – prótesis"
+                        "content_type": "audio",
+                        "content_value": "Trinche comida, prótesis. Corte comida, mano no prostética."
                     },
                     "4": {
-                    "content_type": "audio",
-                    "content_value": "Corta tostada – mano sana; suelta cuchillo – mano sana"
+                        "content_type": "audio",
+                        "content_value": "Libere tenedor. Deje cuchillo. Desbloquee prótesis. Pase tenedor a mano no prostética."
                     },
                     "5": {
-                    "content_type": "audio",
-                    "content_value": "Toma tenedor – mano sana; abre prótesis – prótesis; retira tenedor – mano sana; come tostada – mano sana"
+                        "content_type": "audio",
+                        "content_value": "Lleve tenedor a boca, mano no prostética. Coma."
                     },
                     "6": {
-                    "content_type": "audio",
-                    "content_value": "Repite comer – mano sana"
+                        "content_type": "audio",
+                        "content_value": "Repita secuencia: trinche, corte, pase, coma."
                     }
                 }
             },
-            "3": {
+            "4": {
                 "name": "Estrategia Auditiva 3",
                 "steps": {
                     "1": {
-                    "content_type": "audio",
-                    "content_value": "Coloque la prótesis con la palma hacia la izquierda y cierre en agarre de poder."
+                        "content_type": "audio",
+                        "content_value": "Hola. He activado el agarre de poder en su prótesis. Para prepararnos, por favor oriente la palma hacia la izquierda y manténgala abierta; así estará lista para recibir el cubierto cómodamente."
                     },
                     "2": {
-                    "content_type": "audio",
-                    "content_value": "Con la mano sana, ponga el tenedor en la prótesis y cierre la prótesis para sujetarlo."
+                        "content_type": "audio",
+                        "content_value": "Excelente. Ahora, utilice su mano no prostética para colocar el tenedor en la prótesis. Cuando lo tenga bien sujeto, cierre el agarre y no olvide activar el bloqueo de seguridad. Esto nos garantizará que la herramienta no se mueva mientras aplicamos fuerza."
                     },
                     "3": {
-                    "content_type": "audio",
-                    "content_value": "Fije la tostada con el tenedor sujetado por la prótesis."
+                        "content_type": "audio",
+                        "content_value": "Muy bien, vamos a cortar. Trinche la comida con la prótesis para mantenerla firme en el plato. Luego, use su mano no prostética para realizar el corte con el cuchillo. Esta es una gran estrategia para aprovechar al máximo la estabilidad de su prótesis."
                     },
                     "4": {
-                    "content_type": "audio",
-                    "content_value": "Con la mano sana, corte un trozo pequeño de la tostada con el cuchillo; luego suelte el cuchillo."
+                        "content_type": "audio",
+                        "content_value": "Perfecto. Por su seguridad, primero libere el tenedor de la comida y deje el cuchillo sobre la mesa. Una vez que sus manos estén libres, desbloquee la prótesis y pase el tenedor con cuidado a su mano no prostética."
                     },
                     "5": {
-                    "content_type": "audio",
-                    "content_value": "Tome el tenedor con la mano sana, abra la prótesis y retire el tenedor. Lleve el tenedor a la boca y coma el trozo."
+                        "content_type": "audio",
+                        "content_value": "Ahora viene la mejor parte: use su mano no prostética para llevar el bocado a su boca. Le sugiero hacerlo de esta manera porque le brinda la rotación exacta que necesitamos para comer cómodamente y sin complicaciones."
                     },
                     "6": {
-                    "content_type": "audio",
-                    "content_value": "Repita los pasos hasta terminar la tostada."
+                        "content_type": "audio",
+                        "content_value": "¡Muy buen trabajo! Puede repetir esta misma secuencia de movimientos para disfrutar del resto de su comida. Siga alternando el soporte firme de su prótesis con la precisión de su mano no prostética. ¡Buen provecho!"
                     }
                 }
             }
@@ -520,59 +507,39 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Asegúrese de tener la prótesis con la palma mirando hacia abajo."
+                        "content_value": "Tome la camisa con su mano no prostética del montón de ropa y extiéndala para identificar el frente."
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Busque su pantalón en el montón de ropa."
+                        "content_value": "Sujete un extremo con la prótesis para que sirva de anclaje fijo. Con su mano no prostética, proceda a desabotonar la prenda."
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Tome el pantalón con ambas manos, asegurando con la mano sana que el pantalón quede bien sujeto en la prótesis."
+                        "content_value": "Sujete la camisa con la mano no prostética. Abra la prótesis e introduzca su brazo derecho en la manga correspondiente."
                     },
                     "4": {
                         "content_type": "audio",
-                        "content_value": "Colóquese el pantalón cuidadosamente, asegurándose de que cada pierna entre correctamente."
+                        "content_value": "Termine de acomodar la manga derecha e introduzca su mano no prostética en la manga izquierda."
                     },
                     "5": {
                         "content_type": "audio",
-                        "content_value": "Utilice la mano sana para asegurar la punta del broche en la prótesis."
+                        "content_value": "Activando agarre de pinza. Use la mano no prostética para alinear la camisa y corregir cualquier doblez."
                     },
                     "6": {
                         "content_type": "audio",
-                        "content_value": "Cierre el botón y suba la cremallera del pantalón usando su mano sana."
+                        "content_value": "Junte los dos bordes con la mano no prostética. Sujételos con la prótesis cerca del ojal para generar tensión, mientras inserta el botón."
                     },
                     "7": {
                         "content_type": "audio",
-                        "content_value": "Encuentre su camisa en el montón de ropa."
+                        "content_value": "Mantenga la sujeción de precisión y repita el proceso con el segundo botón."
                     },
                     "8": {
                         "content_type": "audio",
-                        "content_value": "Sujete la camisa con ambas manos, asegurando que esté firmemente agarrada por la prótesis."
+                        "content_value": "Siga con los demás botones. Para los superiores, use solo su mano no prostética, ya que los botones inferiores ya brindan la tensión necesaria."
                     },
                     "9": {
                         "content_type": "audio",
-                        "content_value": "Localice la manga derecha y sujete el extremo con la mano sana para pasar la prótesis a través de ella."
-                    },
-                    "10": {
-                        "content_type": "audio",
-                        "content_value": "Deslice la prótesis cuidadosamente a través de la manga derecha."
-                    },
-                    "11": {
-                        "content_type": "audio",
-                        "content_value": "Pase su mano sana por la manga izquierda."
-                    },
-                    "12": {
-                        "content_type": "audio",
-                        "content_value": "Agarre la parte inferior derecha de la camisa con la mano sana y ayúdese para sujetarla con la prótesis."
-                    },
-                    "13": {
-                        "content_type": "audio",
-                        "content_value": "Use su mano sana para abrochar el primer botón de la camisa."
-                    },
-                    "14": {
-                        "content_type": "audio",
-                        "content_value": "Continúe abotonando la camisa siguiendo el mismo procedimiento."
+                        "content_value": "Para finalizar, organice el cuello de la camisa con su mano no prostética para asegurar un acabado correcto."
                     }
                 }
             },
@@ -581,59 +548,39 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Ubica prótesis – palma abajo"
+                        "content_value": "Tome camisa, mano no prostética."
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Busca pantalón – mano sana"
+                        "content_value": "Sujete extremo, prótesis. Desabotone camisa, mano no prostética."
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Sujeta pantalón – ambas manos"
+                        "content_value": "Sujete camisa, mano no prostética. Abra prótesis. Introduzca brazo derecho."
                     },
                     "4": {
                         "content_type": "audio",
-                        "content_value": "Ponte pantalón – ambas manos"
+                        "content_value": "Acomode manga derecha. Introduzca mano no prostética en manga izquierda."
                     },
                     "5": {
                         "content_type": "audio",
-                        "content_value": "Ubica broche en prótesis – ambas manos"
+                        "content_value": "Agarre pinza. Alinee camisa, mano no prostética."
                     },
                     "6": {
                         "content_type": "audio",
-                        "content_value": "Cierra botón; sube cremallera – mano sana"
+                        "content_value": "Junte bordes, mano no prostética. Sujete tela, prótesis. Inserte botón, mano no prostética."
                     },
                     "7": {
                         "content_type": "audio",
-                        "content_value": "Busca camisa – mano sana"
+                        "content_value": "Mantenga sujeción, prótesis. Inserte segundo botón, mano no prostética."
                     },
                     "8": {
                         "content_type": "audio",
-                        "content_value": "Sujeta camisa – ambas manos"
+                        "content_value": "Abotone resto. Use solo mano no prostética para botones superiores."
                     },
                     "9": {
                         "content_type": "audio",
-                        "content_value": "Sujeta manga derecha – mano sana"
-                    },
-                    "10": {
-                        "content_type": "audio",
-                        "content_value": "Desliza prótesis – manga derecha"
-                    },
-                    "11": {
-                        "content_type": "audio",
-                        "content_value": "Pasa mano – manga izquierda"
-                    },
-                    "12": {
-                        "content_type": "audio",
-                        "content_value": "Ajusta borde camisa – mano sana en prótesis"
-                    },
-                    "13": {
-                        "content_type": "audio",
-                        "content_value": "Abrocha botón – mano sana"
-                    },
-                    "14": {
-                        "content_type": "audio",
-                        "content_value": "Continúa abotonando camisa – mano sana"
+                        "content_value": "Organice cuello, mano no prostética."
                     }
                 }
             },
@@ -642,59 +589,39 @@
                 "steps": {
                     "1": {
                         "content_type": "audio",
-                        "content_value": "Asegúrate de que la palma de tu prótesis esté orientada hacia abajo antes de comenzar."
+                        "content_value": "Hola, vamos a prepararnos para vestirnos. Para comenzar, por favor tome la camisa con su mano no prostética. Le sugiero extenderla sobre una superficie para identificar fácilmente la parte frontal."
                     },
                     "2": {
                         "content_type": "audio",
-                        "content_value": "Busca tu pantalón en el montón de ropa."
+                        "content_value": "Excelente. Ahora, sujete un extremo inferior con su prótesis para que nos sirva como un anclaje firme. Con este apoyo, proceda a desabotonar la prenda tranquilamente usando su mano no prostética."
                     },
                     "3": {
                         "content_type": "audio",
-                        "content_value": "Sujeta el pantalón con ambas manos, asegurándote de que quede bien firme en la prótesis con ayuda de tu mano sana."
+                        "content_value": "Muy bien. Tome la camisa con su mano no prostética, abra la prótesis e introduzca primero su brazo derecho en la manga correspondiente. Hacer este lado primero facilita mucho el proceso."
                     },
                     "4": {
                         "content_type": "audio",
-                        "content_value": "Ponte el pantalón con cuidado, asegurándote de que ambas piernas entren correctamente."
+                        "content_value": "Perfecto. Termine de acomodar la manga derecha hasta que se sienta cómodo, y luego deslice suavemente su mano no prostética por la manga izquierda."
                     },
                     "5": {
                         "content_type": "audio",
-                        "content_value": "Con tu mano sana, encaja la punta del broche en la prótesis para facilitar el cierre."
+                        "content_value": "He ajustado su prótesis al modo de agarre de pinza, que es ideal para manejar la tela de su camisa. Use su mano no prostética para alinear los bordes y alisar cualquier doblez."
                     },
                     "6": {
                         "content_type": "audio",
-                        "content_value": "Cierra el botón del pantalón y sube la cremallera usando tu mano sana."
+                        "content_value": "Vamos a abotonar. Junte los dos bordes con su mano no prostética. Luego, sujételos con la prótesis justo al lado del ojal. Esto generará la tensión perfecta para que pueda insertar el botón fácilmente con su mano no prostética."
                     },
                     "7": {
                         "content_type": "audio",
-                        "content_value": "Busca tu camisa en el montón de ropa."
+                        "content_value": "¡Gran trabajo! Mantenga esa misma sujeción de precisión con la prótesis y repita el proceso suavemente para asegurar el segundo botón."
                     },
                     "8": {
                         "content_type": "audio",
-                        "content_value": "Sujeta la camisa con ambas manos, asegurando que la prótesis tenga un buen agarre."
+                        "content_value": "Puede continuar con los demás botones de la misma forma. Como consejo experto: para los botones superiores, le sugiero usar únicamente su mano no prostética, ya que los botones inferiores que ya abrochamos le brindarán la tensión necesaria por sí solos."
                     },
                     "9": {
                         "content_type": "audio",
-                        "content_value": "Localiza la manga derecha de la camisa y sujétala por el extremo con tu mano sana."
-                    },
-                    "10": {
-                        "content_type": "audio",
-                        "content_value": "Desliza cuidadosamente tu prótesis a través de la manga derecha."
-                    },
-                    "11": {
-                        "content_type": "audio",
-                        "content_value": "Ahora pasa tu mano sana por la manga izquierda."
-                    },
-                    "12": {
-                        "content_type": "audio",
-                        "content_value": "Con tu mano sana, ajusta la parte inferior derecha de la camisa para que la prótesis la sujete bien."
-                    },
-                    "13": {
-                        "content_type": "audio",
-                        "content_value": "Usa tu mano sana para abrochar el primer botón de la camisa."
-                    },
-                    "14": {
-                        "content_type": "audio",
-                        "content_value": "Continúa abotonando la camisa con el mismo procedimiento hasta completarla."
+                        "content_value": "Para terminar y lucir impecable, organice el cuello de su camisa utilizando su mano no prostética. ¡Ha completado la tarea de vestirse con muchísimo éxito!"
                     }
                 }
             }
