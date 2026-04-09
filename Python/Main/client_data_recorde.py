@@ -32,9 +32,9 @@ class DataRecorder:
         self.data_buffer = []  # Limpiar el buffer
         self.last_message_time = time.time()  # Inicializar el tiempo del último mensaje
 
-        # Crear nombre del archivo con formato: user<ID>_activity<ID>_strategy<ID>_YYYYMMDD-HHMMSS.csv
+        # Crear nombre del archivo con formato: <nombre_usuario>_activity<ID>_strategy<ID>_YYYYMMDD-HHMMSS.csv
         timestamp = time.strftime("%Y%m%d-%H%M%S")
-        file_name = f"user{user_id}_activity{activity_id}_strategy{strategy_id}_{timestamp}.csv"
+        file_name = f"{user_id}_activity{activity_id}_strategy{strategy_id}_{timestamp}.csv"
         self.current_file_path = self.output_folder / file_name  # Ruta completa al archivo
 
         print(f"Archivo creado: {self.current_file_path}")
@@ -70,7 +70,7 @@ class DataRecorder:
                 "HRI_strategy": data.get("HRI_strategy", 0),
                 "GT": data.get("GT", 0),
                 "tiempo": data.get("tiempo", 0),
-                "UserID": data.get("UserID", 0),
+                "UserID": data.get("nombre_participante", "unknown"),
             }
             self.data_buffer.append(data_to_save)  # Guardar en el buffer
             print(f"[DATA] Datos registrados: {data_to_save}")
@@ -115,7 +115,7 @@ async def client(recorder):
                 # Si HPISControl está conectado
                 if data.get("hpi_connected"):
                     if not recorder.is_recording:
-                        user_id = data.get("UserID", "unknown")
+                        user_id = data.get("nombre_participante", "unknown")
                         activity_id = data.get("actividad", "unknown")
                         strategy_id = data.get("HRI_strategy", "unknown")
                         recorder.start_recording(user_id, activity_id, strategy_id)
