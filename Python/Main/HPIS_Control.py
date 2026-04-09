@@ -105,7 +105,7 @@ class AplicacionHRI:
             "EMGTotal_counter": 0,
             "Heart_Rate": 0,
             "GT": 0,
-            "UserID": int(self.participante),
+            "nombre_participante": str(self.participante),
             "GM": 0,
             "tiempo": 0
         }
