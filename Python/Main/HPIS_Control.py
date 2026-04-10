@@ -6,7 +6,7 @@ from websockets.asyncio.client import connect  # Cliente WebSocket asíncrono
 # Variable global para controlar la interrupción
 interrupted_event = None
 
-# Clase que gestiona la aplicación de interacción humano-robot
+
 class AplicacionHRI:
     def __init__(self):
         # Variables de configuración inicial
