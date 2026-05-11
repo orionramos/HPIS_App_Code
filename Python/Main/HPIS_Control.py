@@ -165,7 +165,7 @@ async def enviar_datos_al_servidor(app, websocket_holder):
 
             if app.running and not interrupted_event.is_set():
                 try:
-                    # Esperar input o interrupción - máximo 30 segundos
+                    # Esperar input o interrupción
                     print("Presiona Enter para continuar al siguiente paso (o Ctrl+C para salir)...\n")
                     
                     # Crear tarea para input
@@ -175,7 +175,6 @@ async def enviar_datos_al_servidor(app, websocket_holder):
                     # Esperar a que termine uno u otro
                     done, pending = await asyncio.wait(
                         [input_task, interrupt_task],
-                        timeout=30.0,
                         return_when=asyncio.FIRST_COMPLETED
                     )
                     
@@ -200,9 +199,6 @@ async def enviar_datos_al_servidor(app, websocket_holder):
                             app.avanzar_paso()
                         except Exception:
                             pass  # No avanzar en caso de error
-                    else:
-                        # Timeout - No avanzar, solo continuar esperando
-                        print("(Esperando entrada del usuario...)")
                         
                 except Exception as e:
                     print(f"Error en input: {e}")
