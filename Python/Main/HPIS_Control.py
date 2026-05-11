@@ -27,9 +27,9 @@ class AplicacionHRI:
                 'gt': {1:1, 2:1, 3:1, 4:1, 5:4, 6:1, 7:1, 8:1, 9:3, 10:3, 11:3, 12:3}, 
                 'gM': {1:2, 2:2, 3:2, 4:2, 5:2, 6:2, 7:2, 8:2, 9:2, 10:2, 11:2, 12:2}},
             
-            '3': {'pasos': 12, 
-                'gt': {1:1, 2:2, 3:2, 4:2, 5:2, 6:2, 7:2, 8:2, 9:2, 10:2, 11:2, 12:2}, 
-                'gM': {1:1, 2:1, 3:1, 4:1, 5:1, 6:1, 7:2, 8:1, 9:1, 10:1, 11:1, 12:1}},
+            '3': {'pasos': 13, 
+                'gt': {1:1, 2:2, 3:2, 4:2, 5:2, 6:2, 7:2, 8:2, 9:2, 10:2, 11:2, 12:2, 13:2}, 
+                'gM': {1:1, 2:1, 3:1, 4:1, 5:1, 6:1, 7:1, 8:1, 9:1, 10:1, 11:1, 12:1, 13:1}},
             
             '4': {'pasos': 6,
                 'gt': {1:1, 2:1, 3:1, 4:1, 5:1, 6:1},
@@ -199,15 +199,13 @@ async def enviar_datos_al_servidor(app, websocket_holder):
                             input_task.result()
                             app.avanzar_paso()
                         except Exception:
-                            app.avanzar_paso()
+                            pass  # No avanzar en caso de error
                     else:
-                        # Timeout
-                        print("(Avanzando automáticamente por timeout)")
-                        app.avanzar_paso()
+                        # Timeout - No avanzar, solo continuar esperando
+                        print("(Esperando entrada del usuario...)")
                         
                 except Exception as e:
                     print(f"Error en input: {e}")
-                    app.avanzar_paso()
 
         # Enviar señal de fin cuando se termina o se interrumpe
         print("\n✅ Enviando señal de fin a Unity...")
