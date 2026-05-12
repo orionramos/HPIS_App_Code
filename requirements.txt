@@ -3,3 +3,7 @@ websockets
 aioconsole
 rel
 bleak
+pandas
+numpy
+matplotlib
+seaborn
